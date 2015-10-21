@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrator | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Admin.png" width="75" height="75">
+            <p class="label2">Admin</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Installation</li>
+
+                    <li><a href="admin_tsinstall.html#system" class="label9">System Requirements</a></li>
+                    <li><a href="admin_tsinstall.html#size" class="label9">Sizing Recommendations</a></li>
+                    <li><a href="admin_tsinstall.html#download" class="label9">Download TeamServer</a></li>
+                    <li><a href="admin_tsinstall.html#install" class="label9">Installing TeamServer</a></li>
+                    <li><a href="admin_tsinstall.html#run" class="label9">Running TeamServer</a></li>
+                    <li><a href="admin_tsinstall.html#apps" class="label9">Enable Applications Servers</a></li>
+                    
+                    <br>
+
+                <li><a href="admin_tsconfig.html">Configuration</a></li>
+                <li><a href="admin_tsfaq.html">Troubleshooting</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Crawler</p></li>
+                <li><a href="admin_crawlinstall.html">Installation</a></li><li>
+                </li><li><a href="admin_crawlconfig.html">Configuration </a></li>
+<!--
+                <li><a href="admin_crawlfaq.html">Troubleshooting</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Administrator</li>
+            <li>TeamServer</li>
+            <li class="label6">Installation</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">System Requirements</h1>
+            <a class="anchor" id="system">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+  title: "System Requirements",
+  description: "Minimum system requirements for running the EOP TeamServer",
+-->
+
+<h2 id="preparing-for-the-installation">Preparing for the Installation</h2>
+<p>The Contrast Enterprise on Premise (EOP) TeamServer includes a Tomcat servlet container, a MySQL database instance and an Oracle Hotspot Java Virtual Machine. All of these components are embedded within the installation binary and deployed to a single server as part of the 3.1.X TeamServer architecture. Very little is needed by customers to perform an installation of the TeamServer. Customers should prepare the following prior to installing:</p>
+<ul>
+<li>System with adequate compute and memory resources based on guidance from our sizing recommendations.</li>
+<li>Adherence to the system requirements specified below.</li>
+<li>Installation of the MySQL run-time libraries (Linux Only)</li>
+</ul>
+<h2 id="system-requirements">System Requirements</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Category</th>
+<th style="text-align:left">Minimum</th>
+<th style="text-align:left">Recommended</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>OS Architecture</strong></td>
+<td style="text-align:left">64-bit</td>
+<td style="text-align:left">64-bit</td>
+<td style="text-align:left">Due to memory requirements, TeamServer will <strong>only</strong> is designed to run on 64-bit architectures.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Operating System</strong></td>
+<td style="text-align:left"><ul><li>Microsoft Windows 2008 R2 64-bit</li> <li>Ubuntu 12.04 LTS</li><li>Centos 6</li></ul></td>
+<td style="text-align:left"><ul><li>Microsoft Windows 2012 R2  </li><li>  Ubuntu 14.04 LTS </li><li> Centos 7</li></ul></td>
+<td style="text-align:left">Any modern Operating System <strong>should</strong> run Contrast - we officially support the following: Ubuntu Linux \ Debian Linux \ Redhat Enterprise Linux \ Centos Linux \ Windows Server 2008 R2 64-bit \ Windows 2012 R2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mysql-shared-libraries">MySQL Shared Libraries</h2>
+<p>Customers running TeamServer will need to pre-configure their base operating system on Linux with a shared library for running MySQL. Depending on which flavor of Linux deployed with TeamServer, follow the installation options below:</p>
+<p><strong>Customers Running Centos or RHL</strong></p>
+<pre><code>[contrast@myserver ~]# yum install libaio</code></pre>
+<p><strong>Customers Running Ubuntu or Debian</strong></p>
+<pre><code>[contrast@myserver ~]# apt-get install libaio1 libaio-dev</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">TeamServer Sizing Recommendations</h1>
+            <a class="anchor" id="size">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+  title: "TeamServer Sizing Recommendations",
+  description: "AWS like sizing guidelines for TeamServer and Crawler",
+-->
+
+<h2 id="overview">Overview</h2>
+<p>The Contrast Enterprise on Premise (EOP) TeamServer is designed for ease of deployment and simplicity of configuration.  The installation contains all of the embedded components that make up the configuration of the system. These components include a Tomcat servlet container, a MySQL database instance, a Cassandra NoSQL instance and an Oracle Hotspot Java Virtual Machine. All of these components are embedded within the installation binary and deployed to a single server as part of the TeamServer architecture.</p>
+<p><a href="assets/images/KB2-k02.png" rel="lightbox" title="Components"><img class="thumbnail" src="assets/images/KB2-k02.png"></a></p>
+<p>TeamServer is designed for a scale-up architecture with an emphasis on providing more compute and memory resources upon need. Future versions of TeamServer will have greater flexibility for distributed deployment and configuration for greater scalability.</p>
+<p>The compute (CPU) and memory resources for TeamServer can vary given the number of agents connected and application traffic communicating back to the TeamServer. There are two additional factors that will also impact performance.
+The first additional factor is web traffic from consumers of the TeamServer reporting data. TeamServer is a highly transactional system that presents calculated and real-time data sets back to consumers of the data. As more users interface with the system, the greater the demand for compute and memory.</p>
+<p>Second, TeamServer will maintain large amounts of data over extended periods of time. Customers can proactively purge data over time or choose to keep the data. With any transactional system, the larger the data set to query against, the greater the compute requirements.</p>
+<p>The section below provides a wide selection of configurations optimized to fit different deployment scenarios for Contrast customers. These configurations are comprised of varying combinations of CPU, memory and storage capacity and give our customers the flexibility to choose the appropriate mix of resources for your applications allowing you to scale your resources to the requirements of your target workload.</p>
+<h2 id="teamserver-configuration-options">TeamServer Configuration Options</h2>
+<h3 id="ts1-configuration">TS1 Configuration</h3>
+<p>TS1 configurations are designed for small workloads of 1 to 3 agents communicating to TeamServer as part of the initial analysis of Contrast during a “Proof of Concept” exercise or a single application agent for a small team of end users. A small contingent of web traffic end users, possibly one to five may use the system from time to time or during specific training sessions with a sales engineer or for demonstration purposes with team members.</p>
+<p>TS1 configurations will provide a baseline level of CPU performance, but are flexible enough to scale to increasing compute and memory requirements. They are designed for small workloads that don’t use the full CPU capacity to be handling in-bound traces constantly, or sustain large web traffic. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">VCPUs</th>
+<th style="text-align:center">Clock Speed</th>
+<th style="text-align:center">RAM</th>
+<th style="text-align:center">Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">~2</td>
+<td style="text-align:center">2.5GHz to 3.3GHz</td>
+<td style="text-align:center">4GB</td>
+<td style="text-align:center">30GB</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="use-cases-for-ts1-">Use Cases for TS1:</h4>
+<ul>
+<li>Proof of concept exercises and small deployments of 1 to 3 agents with small teams consuming the results (~ 5 end-users).</li>
+</ul>
+<h3 id="ts2-configuration">TS2 Configuration</h3>
+<p>TS2 configurations are recommended for common workloads of 3 to 30 agents communicating to TeamServer and larger web traffic of users, such as 5 to 25 end-users. Agents are typically running constantly and transporting findings to TeamServer. End users will access the system multiple times of day and actively engage in TeamServer features such as alerts, reports and integrations.</p>
+<p>TS2 configurations will provide a suitable level of performance for most deployments fitting the workloads above. They are designed for typical workloads and scenarios within TeamServer. The greater the number of connected agents, the greater the memory requirements will be for the TeamServer to handle inflight traces. Storage will be dependent on the life of trace data and the preservation of log files by system administrators.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">VCPUs</th>
+<th style="text-align:center">Clock Speed</th>
+<th style="text-align:center">RAM</th>
+<th style="text-align:center">Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">~4 to ~8</td>
+<td style="text-align:center">2.5GHz to 3.3GHz</td>
+<td style="text-align:center">8GB to 12GB</td>
+<td style="text-align:center">50GB to 100GB</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="use-cases-for-ts2-">Use Cases for TS2:</h4>
+<ul>
+<li>Agent deployments between 3 and 30.</li>
+<li>Integrations with external systems such as Active Directory, LDAP and Issue * Tracking Systems.</li>
+<li>End user team traffic between 5 and 25 users.</li>
+</ul>
+<h3 id="ts3-configuration">TS3 Configuration</h3>
+<p>TS3 configurations are intended for larger workloads of 30 to 100+ agents communicating to TeamServer and larger web traffic of users for full-scale enterprise deployments. Agents are connected at all times and transporting findings to TeamServer. End users will access the system multiple times of day and actively engage in TeamServer features such as alerts, reports and integrations.</p>
+<p>TS3 configurations will provide a high-degree of performance and scalability for most deployments fitting the workloads above. The greater the number of connected agents and end-users, the greater the memory requirements will be for the TeamServer to handle inflight traces. Storage will be dependent on the life of trace data and the preservation of log files by system administrators. </p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">VCPUs</th>
+<th style="text-align:center">Clock Speed</th>
+<th style="text-align:center">RAM</th>
+<th style="text-align:center">Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">~8 to ~16</td>
+<td style="text-align:center">2.5GHz to 3.3GHz</td>
+<td style="text-align:center">16GB to 24GB</td>
+<td style="text-align:center">100GB to 500GB</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="use-cases-for-ts3-">Use Cases for TS3:</h4>
+<ul>
+<li>Enterprise agent deployments greater than 30.</li>
+<li>Integrations with external systems such as Active Directory, LDAP and Issue Tracking Systems.</li>
+<li>Advanced use of the TeamServer REST API architecture for automation or data extraction purposes.</li>
+<li>Continuous integration of agents with large automated regression suites.</li>
+<li>Taking advantage of the Crawler micro-server (requires extra storage demand).</li>
+</ul>
+<h4 id="c1-configuration-crawler-micro-service-">C1 Configuration (Crawler Micro-Service)</h4>
+<p>C1 configurations are recommended for EOP customers deploying the Crawler micro-service. The compute, resource and storage requirements are minimal for the Crawler.</p>
+<p>Most Crawler installations are suitable to run on a single VCPU. However, crawling performance would improve with at least 2 VCPUs. Memory can be configured for the Crawler processes, which are both a Java Virtual Machine and PhantomJS process. Storage is only needed during the crawling operation. </p>
+<p>Once the crawling is complete, the results of the crawling exercise are transferred to the TeamServer. Note that TeamServer customers making use of the Crawler service will have more storage needs for storing Crawler results. </p>
+<p>EOP customers implementing Crawler are advised to run on different systems than their TeamServer. While most TeamServer deployments can support the additional compute and resource requirements, we still recommend running this service on a different server. Crawler can be configured to run on multiple servers for parallel crawling operations.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">VCPUs</th>
+<th style="text-align:center">Clock Speed</th>
+<th style="text-align:center">RAM</th>
+<th style="text-align:center">Storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">~1 to ~2</td>
+<td style="text-align:center">2.5GHz to 3.3GHz</td>
+<td style="text-align:center">2GB</td>
+<td style="text-align:center">Less than 10GB</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="use-cases-for-c1-">Use Cases for C1:</h4>
+<ul>
+<li>Single Crawler micro-service</li>
+<li>Deploy multiple Crawler services for parallel crawling efforts.</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Downloading TeamServer From Contrast HUB</h1>
+            <a class="anchor" id="download">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+  title: "Downloading TeamServer from Contrast Hub",
+  description: "Guide for EOP administrators to reference when downloading TeamServer binaries and licenses.",
+-->
+
+<h2 id="setup-an-account-on-the-contrast-hub">Setup an Account on the Contrast Hub</h2>
+<p>Enterprise on Premise (EOP) customers will need to request an account on the <a href="https://hub.contrastsecurity.com">Contrast Hub</a> prior to installation. </p>
+<p>Hub is the central distribution system for customers to obtain installation media, release notes and licenses for EOP installations. To register for an account simply visit the <a href="https://hub.contrastsecurity.com">Contrast Hub Site</a> and select <strong>New User</strong>. Make sure to fill out the required information to the fullest details and our Support Team will be notified of the account request. </p>
+<p>In most cases accounts will be approved and provisioned within 8 business hours. Notification will be sent via email requesting activation of the new Hub account.</p>
+<p><a href="assets/images/KB2-k03.png" rel="lightbox" title="Spam Notice"><img class="thumbnail" src="assets/images/KB2-k03.png"></a>  </p>
+<h2 id="download-the-teamserver-installer">Download the TeamServer Installer</h2>
+<p>Once you have activated your Contrast Hub account you will have the option to download the TeamServer installer for your operating system. If you are on Windows, ensure you download the correct architecture for your Operating System (32 vs. 64 bit).</p>
+<h2 id="download-the-teamserver-license-file-optional-">Download the TeamServer License File (Optional)</h2>
+<p>Your Contrast license file is configured with a <strong>superadmin</strong> account and a regular user account.  You&#39;ll need the license during the Contrast TeamServer installation process.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Installing TeamServer</h1>
+            <a class="anchor" id="install">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing TeamServer"
+description: "Installation instructions for running the TeamServer installer."
+-->
+
+<h2 id="gathering-information">Gathering Information</h2>
+<p>Prior to installing Contrast you should download and fill out the information worksheets attached to this article. Getting prepared with this information will greatly reduce configuration errors.</p>
+<h2 id="running-the-installation">Running the Installation</h2>
+<p>It is necessary to run the installation as a privileged user. This means if you are on Windows, you can right-click the installer and select <strong>Run As Administrator</strong> and if you are on Linux, use the <code>sudo</code> command to launch the installer.</p>
+<p>Once you have launched the installer, you will be presented with several questions. You can use the information in the worksheets to answer these questions as you step through the installation.</p>
+<blockquote>
+<p>On the General Settings page in the installation wizard pay particularly close attention to the value used for the TeamServer URL. This is the URL that client agents will use to communicate back to the TeamServer. We make our best attempt to determine the hostname and pre-populate this value, but if the provided hostname is not resolvable by clients on the network, they won&#39;t be able to communicate back to the server.</p>
+</blockquote>
+<p>After the installation is complete, the installation wizard will start the Contrast Server process for you and perform it&#39;s initial configuration (this includes performing an update tasks if you are upgrading your version of Contrast). Once the server is up and running you can click the link in the final screen to browse to your new TeamServer!</p>
+<h2 id="passing-arguments-to-the-installer">Passing Arguments to the Installer</h2>
+<p>You can customize the behavior of the installer by providing arguments when you run the installation script. This allows you to perform actions such as force console mode or perform an unattended installation.</p>
+<table>
+<thead>
+<tr>
+<th>Command Line Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-h -help</td>
+<td>Shows help for common command-line arguments.</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>Forces the installation to run in Console Mode.</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>Executes the installer in Unattended Mode.</td>
+</tr>
+<tr>
+<td>-g</td>
+<td>Forces the installation to run in GUI Mode. (Windows Only)</td>
+</tr>
+<tr>
+<td>-console</td>
+<td>If the installer is executed in Unattended Mode and the -console argument is passed on Windows a second console will be displayed showing the output of the installer.</td>
+</tr>
+<tr>
+<td>-overwrite</td>
+<td>Forces the installer to overwrite all files in Unattended Mode regardless of the overwrite policy specified in the installer. <em>CAUTION:</em> This can cause your configuration to be overwritten back to default values.</td>
+</tr>
+<tr>
+<td>-dir</td>
+<td>Only valid in Unattended Mode. Specifies the Directory where Contrast should be installed.</td>
+</tr>
+<tr>
+<td>-Dinstall4j.debug</td>
+<td>By default, the installer catches all exceptions, creates a &quot;crash log&quot; and informs the user about the location of that log file. This might be inconvenient when debugging an installer, so this system property switches off the default mechanism and exceptions are printed to stderr.</td>
+</tr>
+<tr>
+<td>-Dinstall4j.keepLog=true -Dinstall4j.alternativeLogfile=[path]</td>
+<td>The installer creates a log file prefixed i4j_log for all installations and uninstallation in your temp directory. This log file can be helpful for debugging purposes. If your installer contains an &quot;Install files&quot; action and terminates successfully the log file is copied to [installation dir]/.install4j/installation.log, otherwise it will be deleted after the installer or uninstaller terminates by default. With the -Dinstall4j.keepLog=true option, the log file won&#39;t be deleted in this case. With the -Dinstall4j.alternativeLogfile=[path] the log file will be copied to the file specified with [path]. This should be an absolute path name. Note that both options have no effect if the log file has already been copied to the installation directory.</td>
+</tr>
+<tr>
+<td>-varfile (filename)</td>
+<td>Specifies a variable-file to be used. When installing in Unattended Mode this allows you to provide customizations to the default values set by the installer.</td>
+</tr>
+<tr>
+<td>--skip-preflight</td>
+<td>Skips preflight checks (current user is root, dependencies present). If using this parameter it must be the first parameter passed on the command line.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="logging-in-for-the-first-time">Logging in for the first time</h2>
+<p>The first time you access the Contrast you will be able to login using the credentials you used when you signed up for your account on the Contrast Hub. There are two interfaces for the TeamServer Application, the User Interface located at <strong><em>/Contrast</em></strong> and the Administrative interface located at <strong><em>/Contrast/superadmin</em></strong>. Regular users cannot log in to the Administrative Interface and visa versa (although administrators do have the ability to Impersonate normal users). To access the Administrative interface access the login page at <strong><em>/Contrast/superadmin/login.html</em></strong> (you should bookmark this page) and login with the default credentials (it is recommended that you change the password after you&#39;ve installed and configured TeamServer).</p>
+<blockquote>
+<p>Superadmin Username: contrast_superadmin@your-email-domain.com</p>
+<p>Superadmin Password: default1!</p>
+</blockquote>
+<h2 id="attachments">Attachments</h2>
+<ul>
+<li><a href="https://docs.contrastsecurity.com/assets/attachments/CONTRAST-WS-EOP-Network.pdf">Network</a></li>
+<li><a href="https://docs.contrastsecurity.com/assets/attachments/CONTRAST-WS-EOP-Auth.pdf">Auth.</a></li>
+<li><a href="https://docs.contrastsecurity.com/assets/attachments/CONTRAST-WS-EOP-Misc.pdf">Misc.</a></li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Running TeamServer</h1>
+            <a class="anchor" id="run">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running TeamServer"
+description: "Instructions for starting/stopping TeamServer"
+-->
+
+<h2 id="the-teamserver-service">The TeamServer Service</h2>
+<h3 id="running-on-windows">Running on Windows</h3>
+<p>In windows, TeamServer is installed as a system service. You can start/stop the service through the Windows Service Manager application.</p>
+<h3 id="running-on-linux">Running on Linux</h3>
+<p>The TeamServer daemon is registered as an <code>init.d</code> daemon. Starting and stopping the server should be done via invoking:</p>
+<pre><code>/etc/init.d/contrast-server &lt;start|stop|restart|status&gt;</code></pre>
+<p>or </p>
+<pre><code>service contrast-server &lt;start|stop|restart|status&gt;</code></pre>
+<h2 id="updating-java-options">Updating Java Options</h2>
+<p>If you are instructed to, or would like to change the JVM settings for your Contrast Server instance, you can open the file <strong><em>$CONTRAST_HOME/bin/contrast-server.vmoptions</em></strong></p>
+<p>This file contains standard JVM parameters that are passed to the underlying virtual machine when the Contrast Server process starts. For instance, if you would like to update the server to allow more heap memory usage, you could update the -Xmx setting to a different value.</p>
+<h2 id="contrast-logs">Contrast Logs</h2>
+<p>Contrast has several logs, and depending on what information you are looking for will determine which log you will want to look in. The different logs, and their purpose is captured in the table below:</p>
+<table>
+<thead>
+<tr>
+<th>Log File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>audit.log</td>
+<td>Logs audit events such as successful/failed login attempts.</td>
+</tr>
+<tr>
+<td>console.log</td>
+<td>Default application event log.</td>
+</tr>
+<tr>
+<td>contrast-error.log</td>
+<td>Logs messages printed to stderr.</td>
+</tr>
+<tr>
+<td>contrast-stdout.log</td>
+<td>Logs messages printed to stdout.</td>
+</tr>
+<tr>
+<td>contrast.log</td>
+<td>Primary application log.</td>
+</tr>
+<tr>
+<td>esapi.log</td>
+<td>Captures security events.</td>
+</tr>
+<tr>
+<td>windward.log</td>
+<td>Captures reporting server events.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contrast-tools">Contrast Tools</h2>
+<p>Contrast comes with various utilities that can be run from the command-line to assist with performing maintenance, managing encrypted properties files, and performing backups of the database.</p>
+<h2 id="the-encrypted-properties-editor">The Encrypted Properties Editor</h2>
+<p>Occasionally, you may find it necessary to access the values of the encrypted properties files outside of the application configuration UI, or perhaps to automate the updating of some property (automated bind password rotation for example). Using the encrypted properties editor is a powerful way to perform these types of operations.</p>
+<p>The encrypted properties editor binary is located at <strong><em>$CONTRAST_HOME/bin/edit-properties</em></strong>. In it&#39;s most basic form, an interactive property editor, invoking it is as simple as providing the path to your ESAPI configuration and the file you would like to work on.</p>
+<pre><code>$CONTRAST_HOME/bin/edit-properties -e $CONTRAST_HOME/data/esapi -f $CONTRAST_HOME/data/conf/ad.properties</code></pre>
+<p>This will open an interactive application that will allow you to update the values of properties.
+You can also retrieve the unencrypted value of a property (say for a shell script to backup the database) by passing another parameter to the tool.</p>
+<pre><code>$CONTRAST_HOME/bin/edit-properties \
+   -e $CONTRAST_HOME/data/esapi \
+   -f $CONTRAST_HOME/data/conf/database.properties \ 
+   -p jdbc.username \
+   -o</code></pre>
+<p>And you can even update the value of a property in the file by passing a different set of arguments:</p>
+<pre><code>$CONTRAST_HOME/bin/edit-properties \
+   -e $CONTRAST_HOME/data/esapi \
+   -f $CONTRAST_HOME/data/conf/database.properties \ 
+   -p jdbc.username \
+   -v joe.blow \
+   -c &quot;Updating JDBC Password&quot;</code></pre>
+<p>You can get help by executing edit-properties with no arguments:</p>
+<pre><code>$ bin/edit-properties
+usage: property-editor
+ -c,--comment &lt;text&gt;      The comment for the top of the file
+ -e,--esapi &lt;path&gt;        The path to the ESAPI.properties file
+ -f,--targetFile &lt;file&gt;   The properties file to edit
+ -o,--print-value         Print out the value of the property and exit
+ -p,--property &lt;name&gt;     The name of the property to set
+ -v,--value &lt;val&gt;         The value of the property</code></pre>
+<h2 id="run-a-manual-backup-of-the-database">Run a Manual Backup of the Database</h2>
+<p>Although Contrast&#39;s Installer allows you to create a scheduled daily backup of your database, from time to time you may find yourself needing to perform a manual backup of the database. Luckily, accomplishing this task is extremely simple!</p>
+<p><strong>NOTE: DATABASE BACKUP WILL ONLY WORK WHEN THE SERVER IS RUNNING</strong></p>
+<h3 id="linux">Linux</h3>
+<pre><code>$CONTRAST_HOME/bin/backup_db.sh</code></pre>
+<h3 id="windows">Windows</h3>
+<pre><code>$CONTRAST_HOME\bin\backup_db.cmd</code></pre>
+<h2 id="the-database-anonymizer">The Database Anonymizer</h2>
+<p>Under certain circumstances Contrast Support personnel may request a copy of your database to troubleshoot issues, or you may find yourself wanting to present information from your database in an anonymized format. In these cases, you may find the database anonymizer an invaluable tool. </p>
+<p>Using the tool is simple, simply pass the required information into the <strong><em>$CONTRAST_HOME/bin/db-anonymizer</em></strong>.</p>
+<p><strong>NOTE: DO NOT RUN THIS TOOL AGAINST YOUR PRODUCTION DATABASE, IT MODIFIES THE DATA CONTAINED IN THAT DATABASE. YOU CAN CREATE A BACKUP OF YOUR DATABASE AND RESTORE INTO A NEW TEMPORARY DATABASE IN YOUR OWN MYSQL 5.6 SERVER TO ANONYMIZE.</strong></p>
+<pre><code>$ bin/db-anonymizer -db contrast_anon -e data/esapi -p secretpassword -port 3306 -url localhost -u contrast</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Enabling Application Servers with Contrast</h1>
+            <a class="anchor" id="apps">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Enabling Application Servers with Contrast"
+description: "High-level overview for adding the Contrast agent to applications."
+-->
+
+<h2 id="identify-an-application-server-to-enable-with-contrast">Identify an application server to enable with Contrast</h2>
+<p>The first step is to identify an application server that you want Contrast to analyze.  You can choose any of the following types of application servers:</p>
+<ul>
+<li>Developer&#39;s local application server running in the IDE</li>
+<li>Continuous integration application server that is used during the automated testing process</li>
+<li>Test or QA application server</li>
+<li>Staging application server</li>
+<li>Embedded server in an appliance</li>
+<li>Application server running in a virtual machine</li>
+<li>Remote application server running in the cloud</li>
+<li>Production application server (generally we recommend using Contrast earlier in the lifecycle if possible)</li>
+</ul>
+<h2 id="download-the-appropriate-contrast-agent">Download the Appropriate Contrast Agent</h2>
+<p>The next step is to log into your Contrast TeamServer using your Organization Admin (not superadmin) account.  Your user name and password are the same as the Contrast Hub credentials that you used to download the installer and license.</p>
+<p>Click on the <strong>Applications</strong> tab and find the <strong>Add Application</strong> button.  This will start the Agent download and installation wizard.  Follow the on-screen instructions to configure and download the appropriate Agent for the application server you are enabling with Contrast.</p>
+<h2 id="install-the-agent">Install the Agent</h2>
+<p>Follow the simple on-screen instructions to add the agent to your application server.  Once you restart the application server, Contrast Agent should start and immediately connect to the Contrast TeamServer.  If not, then something may be preventing the Agent from communicating with the TeamServer.  The most common causes of this are:</p>
+<ul>
+<li>Firewalls that do not allow traffic to the TeamServer&#39;s IP address and port - need to configure host or network firewall</li>
+<li>Web gateways and proxies that require authentication - This can be configured in the Agent config by returning to the Agent Download page, setting the proper configurations, and getting a new Agent.</li>
+<li>Contrast Application Server URL is misconfigured, so the Agent is attempting to communicate with the wrong address.  This can be changed in the Agent configuration if necessary.</li>
+</ul>
+<h2 id="browse-applications">Browse Applications</h2>
+<p>The next step is to browse the applications on the newly Contrast-enabled application server a bit.  Just click through a few pages and forms, and that should generate enough activity to generate good information on your application inventory and dashboard.</p>
+<h2 id="check-results-in-your-contrast-teamserver-dashboard">Check Results in Your Contrast TeamServer Dashboard</h2>
+<p>Finally, you can check that Contrast is working by returning to your Contrast TeamServer dashboard to review results.  From this point forward, you&#39;ll have an up-to-date application security dashboard for all the applications on that application server. </p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

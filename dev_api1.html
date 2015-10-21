@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer API Version 1 Docs | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+ 
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+ 
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Developer.png" width="75" height="75">
+        <p class="label1">Developer</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">API</p></li>
+                <li><a href="dev_api3.html">Open API</a></li>
+                <li>API v1</li>
+
+                    <li><a href="dev_api1.html#intro" class="label9">Introduction</a></li>
+                    <li><a href="dev_api1.html#monitor" class="label9">Monitored Apps</a></li>
+                    <li><a href="dev_api1.html#appdata" class="label9">Basic App Data</a></li>
+                    <li><a href="dev_api1.html#appvulns" class="label9">App Vulnerabilities</a></li>
+                    <li><a href="dev_api1.html#vulndetails" class="label9">Vulnerability Details</a></li>
+                <br>
+                <li><a href="dev_api2.html">API v2</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Eclipse</p></li>
+                <li><a href="dev_eclipseinstall.html">Installation</a></li><li>
+                </li><li><a href="dev_eclipseguide.html">Guide</a></li>
+                <li><a href="dev_eclipsefaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+ 	<div class="breadcontainer">
+    	<ol class="breadcrumb">
+        	<li>Developer</li>
+        	<li>API</li>
+        	<li class="label6">API v1</li>
+    	</ol>
+ 	</div>
+</div>
+
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Introduction To The TeamServer REST API</h1>
+ 			<a class="anchor" id="intro">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs" data-url="" data-text=""></a>
+
+
+<div class="iconbar">
+
+	<!--
+	 <a href="https://twitter.com/share?&url=#&via=contrastsec&hashtags=opendocs"><i class="fa fa-twitter fa-lg" data-toggle="tooltip" data-placement="top" title="Share this article"></i></a>
+	 -->
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v1" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+
+</div>
+
+
+
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Introduction To The Contrast REST API"
+description: "Overview of the REST API"
+-->
+
+<p>There are two sets of <strong>Contrast APIs</strong>. The Contrast plugin uses its own set of APIs to send vulnerabilities and other application information to the Contrast site for you to view in our web interface. That set of APIs is subject to change at any time, uses <em>different keys</em>, and in general is more about writing data to your Contrast account. We call this set of APIs the <strong>Engine APIs</strong>.</p>
+<p>This documentation is all about the set of APIs meant to read data by our end users - we call these the <strong>User APIs</strong>. You can use this set of APIs to get all the same vulnerability and application information available through the website, but delivered through a REST service instead. </p>
+<blockquote>
+<p><strong>Note:</strong> Unlike other REST services, we use the <strong>PUT</strong> method for all of our services for security purposes</p>
+</blockquote>
+<h2 id="api-security">API Security</h2>
+<p>Services, like the rest of your Contrast experience, is only available over SSL. On top of that, there are two things needed by every API request: an <strong>Authorization Token</strong> and an <strong>API Key</strong>.</p>
+<h3 id="authorization-token">Authorization Token</h3>
+<p>This value holds the <em>Base64-encoded</em> username and your user service key (<strong>not</strong> your password), separated by a colon.</p>
+<p>To get your service key, click on your <strong>Account Settings</strong> dropdown and select <strong>API Key</strong>. This page will allow you to email yourself the key.</p>
+<p><code>AuthorizationToken = BASE64(&lt;username&gt;:&lt;service_key&gt;)</code></p>
+<p>This value goes into its own HTTP request header, <strong>Authorization</strong>.</p>
+<h3 id="api-key">API Key</h3>
+<p>This value holds your organization&#39;s API key. You can get this value from the same API Key email, or from your Administrator. If you&#39;re the Administrator, you can see how to find and rotate this value in the <strong>Admin Guide</strong>. </p>
+<p><code>APIKey = &lt;org_service_key&gt;</code></p>
+<p>This value will go into its own HTTP request header, <strong>API Key</strong>.</p>
+<h3 id="testing-your-credentials">Testing Your Credentials</h3>
+<p>Once you have your credentials and have encoded them properly, try issuing a simple <em>service call</em> with them. We suggest using <strong>Burp</strong>, <strong>ZAP</strong>, <strong>WebScarab</strong>, or other HTTP tools to verify your credentials before testing them. Any key mismatches or authentication issues (like locked accounts) will cause a <code>401 error</code>.</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="admin_tsconfigset.html#key">Security API Keys</a></p>
+<p><a href="dev_api1.html#monitor">Get Your Monitored Applications</a></p>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Get Your Monitored Applications</h1>
+ 			<a class="anchor" id="monitor">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs" data-url="" data-text=""></a>
+
+
+<div class="iconbar">
+
+	<!--
+	 <a href="https://twitter.com/share?&url=#&via=contrastsec&hashtags=opendocs"><i class="fa fa-twitter fa-lg" data-toggle="tooltip" data-placement="top" title="Share this article"></i></a>
+	 -->
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v1" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+
+</div>
+
+
+
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Get Your Monitored Applications"
+description: "Information on how to get monitored applications"
+-->
+
+<h2 id="the-s-api-app-list-service">The &quot;/s/api/app/list&quot; Service</h2>
+<p>You can get a list of the applications registered for your organization, as well as their IDs with this service. It takes no arguments. This is the first step to a lot of API calls, because it&#39;s the only way to get an application&#39;s ID.</p>
+<blockquote>
+<p><strong>Note:</strong> The authorization header value is not prefixed with <strong>Basic</strong> or <strong>Digest</strong> or other values</p>
+</blockquote>
+<h2 id="sample-request">Sample Request</h2>
+<pre><code>PUT /Contrast/s/api/app/list HTTP/1.1
+User-Agent: MyRestAPI
+Content-Length: 0
+Content-Type: text/xml
+Host: www.contrastsecurity.com
+Authorization: &lt;insert authorization token here&gt;
+API-Key: &lt;insert API key here&gt;</code></pre>
+<h2 id="sample-response">Sample Response</h2>
+<pre><code>HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Pragma: no-cache
+Content-Length: 249
+Date: Sun, 18 Nov 2012 03:34:54 GMT
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;apps&gt;
+  &lt;app&gt;
+    &lt;id&gt;43a96eaa-7fd7-4538-b300-c81c735db7fb&lt;/id&gt;
+    &lt;license&gt;Trial&lt;/license&gt;
+    &lt;name&gt;Joe&#39;s BBQ App&lt;/name&gt;
+    &lt;path&gt;/joes&lt;/path&gt;
+  &lt;/app&gt;
+&lt;/apps&gt;</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Get Basic Application Data</h1>
+ 			<a class="anchor" id="appdata">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs" data-url="" data-text=""></a>
+
+
+<div class="iconbar">
+
+	<!--
+	 <a href="https://twitter.com/share?&url=#&via=contrastsec&hashtags=opendocs"><i class="fa fa-twitter fa-lg" data-toggle="tooltip" data-placement="top" title="Share this article"></i></a>
+	 -->
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v1" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+
+</div>
+
+
+
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Get Basic Application Data"
+description: "Information on how to get basic data on a monitored application"
+-->
+
+<h2 id="the-s-api-app-stats-appld-service">The &quot;/s/api/app/stats/{appld}&quot; Service</h2>
+<p>You can get basic data about a monitored application with this service. It only takes one URL path parameter: the ID of the application, which can be retrieved with the <a href="dev_api1.html#monitor">/s/api/app/list</a> service.</p>
+<h2 id="sample-request">Sample Request</h2>
+<pre><code>PUT /Contrast/s/api/app/stats/b4cc1c84-8965-4362-8144-0e8ae1e6fa9f HTTP/1.1
+User-Agent: MyRestAPI
+Content-Length: 0
+Content-Type: text/xml
+Host: www.contrastsecurity.com
+Authorization: &lt;insert authorization token here&gt;
+API-Key: &lt;insert API key here&gt;</code></pre>
+<h2 id="sample-response">Sample Response</h2>
+<pre><code>HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Pragma: no-cache
+Content-Length: 658
+Date: Sun, 18 Nov 2012 03:34:54 GMT
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;app-traces&gt;
+    &lt;coverageGrade&gt;75&lt;/coverageGrade&gt;
+    &lt;grade&gt;62&lt;/grade&gt;
+    &lt;id&gt;b4cc1c84-8965-4362-8144-0e8ae1e6fa9f&lt;/id&gt;
+    &lt;letterGrade&gt;D&lt;/letterGrade&gt;
+    &lt;libraries&gt;
+        &lt;total&gt;4&lt;/total&gt;
+        &lt;stale&gt;1&lt;/stale&gt;
+        &lt;unknown&gt;0&lt;/unknown&gt;
+        &lt;lib&gt;
+           &lt;class-count&gt;62&lt;/class-count&gt;
+           &lt;file&gt;commons-dbcp-1.4.jar&lt;/file&gt;
+           &lt;sha1&gt;30be73c965cc990b153a100aaaaafcf239f82d39&lt;/sha1&gt;
+           &lt;lines-of-code&gt;19209&lt;/lines-of-code&gt;
+           &lt;used-class-count&gt;0&lt;/used-class-count&gt;
+        &lt;/lib&gt;
+    &lt;/libraries&gt;
+    &lt;methods-seen&gt;6&lt;/methods-seen&gt;
+    &lt;methods-total&gt;8&lt;/methods-total&gt;
+    &lt;name&gt;AcmeWidgets&lt;/name&gt;
+    &lt;securityGrade&gt;50&lt;/securityGrade&gt;
+    &lt;views&gt;0&lt;/views&gt;
+    &lt;techs&gt;
+       &lt;t&gt;Wicket&lt;/t&gt;
+       &lt;t&gt;Hibernate&lt;/t&gt;
+    &lt;/techs&gt;
+    &lt;vulns&gt;
+        &lt;criticals&gt;2&lt;/criticals&gt;
+        &lt;highs&gt;1&lt;/highs&gt;
+        &lt;lows&gt;0&lt;/lows&gt;
+        &lt;mediums&gt;0&lt;/mediums&gt;
+        &lt;notes&gt;0&lt;/notes&gt;
+    &lt;/vulns&gt;
+&lt;/app-traces&gt;</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Get Application Vulnerabilities</h1>
+ 			<a class="anchor" id="appvulns">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs" data-url="" data-text=""></a>
+
+
+<div class="iconbar">
+
+	<!--
+	 <a href="https://twitter.com/share?&url=#&via=contrastsec&hashtags=opendocs"><i class="fa fa-twitter fa-lg" data-toggle="tooltip" data-placement="top" title="Share this article"></i></a>
+	 -->
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v1" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+
+</div>
+
+
+
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Get Application Vulnerabilities"
+description: "Information on how to get application vulnerabilities"
+-->
+
+<h2 id="the-s-api-traces-appld-service">The &quot;/s/api/traces/{appld}&quot; Service</h2>
+<p>You can get a list of vulnerabilities (or <strong>Traces</strong> in Contrast terminology) with this service. It only takes one URL path parameter: the ID of the application, which can be retrieved with the <a href="dev_api1.html#monitor">/s/api/app/list</a> service.</p>
+<h2 id="sample-request">Sample Request</h2>
+<pre><code>PUT /Contrast/s/api/traces/b4cc1c84-8965-4362-8144-0e8ae1e6fa9f HTTP/1.1
+User-Agent: MyRestAPI
+Content-Length: 0
+Content-Type: text/xml
+Host: www.contrastsecurity.com
+Authorization: &lt;insert authorization token here&gt;
+API-Key: &lt;insert API key here&gt;</code></pre>
+<h2 id="sample-response">Sample Response</h2>
+<pre><code>HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Pragma: no-cache
+Content-Length: 658
+Date: Sun, 18 Nov 2012 03:34:54 GMT
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;traces&gt;
+   //TODO
+&lt;/traces&gt;</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Get An Individual Vulnerability's Details</h1>
+ 			<a class="anchor" id="vulndetails">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs" data-url="" data-text=""></a>
+
+
+<div class="iconbar">
+
+	<!--
+	 <a href="https://twitter.com/share?&url=#&via=contrastsec&hashtags=opendocs"><i class="fa fa-twitter fa-lg" data-toggle="tooltip" data-placement="top" title="Share this article"></i></a>
+	 -->
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v1" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+
+</div>
+
+
+
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Get An Individual Vulnerability's Details"
+description: "Information on how to get details on an individual vulnerability"
+-->
+
+<h2 id="the-s-api-traces-trace-traceid-service">The &quot;/s/api/traces/trace/{traceID}&quot; Service</h2>
+<p>You can get a complete dump on an individual vulnerability (or <strong>Trace</strong> in Contrast terminology) with this service. It only takes one URL path parameter: the ID of the trace, which can be retrieved with the <a href="dev_api1.html#appvulns">/s/api/traces/{appld}</a> service.</p>
+<h2 id="sample-request">Sample Request</h2>
+<pre><code>PUT /Contrast/s/api/traces/trace/685A-7LXV-X7DF-K57T HTTP/1.1
+User-Agent: MyRestAPI
+Content-Length: 0
+Content-Type: text/xml
+Host: www.contrastsecurity.com
+Authorization: &lt;insert authorization token here&gt;
+API-Key: &lt;insert API key here&gt;</code></pre>
+<h2 id="sample-response">Sample Response</h2>
+<pre><code>HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Pragma: no-cache
+Content-Length: 14366
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;findings&gt;
+    &lt;finding platform=&quot;Sun Microsystems Inc.&quot; ruleId=&quot;sql-injection&quot;&gt;
+        &lt;events&gt;
+            &lt;method-event time=&quot;1311568492609&quot; thread=&quot;http-8080-5 (id 62)&quot; type=&quot;Trigger&quot;&gt;
+            ...
+        &lt;/events&gt;
+        &lt;request method=&quot;POST&quot; port=&quot;0&quot; protocol=&quot;http&quot; version=&quot;1.0&quot; uri=&quot;/WebGoat/attack&quot; qs=&quot;Screen=61&amp;amp;menu=1200&quot;&gt;
+            &lt;headers&gt;
+                &lt;h name=&quot;Content-type&quot; value=&quot;application/x-www-form-urlencoded&quot;/&gt;
+                &lt;h name=&quot;Connection&quot; value=&quot;keep-alive&quot;/&gt;
+                ...
+                &lt;h name=&quot;Referer&quot; value=&quot;http://localhost:8080/WebGoat/attack?Screen=61&amp;amp;menu=1200&quot;/&gt;
+                &lt;h name=&quot;Accept-encoding&quot; value=&quot;gzip,deflate,sdch&quot;/&gt;
+            &lt;/headers&gt;
+            &lt;parameters&gt;
+                &lt;p name=&quot;Screen&quot; value=&quot;61&quot;/&gt;
+                ...
+                &lt;p name=&quot;employee_id&quot; value=&quot;101&quot;/&gt;
+            &lt;/parameters&gt;
+        &lt;/request&gt;
+    &lt;/finding&gt;</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

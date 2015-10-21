@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/User.png" width="75" height="75">
+        <p class="label3">User</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">Agents</p></li>
+                <li>Java Agent</li>
+                    <li><a href="user_javainstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_javaconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_javafaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+                        
+
+                <li>.NET Agent</li>
+                    <li><a href="user_netinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li class="label10">&#8226; Configuration</li>
+
+                    
+                        <li><a href="user_netconfig.html#config" class="label9">.NET Configuration</a></li>
+                        <li><a href="user_netconfig.html#instrument" class="label9">Instrumentation Engine</a></li>
+                        <li><a href="user_netconfig.html#pool" class="label9">Application Pool Blacklist</a></li>
+                        <li><a href="user_netconfig.html#apps" class="label9">Application Display Names</a></li>
+                        <li><a href="user_netconfig.html#servers" class="label9">Server Display Names</a></li>
+                        <li><a href="user_netconfig.html#ssl" class="label9">SSL Certificates</a></li>
+                        <li><a href="user_netconfig.html#azure" class="label9">Microsoft Azure</a></li>
+                        <br>
+
+
+                    <li><a href="user_netfaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+<!--
+                <li>Node.js Agent</li>
+                    <li><a href="user_nodeinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_nodeconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_nodefaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                <br>
+
+-->
+
+                <br>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Guide</li>
+                    <li><a href="user_tsguideapp.html" class="label10">&#8226; Application</a></li>
+                    <li><a href="user_tsguidecrawl.html" class="label10">&#8226; Crawler</a></li>
+                    <li><a href="user_tsguidelib.html" class="label10">&#8226; Library</a></li>
+                    <li><a href="user_tsguiderep.html" class="label10">&#8226; Report</a></li>
+                    <br>
+
+                <li><a href="user_tsfaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>User</li>
+            <li>Agents</li>
+            <li>.NET Agent</li>
+            <li class="label6">Configuration</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">.NET Agent Configuration</h1>
+            <a class="anchor" id="config">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: ".NET Agent Configuration"
+description: "Guide to configuring .NET agent settings"
+-->
+
+<p>The Contrast Service&#39;s configuration file (<strong><em>DotnetAgentService.exe.config</em></strong>) contains several settings that can be modified to change the .NET agent&#39;s behavior.</p>
+<h2 id="general">General</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TeamServerUrl</td>
+<td>This value will override the TeamServer URL that&#39;s packaged with the agent. This can be useful for networks that proxy the information.</td>
+</tr>
+<tr>
+<td><em>ProxyAuth</em>, <em>ProxyUser</em>, <em>ProxyPass</em>, <em>ProxyAddress</em></td>
+<td>Controls the proxy (if any) to be used by the agent to connect to TeamServer.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagnostics">Diagnostics</h2>
+<p>More detailed levels of logging will degrade performance but may generate useful information for debugging Contrast. The default value is <em>warn</em>. </p>
+<table>
+<thead>
+<tr>
+<th>LogLevel</th>
+<th>Controls the <em>logging</em> level.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>error</td>
+<td>Only log error conditions such as un-handled exceptions.</td>
+</tr>
+<tr>
+<td>warn</td>
+<td>Error messages plus unexpected conditions that do not impact the agent.</td>
+</tr>
+<tr>
+<td>info</td>
+<td>Error and warn messages plus general information about the agent&#39;s sensors (startup, shutdown, start/end of requests, etc.)</td>
+</tr>
+<tr>
+<td>debug</td>
+<td>All of the above plus some high-level debugging information (e.g. number of vulnerabilities detected for a request)</td>
+</tr>
+<tr>
+<td>trace</td>
+<td>All of the above and every trace event is logged (e.g. <em>String.Concat</em>). This logging level greatly degrades performance.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="performance">Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>SamplingBaseline</em>, <em>SamplingFrequency</em>, <em>SamplingWindow</em></td>
+<td>Enable and configure <em>sampling mode</em></td>
+</tr>
+<tr>
+<td><em>StackTraceDepth</em></td>
+<td>Limits the number of stack trace frames captured by the agent. Default value is <strong>20</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="analysis">Analysis</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>ResponseMode</em></td>
+<td>Controls the .NET agent&#39;s collection and analysis of response headers and bodies.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Response Analysis is Disabled</strong>
+This improves agent performance <strong>~10-15%</strong>. This setting disables the following rules: </p>
+<ul>
+<li>autocomplete </li>
+<li>cache controls </li>
+<li>clickjacking  </li>
+<li>HTTP and secure cookie flags </li>
+<li>HTTP authentication </li>
+<li>parameter pollution </li>
+<li>session rewriting </li>
+</ul>
+<p><strong>Contrast.NET Collects Response Headers and Full Response Body</strong> </p>
+<p> All rules are enabled. This is the <strong>default</strong> value.  </p>
+<p><strong>Contrast.NET Collects Only Response Headers</strong>
+The response body is not captured. This setting disables the following rules: </p>
+<ul>
+<li>autocomplete </li>
+<li>clickjacking </li>
+<li>parameter pollution </li>
+</ul>
+<p>This setting offers a small performance improvement. </p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>ResponseUrlWhiteListRegex</em></td>
+<td>Controls the .NET agent&#39;s collection and analysis of response headers and bodies. Responses are not captured and are analyzed for request paths (<em>HttpRequest.Path</em>) that match this regex. This setting is required to work around a known Microsoft bug in the .NET framework: <em>HttpModules</em> with filters can cause resources such as <strong><em>WebResource.axd</em></strong> to return <strong>0 bytes</strong> (which can result in 500 status responses for embedded resources such as images). The default value for this setting is: <strong><em>WebResource.axd</em></strong></td>
+</tr>
+<tr>
+<td><em>ProcessBlacklist</em></td>
+<td>Controls the .NET agent&#39;s monitoring of <em>application pools</em>. This setting&#39;s value should be set to a comma-separated list of application pool usernames that should not be analyzed by Contrast.NET. Contrast.NET should have no performance impact on applications that are not analyzed due to this setting.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_netfaq.html#logs">Getting .NET Agent Logs</a></p>
+<p><a href="user_tsfaq.html#sample">Sampling</a></p>
+<p><a href="user_netconfig.html#pool">.NET Application Pool Blacklist</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Instrumentation .NET Agent Data Flow Engine</h1>
+            <a class="anchor" id="instrument">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Instrumentation .NET Agent Data Flow Engine"
+description: "Instrumentation .NET Agent Data Flow Engine"
+-->
+
+<p>Beginning with version 3.2.0, the Contrast .NET Agent includes an entirely new method of tracking data flow through analyzed web applications.  By default, the .NET Agent will continue to use the old data flow engine.  Users who wish to try out the new data flow engine can do so by changing the <code>useNewInstrumentation</code> configuration setting to <code>true</code> in the <strong><em>DotnetAgentService.exe.config</em></strong> file.</p>
+<ul>
+<li>Stop the Contrast .NET Agent</li>
+<li>Using a text editor, open the <strong><em>DotnetAgentService.exe.config</em></strong> file which is located in the Contrast .NET Agent installation directory (<strong><em>C:\Program Files\Contrast.NET</em></strong>)</li>
+<li>Locate the <code>&lt;add key=&quot;UseNewInstrumentation&quot; value=&quot;false&quot; /&gt;</code> setting.  Change the value to <code>true</code> and save the file.</li>
+<li>Start the Contrast .NET Agent</li>
+</ul>
+<p>The new instrumentation engine offers a number of benefits, including: </p>
+<ul>
+<li>Source code file and line number information when PDB files are present.</li>
+<li>Improved stability and comparable performance compared to the old method of tracking data flow.</li>
+<li>Ability to support custom rules in the future.</li>
+</ul>
+<p>In version 3.2.0, the new data flow engine is not 100% complete; specifically, the new engine is missing a small number of propagation rules (such as a handful of <code>StringBuilder</code> methods as well as encoding conversion methods.)  Additionally, for this release only, the new engine will not analyze 32-bit processes/application pools and does not work on Windows Server 2003/IIS6.  It is also worth noting that the new engine has not been used in as many real world environments as the old engine. </p>
+<p>We&#39;ll be working on improving the new data flow engine for future releases.  These improvements will include:</p>
+<ul>
+<li>Completion of propagation rules</li>
+<li>Analysis of 32-bit processes/application pools</li>
+<li>Performance improvements</li>
+<li>Custom rules support</li>
+</ul>
+<p>In a future release, the new data flow engine will eventually replace the old data flow engine.  In the meantime, we encourage you to try out the new data flow engine and give us feedback!</p>
+<h2 id="getting-source-code-information-using-the-new-data-flow-engine">Getting Source Code Information Using the New Data Flow Engine</h2>
+<p>In the .NET Framework, an application&#39;s compiled code is generally contained in .DLL files while debug information is contained in .PDB files.  These .PDB files contain symbol information that Contrast can use to tie stack trace frames to specific lines of code.  By default, the Debug build of web applications include .PDB files while the Release build does not.  However, most deployments of web applications use the Release build (and rightly so as deploying the Debug build can introduce some unnecessary risks.)  It is possible to include .PDB files in the Release build of a web application by changing a project setting.  Note that the inclusion of .PDB files in web application&#39;s deployment is safe and does not include the risks associated with publishing a Debug build.  </p>
+<p>The following steps will configure the build/package process for the Release configuration to include .PDB files in Visual Studio 2013:</p>
+<ul>
+<li>Open the web application&#39;s solution in Visual Studio</li>
+<li>Right click on the web application&#39;s project and select <strong>Properties</strong></li>
+<li>Select the <strong>Package/Publish Web</strong> tab</li>
+<li>Select the <strong>Release</strong> configuration from the <strong>Configuration</strong> dropdown</li>
+<li>Uncheck the <em>Exclude generated debug symbols</em> checkbox if it is checked</li>
+<li>Save the project file</li>
+<li>Build and publish the web application using your normal deployment process </li>
+</ul>
+<p><a href="assets/images/KB3-e14.jpg" rel="lightbox" title="Instrumentation Configuration"><img class="thumbnail" src="assets/images/KB3-e14.jpg"></a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">.NET Application Pool Blacklist</h1>
+            <a class="anchor" id="pool">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: ".NET Application Pool Blacklist"
+description: "Information on blacklisting application pools"
+-->
+
+<p>Some customers will find it necessary to disable Contrast.NET for specific applications on an instance of IIS. <strong>Contrast 3.1.7</strong> introduced a <code>ProcessBlacklist</code> that can be configured to remove the agent from specific application pools. If an application pool is blacklisted, the Contrast.NET agent will not attach to any applications using that application pool and there should be no performance impact for those applications.</p>
+<blockquote>
+<p><strong>Note:</strong> The application pool blacklist functionality is only available for applications hosted on IIS versions 7 and higher</p>
+</blockquote>
+<p>To disable Contrast.NET for a specific application, populate <code>ProcessBlacklist</code> with the appropriate application pool in <strong><em>C:\Program Files\Contrast.NET\ContrastSvc.exe.config</em></strong>:</p>
+<pre><code>&lt;!--Comma-separtated list of application pools that will be ignored by Contrast--&gt;
+&lt;add key=&quot;ProcessBlacklist&quot; value=&quot;&quot;/&gt;</code></pre>
+<p>For more information, see <a href="user_netconfig.html#config">.NET Agent Configuration</a>.</p>
+<p>Web applications hosted on IIS run on application pools. By default, the username for an application pool is the same as the application pool&#39;s name (i.e. using the <strong>ApplicationPoolIdentity</strong> setting).</p>
+<p><strong>The application pool running an application can be discovered using the following:</strong></p>
+<ul>
+<li>Internet Information Services (IIS) Manager</li>
+<li><strong><em>AppCmd.exe</em></strong></li>
+<li>Contrast.NET Logs</li>
+</ul>
+<h2 id="internet-information-services-iis-manager">Internet Information Services (IIS) Manager</h2>
+<ol>
+<li>Start IIS Manager (<strong><em>%windir%\system32\inetsrv\InetMgr.exe</em></strong>)</li>
+<li>Select a web application</li>
+<li>Click <strong>Basic Settings</strong></li>
+<li>The application pool name will be displayed in a form field (see below)</li>
+</ol>
+<p><a href="assets/images/KB3-e05_1.jpg" rel="lightbox" title="Application Pool Name"><img class="thumbnail" src="assets/images/KB3-e05_1.jpg"></a></p>
+<h2 id="-appcmd-exe-"><strong><em>AppCmd.exe</em></strong></h2>
+<ol>
+<li>Run <strong><em>cmd.exe</em></strong> as an <strong>Administrator</strong></li>
+<li>Navigate to <strong><em>C:\Windows\System32\inetsrv</em></strong></li>
+<li>Enter the command <code>appcmd list apps</code></li>
+<li>A list of applications and their associated application pools will appear (see below)</li>
+</ol>
+<p><a href="assets/images/KB3-e05_2.jpg" rel="lightbox" title="Application List"><img class="thumbnail" src="assets/images/KB3-e05_2.jpg"></a></p>
+<h2 id="contrast-net-logs">Contrast.NET Logs</h2>
+<ol>
+<li>Start the Contrast.NET agent</li>
+<li>Browse to an application</li>
+<li>In Windows, navigate to <strong><em>C:\ProgramData\Contrast.NET\LOGS</em></strong></li>
+<li>Open the most recent <strong>ContrastProfiler</strong> log (<strong><em>ContrastProfiler_XXXX_XX_XX_XXXXXXXXX_00000.log</em></strong>)</li>
+<li>The application pool name will be on the line that starts with <strong>Application pool username:</strong> (see below)</li>
+</ol>
+<p><a href="assets/images/KB3-e05_3.jpg" rel="lightbox" title="Application Pool Username"><img class="thumbnail" src="assets/images/KB3-e05_3.jpg"></a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Setting The Display Name For Applications Analyzed By Contrast.NET</h1>
+            <a class="anchor" id="apps">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Setting The Display Name For Applications Analyzed By Contrast.NET"
+description: "Guide to setting the applications display name"
+-->
+
+<p>Starting with <strong>Version 3.1.3</strong>, the .NET agent allows users to customize the display name used for a web application by adding a setting to the <code>appSettings</code> section of the application&#39;s <strong><em>web.config</em></strong> file. For example, the following configuration will set the application&#39;s display name to <strong>MyWebAppName</strong>:</p>
+<pre><code>&lt;appSettings&gt;
+  &lt;add key=&quot;Contrast.AppName&quot; value=&quot;MyWebAppName&quot; /&gt;
+&lt;/appSettings&gt;</code></pre>
+<blockquote>
+<p><strong>Note:</strong> This setting must be present on each server where the application is to be analyzed. Otherwise the applications could potentially have different display names (see below) and be considered different applications by TeamServer.</p>
+</blockquote>
+<h2 id="application-display-name-when-contrast-appname-setting-is-absent">Application Display Name When <em>Contrast.AppName</em> Setting Is Absent</h2>
+<p>If the <strong>Contrast.AppName</strong> configuration setting is not present, the .NET agent will use the application&#39;s virtual path as an application name. If the application is hosted in the root of a site (i.e. the virtual path is <strong><em>/</em></strong>), then the .NET agent will use the site&#39;s name as the application name.</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_netconfig.html#servers">Setting The Display Name For Servers Running Contrast.NET</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Setting The Display Name For Servers Running Contrast.NET</h1>
+            <a class="anchor" id="servers">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Setting The Display Name For Servers Running Contrast.NET"
+description: "Guide to setting the server display name"
+-->
+
+<p>Starting with <strong>Version 3.1.4</strong>, the .NET agent allows users to customize the display name used for the server running the Contrast.NET agent. The server name can be customized by adding a value to the <strong><em>ContrastService.exe.config</em></strong> file in the agent&#39;s installation directory (<strong><em>C:\Program Files\Contrast.NET</em></strong> by default). For example, the following configuration will set the server&#39;s display name to <strong>MyServerName</strong>:</p>
+<pre><code>...
+  &lt;add key=&quot;ServerName&quot; value=&quot;MyServerName&quot; /&gt;
+&lt;/appSettings&gt;</code></pre>
+<h2 id="server-display-name-when-the-configuration-setting-servername-is-absent">Server Display Name When The Configuration Setting <em>ServerName</em> Is Absent</h2>
+<p>If the <strong>ServerName</strong> configuration setting is not present, the .NET agent will use the computer name for the server&#39;s display name. You can view the computer name by viewing the <strong>System</strong> properties in the <strong>Control Panel</strong>.</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_netconfig.html#apps">Setting The Display Name For Applications Analyzed By Contrast.NET</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Using The .NET Agent With A TeamServer Using A Self-Signed SSL Certificate</h1>
+            <a class="anchor" id="ssl">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Using The .NET Agent With A TeamServer Using A Self-Signed SSL Certificate"
+description: "Instructions on using the .NET agent with a TeamServer and self-signed SSL certificate"
+-->
+
+<p>By default, the .NET framework doesn&#39;t allow SSL connections that can&#39;t be validated. If the <strong>Contrast.NET Agent</strong> is attempting to connect to a TeamServer with a self-signed SSL certificate, it could give the following error message:</p>
+<blockquote>
+<p>&quot;The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel.&quot;</p>
+</blockquote>
+<p>There are two configuration changes that will allow the .NET agent to connect to TeamServer with a self-signed SSL certificate:</p>
+<h2 id="install-the-self-signed-certificate-as-a-trusted-root-ca">Install The Self-Signed Certificate As A Trusted Root CA</h2>
+<ol>
+<li>Open Internet Explorer as an <strong>Administrator</strong></li>
+<li>Navigate to your instance of TeamServer. If IE displays an error message, click <strong>Continue to this website (not recommended)</strong></li>
+<li>Click on the <strong>Certificate Error</strong> icon next to the URL</li>
+<li>Click <strong>View Certificate</strong></li>
+<li>Click the <strong>Details</strong> tab</li>
+<li>Click <strong>Copy to File</strong></li>
+<li>Export the certificate as a <strong>DER encoded binary X.509 (.CER)</strong></li>
+<li>Click <strong>Start</strong>, click <strong>Start Search</strong>, type <strong>mmc</strong> and then press <strong>Enter</strong></li>
+<li>On the <strong>File</strong> menu, click <strong>Add/Remove Snap-in</strong></li>
+<li>Under <strong>Available snap-ins</strong>, click <strong>Certificates</strong> and then <strong>Add</strong></li>
+<li>Under <strong>This snap-in will always manage certificates for</strong>, click <strong>Computer account</strong> and then <strong>Next</strong></li>
+<li>Click <strong>Local computer</strong> and click <strong>Finish</strong></li>
+<li>If you have no more snap-ins to add to the console, click <strong>OK</strong></li>
+<li>In the console tree, double-click <strong>Certificates</strong></li>
+<li>Right-click the <strong>Trusted Root Certification Authorities</strong> store</li>
+<li>Click <strong>Import</strong> to import the certificates and follow the steps in the <strong>Certificate Import Wizard</strong> using the certificate created in Step 7</li>
+</ol>
+<h2 id="add-the-teamservervalidatecert-tag-to-the-configuration-file">Add The <code>TeamServerValidateCert</code> Tag To The Configuration File</h2>
+<p>Alternatively, the agent can be configured to trust <strong>any</strong> certificate. This configuration should only be used for testing purposes or in trusted environments.</p>
+<ol>
+<li>In a text editor, open <strong><em>-%SYSTEMDRIVE%\Program Files\Contrast.NET\ContrastService.exe.config</em></strong></li>
+<li>In the <strong>appSettings</strong> section, add the <code>TeamServerValidateCert</code> tag</li>
+</ol>
+<p>Example:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;configuration&gt;
+ &lt;appSettings&gt;
+ &lt;add key=&quot;TeamServerUrl&quot; value=&quot;*****************&quot;/&gt;
+ &lt;add key=&quot;TeamServerUserName&quot; value=&quot;*******************&quot;/&gt;
+ &lt;add key=&quot;TeamServerApiKey&quot; value=&quot;**************&quot;/&gt;
+ &lt;add key=&quot;TeamServerServiceKey&quot; value=&quot;************&quot;/&gt;
+ &lt;add key=&quot;TeamServerValidateCert&quot; value=&quot;false&quot;/&gt;</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Using Contrast.NET On Microsoft Azure</h1>
+            <a class="anchor" id="azure">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Using Contrast .NET on Microsoft Azure"
+description: "Using Contrast .NET on Microsoft Azure"
+-->
+
+<p>The Contrast .NET Agent can be used to analyze ASP.NET applications running on Azure Virtual Machines, Cloud Services, or Mobile Services.  Unfortunately, Contrast cannot be used on Azure Websites at this time.</p>
+<p>Follow the instructions below to set up the Contrast .NET Agent in your environment. </p>
+<h2 id="using-contrast-net-on-azure-virtual-machines">Using Contrast .NET on Azure Virtual Machines</h2>
+<p>Follow these steps to install the .NET agent on an Azure Virtual Machine:</p>
+<ul>
+<li>Set up the Azure Virtual Machine normally and deploy the ASP.NET applications to be analyzed.</li>
+<li>Log in to the Contrast TeamServer and download the .NET Agent zip file.</li>
+<li>Access the Azure VM by Remote Desktop (<a href="https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-log-on-windows-server">Log on to a Windows virtual machine</a>)</li>
+</ul>
+<p><a href="assets/images/KB3-e15_1.png" rel="lightbox" title="Azure Virtual Machine"><img class="thumbnail" src="assets/images/KB3-e15_1.png"></a></p>
+<ul>
+<li>Copy the .NET Agent zip file to the Azure VM and extract the archive.</li>
+<li>Run the .NET Agent installer (<strong><em>ContrastSetup.exe</em></strong>)</li>
+<li>Browse to and use the application normally in order to have Contrast analyze it.</li>
+</ul>
+<p><a href="assets/images/KB3-e15_2.png" rel="lightbox" title="Virtual Machine RDP"><img class="thumbnail" src="assets/images/KB3-e15_2.png"></a></p>
+<h2 id="using-contrast-net-on-azure-cloud-services-or-mobile-services">Using Contrast .NET on Azure Cloud Services or Mobile Services</h2>
+<ul>
+<li>Set up the Azure Cloud Service normally and deploy the ASP.NET applications to be analyzed.</li>
+<li>Log in to the Contrast TeamServer and download the .NET Agent zip file.</li>
+<li>Access the Cloud Service Instance by Remote Desktop (<a href="https://msdn.microsoft.com/en-us/library/azure/gg443832.aspx">see Using Remote Desktop with Azure Roles</a>)</li>
+</ul>
+<p><a href="assets/images/KB3-e15_3.png" rel="lightbox" title="Cloud Remote Desktop Services"><img class="thumbnail" src="assets/images/KB3-e15_3.png"></a></p>
+<ul>
+<li>Copy the .NET Agent zip file to the Cloud Service Instance and extract the archive.</li>
+<li>Run the .NET Agent installer (<strong><em>ContrastSetup.exe</em></strong>)</li>
+<li>Browse to and use the application normally in order to have Contrast analyze it.</li>
+</ul>
+<p><a href="assets/images/KB3-e15_4.png" rel="lightbox" title="Cloud RDP"><img class="thumbnail" src="assets/images/KB3-e15_4.png"></a></p>
+<h2 id="azure-websites">Azure Websites</h2>
+<p>Contrast cannot be used on Azure Websites because the .NET Agent installer requires administrative privileges to run and Azure Website users are not granted administrative access to the underlying VM.</p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

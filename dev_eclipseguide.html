@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Eclipse Guide | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+ 
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+ 
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Developer.png" width="75" height="75">
+        <p class="label1">Developer</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">API</p></li>
+                <li><a href="dev_api3.html">Open API</a></li>
+                <li><a href="dev_api1.html">API v1</a></li>
+                <li><a href="dev_api2.html">API v2</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Eclipse</p></li>
+                <li><a href="dev_eclipseinstall.html">Installation</a></li><li>
+                </li><li>Guide</li>
+                    <li><a href="dev_eclipseguide.html#about" class="label9">What Is Eclipse?</a></li>
+                    <li><a href="dev_eclipseguide.html#systems" class="label9">Supported Systems</a></li>
+                    <li><a href="dev_eclipseguide.html#test" class="label9">Outside Server Testing</a></li>
+                    <br>
+                <li><a href="dev_eclipsefaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+ 	<div class="breadcontainer">
+    	<ol class="breadcrumb">
+        	<li>Developer</li>
+        	<li>Eclipse</li>
+        	<li class="label6">Guide</li>
+    	</ol>
+ 	</div>
+</div>
+
+ <div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">What Is Contrast For Eclipse?</h1>
+ 			<a class="anchor" id="about">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/guide" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "What is Contrast for Eclipse?"
+description: "What is Contrast for Eclipse?"
+-->
+
+<h2 id="what-is-contrast-for-eclipse-">What is Contrast for Eclipse?</h2>
+<p>Contrast for Eclipse brings Contrast’s award winning vulnerability analysis technology to Java developers through a fully integrated Eclipse IDE plugin. It is free, easy to use, and powerful application security that expertly pinpoints vulnerabilities such as SQL Injection and Cross-Site Scripting -- right to the source for easy remediation.  You can find more details <a href="https://www.contrastsecurity.com/eclipse">here</a>.</p>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Supported Systems For Eclipse</h1>
+ 			<a class="anchor" id="systems">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/guide" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Supported Systems for Eclipse"
+description: "Supported Systems for Eclipse"
+-->
+
+<h2 id="eclipse-versions">Eclipse Versions</h2>
+<ul>
+<li>Helios</li>
+<li>Indigo</li>
+<li>Juno </li>
+<li>Kepler</li>
+<li>Luna</li>
+<li>Mars </li>
+</ul>
+<h2 id="java-versions">Java Versions</h2>
+<ul>
+<li>1.5</li>
+<li>1.6</li>
+<li>1.7</li>
+<li>1.8</li>
+</ul>
+<h2 id="supported-containers">Supported Containers</h2>
+<ul>
+<li>JBoss 4.2, 5.0, 5.1, 6, 7.0, 7.1</li>
+<li>Jetty 6, 7, 8, and 9</li>
+<li>Tomcat 4, 5, 6, 7, 8</li>
+<li>WebLogic 10, 11, 12</li>
+<li>WebSphere 6.1, 7,  8.5</li>
+<li>GlassFish 3, 4</li>
+<li>JRun 4</li>
+</ul>
+<h2 id="operating-systems">Operating Systems</h2>
+<ul>
+<li>Linux/Unix</li>
+<li>Mac/OS</li>
+<li>Windows</li>
+</ul>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Testing On A Server Outside Of Eclipse</h1>
+ 			<a class="anchor" id="test">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/guide" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Testing on a Server Outside Eclipse"
+description: "Testing on a Server Outside Eclipse"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>When the plugin first loads in Eclipse, it will deploy a Contrast Agent, a jar file beginning with the file name <strong><em>contrast-engine-</em></strong>, to the user home directory under the hidden folder <strong><em>.contrast</em></strong> To monitor a server running outside of Eclipse, you will need this file. In the context below, <code>${version}</code> is the version number trailing this file name.  </p>
+<h3 id="running-a-server-with-your-account">Running a server with your account</h3>
+<p>If you&#39;re running a server independent of Eclipse using the same account with which Eclipse is running, getting reports is pretty simple. As with the standard Contrast Agent installation, simply add the following line to the file where you set the JAVA_OPTS of your server:</p>
+<pre><code> Linux:
+set JAVA_OPTS=&quot;$JAVA_OPTS -javaagent:${USER_HOME}/.contrast/contrast-engine-${version}.jar&quot;
+ Windows:
+set JAVA_OPTS=&quot;%JAVA_OPTS% -javaagent:${USER_HOME}/.contrast/contrast-engine-${version}.jar&quot;</code></pre>
+<h3 id="running-a-server-with-a-different-user-account">Running a server with a different user account</h3>
+<p>If you&#39;re running a server with a different user account but on the same machine, the process is almost the same as above, but you will need to set an additional configuration flag to the file where you modify the JAVA_OPTS of your server. If, however, you&#39;re running a server on a different machine, you will need to copy the Contrast Agent file to that machine and place it into a &quot;.contrast&quot; directory in the ${USER_HOME} before attempting to run with the following flags.</p>
+<pre><code> Linux:
+set JAVA_OPTS=&quot;$JAVA_OPTS -javaagent:${USER_HOME}/.contrast/contrast-engine-${version}.jar \
+ -Dcontrast.dir=${USER_HOME}/.contrast&quot;
+
+ Windows:
+set JAVA_OPTS=&quot;%JAVA_OPTS% -javaagent:${USER_HOME}/.contrast/contrast-engine-${version}.jar \
+-Dcontrast.dir=${USER_HOME}/.contrast&quot;</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

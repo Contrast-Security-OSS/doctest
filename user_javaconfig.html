@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/User.png" width="75" height="75">
+        <p class="label3">User</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">Agents</p></li>
+                <li>Java Agent</li>
+                    <li><a href="user_javainstall.html" class="label10">&#8226; Installation</a></li>
+
+                    <li class="label10">&#8226; Configuration</li>
+
+
+                        <li><a href="user_javaconfig.html#props2" class="label9">System Properties</a></li>
+                        <li><a href="user_javaconfig.html#props" class="label9">Configurable Properties</a></li>
+                        <li><a href="user_javaconfig.html#config" class="label9">Overriding Configuration</a></li>
+                        <li><a href="user_javaconfig.html#cache" class="label9">Java Agent Cache</a></li>
+                        <li><a href="user_javaconfig.html#rules" class="label9">Advanced Rules Customization</a></li>
+                        <li><a href="user_javaconfig.html#bootstrap" class="label9">Speed Enhancements</a></li>
+                        <li><a href="user_javaconfig.html#bytecode" class="label9">Bytecode Changes</a></li>
+                        <br>
+
+                    <li><a href="user_javafaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+                <li>.NET Agent</li>
+                    <li><a href="user_netinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_netconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_netfaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+<!--
+                <li>Node.js Agent</li>
+                    <li><a href="user_nodeinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_nodeconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_nodefaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                <br>
+
+-->
+
+                <br>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Guide</li>
+                    <li><a href="user_tsguideapp.html" class="label10">&#8226; Application</a></li>
+                    <li><a href="user_tsguidecrawl.html" class="label10">&#8226; Crawler</a></li>
+                    <li><a href="user_tsguidelib.html" class="label10">&#8226; Library</a></li>
+                    <li><a href="user_tsguiderep.html" class="label10">&#8226; Report</a></li>
+                    <br>
+
+                <li><a href="user_tsfaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>User</li>
+            <li>Agents</li>
+            <li>Java Agent</li>
+            <li class="label6">Configuration</li>
+        </ol>
+    </div>
+</div>
+
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Java Agent System Properties</h1>
+            <a class="anchor" id="props2">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Java Agent System Properties"
+description: "How to tweak system properties to alter Contrast's behavior"
+-->
+
+<h2 id="general-properties">General Properties</h2>
+<p>The following <a href="http://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html">System Properties</a> can be used to alter Contrast&#39;s behavior.  All options are prefixed with <strong>-D</strong> and no space, e.g. <strong>-Dcontrast.property=value</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.appname</td>
+<td>Specify the name of a standalone or desktop application.</td>
+</tr>
+<tr>
+<td>contrast.dir</td>
+<td>This value can override the default Contrast working directory (default: $USER_HOME/.contrast of the user account the application runs under).</td>
+</tr>
+<tr>
+<td>contrast.enabled</td>
+<td>Determines whether or not Contrast will monitor the JVM. You can use this feature to quickly turn Contrast on or off without removing the <em>-javaagent</em> flag. The default value is <em>true</em>. Setting it to a value of  <em>false</em> will prevent Contrast from instrumenting the server.</td>
+</tr>
+<tr>
+<td>contrast.rootapp</td>
+<td>This value can override (or provide one if none exist) a display name for the app running at the root context. This may be needed for Contrast to collect analytics on the application.</td>
+</tr>
+<tr>
+<td>contrast.server</td>
+<td>Overrides name of the server displayed in the Contrast TeamServer. Includes any valid path characters, e.g. <em>myserver-1/myapp</em> or <em>john_dev</em>.</td>
+</tr>
+<tr>
+<td>contrast.teamserver.url</td>
+<td>This value will override the TeamServer URL that&#39;s packaged with the agent. This can be useful for networks that proxy the information.</td>
+</tr>
+<tr>
+<td>contrast.timeout</td>
+<td>This value can override the default timeout (in seconds) for communicating with TeamServer. The default value is <em>10</em>.</td>
+</tr>
+<tr>
+<td>contrast.classpath.libs</td>
+<td>Determines whether or not Contrast will track usage of libraries listed in the environment&#39;s <em>java.class.path</em> property. The default value is <em>false</em>.</td>
+</tr>
+<tr>
+<td>contrast.useconfig</td>
+<td>Use to load configuration from another Contrast agent jar file e.g. <em>-Dcontrast.useconfig=&quot;path/to/another/contrast.jar&quot;</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logging">Logging</h2>
+<p>By default, diagnostic logging is enabled, but set to the INFO level. It uses a rolling file appender scheme to keep up to 1 GB of logs on the File System, broken up into 10MB log files. Logging has a small performance impact, but generates useful information for debugging Contrast. To change how this logging functions, you can adjust the following System properties. </p>
+<h3 id="assessment-mode">Assessment Mode</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.log</td>
+<td>Enable <em>diagnostic logging</em>. This hurts performance, but generates useful information for debugging Contrast.</td>
+</tr>
+<tr>
+<td>contrast.level</td>
+<td>Set the log level for diagnostic logging. Values include: <em>trace</em>, <em>debug</em>, <em>info</em>, <em>warn</em>, <em>error</em>, and <em>fatal</em>. The default is <em>debug</em>.</td>
+</tr>
+<tr>
+<td>contrast.log.daily</td>
+<td>Change the Contrast logger from a file sized based rolling scheme to a date based rolling scheme. At midnight serve time, the previous day&#39;s log will be renamed to file_name.yyyy-MM-dd. Note, this scheme does not have a size limit, so manual log pruning will be required. Setting this flag overrides the subsequent backups and size flags. By default, this value is &#39;off&#39;.</td>
+</tr>
+<tr>
+<td>contrast.log.backups</td>
+<td>Specify the number of &quot;backup&quot; logs that will be created before Contrast will clean up the oldest file. This value has a cap of 100, meaning no more than 100 log files can be stored on the file system at one time. A value of 0 here means that no backups will be created and the log will simply be truncated when it reaches its size cap. By default, this value is &#39;100&#39;.</td>
+</tr>
+<tr>
+<td>contrast.log.size</td>
+<td>Specify the file size cap, in MB, of each log file. This value has a cap of 10, meaning no more than 10MB will be logged to a single file. By default, this value is &#39;10&#39;.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="defend-mode">Defend Mode</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.security.log.file</td>
+<td>The file to which logging of security events will occur. By default, this file is located at <working_directory>/security.log.</working_directory></td>
+</tr>
+<tr>
+<td>contrast.security.log.level</td>
+<td>Set the log level for security logging. Values include: trace, debug, info, warn, error, fatal, off. Setting this to off will disable security logging. By default, this value is &#39;info&#39;.</td>
+</tr>
+<tr>
+<td>contrast.security.log.daily</td>
+<td>Change the Contrast security logger from a file sized based rolling scheme to a date based rolling scheme. At midnight server time, the previous day&#39;s log will be renamed to file_name.yyyy-MM-dd. Note, this scheme does not have a size limit, so manual log pruning will be required. Setting this flag overrides the subsequent backups and size flags. By default, this value is &#39;off&#39;.</td>
+</tr>
+<tr>
+<td>contrast.security.log.backups</td>
+<td>Specify the number of &quot;backup&quot; logs that will be created before Contrast will clean up the oldest file. This value has a cap of 100, meaning no more than 100 log files can be stored on the file system at one time. A value of 0 here means that no backups will be created and the log will simply be truncated when it reaches its size cap. By default, this value is &#39;100&#39;.</td>
+</tr>
+<tr>
+<td>contrast.security.log.size</td>
+<td>Specify the file size cap, in MB, of each log file. This value has a cap of 10, meaning no more than 10MB will be logged to a single file. By default, this value is &#39;10&#39;.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagnostics">Diagnostics</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.savebytecode</td>
+<td>Save the <em>before/after bytecode</em> of classes where sensors have been added.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="performance">Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.clear</td>
+<td>Don&#39;t use any previous <em>security analysis cache</em>. This artificially extends startup time, but may help with conflicts when multiple app servers are running on the same host. The analysis cache was removed in <strong>Version 2.7.3</strong>. </td>
+</tr>
+<tr>
+<td>contrast.blacklist</td>
+<td>If you set this value to a readable file, Contrast will read it for a list of class names (one per line, in the format <em>org.example.Foo</em>) that will not be analyzed for security sensors. This can help improve startup time if enough classes can be put into the blacklist.</td>
+</tr>
+<tr>
+<td>contrast.sampling</td>
+<td>Enable and configure <em>sampling mode</em>.</td>
+</tr>
+<tr>
+<td>contrast.savestacks</td>
+<td>Configure Contrast&#39;s collecting of stacktraces. The default value is <em>all</em>, but can be overriden to <em>some</em> or <em>none</em>. Reducing the amount of stacktraces collected can offer a performance improvement, but makes understanding individual events in a vulnerability trace harder to identify in the code.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="policy">Policy</h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.policy</td>
+<td>If you set this value to a file or URL, Contrast will use it instead of the pre-packaged security policy. For more information about rule customization, please contact your account manager.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="updates">Updates</h2>
+<blockquote>
+<p><strong>Note:</strong> These options only apply to the Java 1.6 agent</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>contrast.forceupdate</td>
+<td>If you set this value to <em>true</em>, Contrast will download the latest available agent from whatever TeamServer the current agent was downloaded from. This feature is useful if you&#39;ve changed the configuration of the agent and want to ensure that all current agents pick up this change. By default, the agent will smart update on application server restart, downloading a new agent from TeamServer if the TeamServer has been upgraded since the last time the application server was started.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_tsfaq.html#list">An Application Is Not Appearing In The List</a></p>
+<p><a href="user_javafaq.html#log">Getting Contrast Java Agent Logs</a></p>
+<p><a href="user_javaconfig.html#bytecode">Java Agent Bytecode Changes</a></p>
+<p><a href="user_javaconfig.html#cache">Working With Contrast&#39;s Java Agent Cache</a></p>
+<p><a href="user_tsfaq.html#sample">Sampling</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Configurable Java Agent Properties</h1>
+            <a class="anchor" id="props">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configurable Java Agent Properties"
+description: "Instructions on configuring Java agent properties"
+-->
+
+<p>Parameters for certain rules are now configurable by the end user. The following are methods of applying custom parameters to these rules.</p>
+<h2 id="setting-in-rules-xml-">Setting In &quot;rules.xml&quot;</h2>
+<p>An optional top level <code>&lt;properties&gt;</code> element has been added to the <strong><em>rules.xml</em></strong>.</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;policies&gt;
+    &lt;policy&gt;
+        &lt;properties&gt;
+            &lt;web.session.timeout&gt;30&lt;/web.session.timeout&gt;
+            .
+            .
+            .
+        &lt;/properties&gt;
+        &lt;org-packages/&gt;
+        &lt;propagators&gt;
+        .
+        .
+        .
+        &lt;/propagators&gt;
+        .
+        .
+        .
+    &lt;/policy&gt;
+    .
+    .
+    .
+&lt;/policies&gt;</code></pre>
+<h2 id="properties-file">Properties File</h2>
+<p>Also, users can use <code>-Dcontrast.properties=&quot;/path/to/properties.file&quot;</code> to point to a standard Java properties file when launching their application container. This will override any settings in the <code>&lt;properties&gt;</code> element in the <strong><em>rules.xml</em></strong> file.</p>
+<p>For example, in the <strong><em>catalina.sh</em></strong>:</p>
+<p><code>export CONTRAST_AGENT_JAR= &quot;...&quot;</code>
+<code>export JAVA_OPTS= &quot;$JAVA_OPTS -javaagent:$CONTRAST_AGENT_JAR -Dcontrast.properties=&quot; /path/to/properties.file &quot;...&quot;</code></p>
+<p>And a properties file located at <code>/path/to/properties.file</code> would look like:
+<code>web.session.timeout= 30</code></p>
+<h2 id="direct-definition">Direct Definition</h2>
+<p>Finally, the user could specify a property directly when launching their application container, like <code>-Dweb.session.timeout=30</code>. This will override any settings in <strong><em>rules.xml</em></strong> and the properties file.</p>
+<p><code>export CONTRAST_AGENT_JAR= &quot;...&quot;</code>
+<code>export JAVA_OPTS= &quot;$JAVA_OPTS -javaagent:$CONTRAST_AGENT_JAR -Dweb.session.timeout=&quot; 30 &quot;...&quot;</code></p>
+<h2 id="supported-properties">Supported Properties</h2>
+<p>Currently, the following properties are supported by this feature:</p>
+<table>
+<thead>
+<tr>
+<th>Property Name</th>
+<th>Default Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>web.session.timeout</code></td>
+<td>30</td>
+<td>The security plugin will report a vulnerability if the <code>&lt;session-timeout&gt;</code> value configured in an application&#39;s <strong><em>web.xml</em></strong> exceeds this value. This value is in minutes.</td>
+</tr>
+</tbody>
+</table>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Overriding Configuration Options With The Java Agent</h1>
+            <a class="anchor" id="config">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Overriding Configuration Options With The Java Agent"
+description: "Overriding Java agent configuration"
+-->
+
+<p>If you&#39;d like to override configuration options in your agent, you can run with a custom configuration. To start, let&#39;s copy the configuration that&#39;s shipped with the agent. The following <a href="http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jar.html">JAR</a> command will copy the configuration file out of an agent that&#39;s been downloaded from the Contrast site:</p>
+<p><code>user:tomcat majordomo$ jar -xf contrast.jar contrast.config</code></p>
+<p>Now that you have a <strong><em>contrast.config</em></strong> file, which is just XML, you can edit it like any other file. However, to tell the agent to use this configuration file, we have to modify our <code>-javaagent</code> line to point to it, as shown here:</p>
+<p><code>export JAVA_OPTS=&quot;$JAVAOPTS -javaagent:/tomcat6/contrast.jar=/tomcat6/contrast.config&quot;</code></p>
+<p>The following marked-up <strong><em>contrast.config</em></strong> file shows what can be controlled here:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;contrast&gt;
+   &lt;id/&gt; &lt;!-- Used to &#39;id&#39; this agent, if such a need exists. --&gt;
+   &lt;log level=&quot;error&quot; console=&quot;false&quot;/&gt; &lt;!-- The level is one of the standard log4j levels. --&gt;
+   &lt;global-key&gt;demo&lt;/global-key&gt; &lt;!-- Your organization&#39;s API Key. Needed for talking to the REST API. --&gt;
+
+   &lt;user&gt;
+     &lt;id&gt;contrast_admin&lt;/id&gt; &lt;-- Your username. --&gt;
+     &lt;key&gt;demo&lt;/key&gt; &lt;!-- Your service key, which is needed for talking to the REST API. --&gt;
+   &lt;/user&gt;
+
+   &lt;!-- 
+   Where Contrast results are reported. You can add the following attributes to the &#39;url&#39; element in order
+   to ask Contrast to use a proxy:
+      - proxyHost (just the hostname or IP)
+      - proxyPort
+      - proxyUser
+      - proxyPassword
+      - proxyAuthenticationType (one of NTLM, Digest or Basic)
+    --&gt; 
+   &lt;url&gt;https://app.contrastsecurity.com/Contrast/s/&lt;/url&gt;
+   &lt;local-results mode=&quot;never&quot;/&gt; &lt;!-- Results can be captured locally with &quot;error&quot; or &quot;always&quot;. --&gt;
+   &lt;plugins&gt;
+      &lt;!-- The contents of this area shouldn&#39;t be altered. --&gt;
+   &lt;/plugins&gt;
+   &lt;capture-stacktraces&gt;ALL&lt;/capture-stacktraces&gt; &lt;!-- Set to SOME or NONE to gain performance boosts. --&gt;
+
+   &lt;!--
+   Setting &#39;enabled&#39; to true in the sampling section tells Contrast to skip analysis of redundant of URIs
+   after some baseline samples have been collected.
+   --&gt;
+   &lt;sampling&gt;
+      &lt;enabled&gt;false&lt;/enabled&gt;
+      &lt;baseline&gt;5&lt;/baseline&gt;
+      &lt;request-frequency&gt;10&lt;/request-frequency&gt;
+      &lt;response-frequency&gt;50&lt;/response-frequency&gt;
+      &lt;window&gt;180&lt;/window&gt;
+    &lt;/sampling&gt;
+&lt;/contrast&gt;</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Working With Contrast's Java Agent Cache</h1>
+            <a class="anchor" id="cache">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Working with Contrast's Java Agent Cache"
+description: "You may have noticed that Contrast was slow to start up the first time it ran, then fast after that. That's because Contrast caches all of its bytecode analysis."
+-->
+
+<h2 id="how-does-the-cache-work-">How does the cache work?</h2>
+<p>It works like this: Contrast sees a new class about to be loaded, and it hashes the bytecode. It checks in a map if there is an entry under that hash key. If there&#39;s no entry under that key, it analyzes the bytecode for changes according to the rules. The results of this expensive analysis (including the changed bytecode if necessary) is saved. The results are either an empty value, which means that the class isn&#39;t important, and can be ignored in the future, or that it&#39;s a class that required instrumentation, and thus the cached changed bytecode is returned. Once the JVM is finished starting up, the cache spools. After that, it spools during quiet periods or after new classes are put in the cache.</p>
+<h2 id="where-is-this-cache-stored-">Where is this cache stored?</h2>
+<p>It&#39;s stored (along with other metadata) in your Contrast directory. This is specified by the <code>contrast.dir</code> System property (i.e., <strong><em>-Dcontrast.dir=/tmp/contrast</em></strong>), and defaults to <strong><em>$HOME/.contrast</em></strong>.
+The cache file is relatively small, even for really big apps on heavy duty containers. For instance, the cache is only a few MB for a big application on WebSphere. A new cache is created every time a new policy is used, and even a small customization of the rules will be recognized as a new policy!</p>
+<h2 id="can-i-clear-the-cache-">Can I clear the cache?</h2>
+<p>Yes! Pass the <code>-Dcontrast.clear</code> System property to your container startup options and Contrast will rebuild the cache (and thus, have a slower startup time). </p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Advanced Rules Customization</h1>
+            <a class="anchor" id="rules">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Advanced Rules Customization"
+description: "Advanced Rules Customization"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>The <code>contrast.policy.overrides</code> definition allows the end-user to apply custom rules in addition to the default Contrast rules without having to maintain &amp; modify a copy of the default rules. This define lets the user specify a list of files containing properties/rules/propagators/sources/tag-lists custom rules to apply to their active policy.</p>
+<p>Example Syntax:</p>
+<pre><code>java -jar -javaagent:&quot;/path/to/contrast.jar&quot; -Dcontrast.policy.overrides=&quot;/path/to/file1;/path/to/file2;...;/path/to/fileN&quot; ...</code></pre>
+<p>This definition can also be added to the JAVA_OPTS export:</p>
+<pre><code>export ***CONTRAST_AGENT_JAR=&quot;/path/to/contrast.jar&quot;***
+export ***CONTRAST_POLICY_OVERRIDES=&quot;/path/to/file1;/path/to/file2;...;/path/to/fileN&quot;***
+export ***JAVA_OPTS=&quot;$JAVA_OPTS -javaagent:$CONTRAST_AGENT_JAR –Dcontrast.policy.overrides=$CONTRAST_POLICY_OVERRIDES ...&quot;***</code></pre>
+<p>Files containing the overrides must follow the same format as the default rules.xml file:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;policies&gt;
+    &lt;policy&gt;
+        &lt;org-packages/&gt;
+        &lt;properties&gt;
+            &lt;property.to.add.or.override&gt;value.1&lt;/property.to.add.or.override&gt;
+        &lt;/properties&gt;
+        &lt;propagators&gt;
+            &lt;method id=&quot;propagator.id.to.add.or.override&quot; deep=&quot;false&quot; enabled=&quot;true&quot; scoped=&quot;true&quot; signature=&quot;...&quot; type=&quot;P2R&quot;/&gt;
+    &lt;/propagators&gt;
+        &lt;rules&gt;
+            &lt;rule id=&quot;rule.to.add.or.override&quot; service-level=&quot;Business&quot; level=&quot;high&quot; enabled=&quot;true&quot;&gt;
+                ...
+               &lt;/rule&gt;
+        &lt;/rules&gt;
+        &lt;sources&gt;
+            &lt;dynamic-sources&gt;
+                &lt;dynamic-source id=&quot;dynamic-source.to.add.or.override&quot; includeStatic=&quot;false&quot;&gt;
+                    ...
+                &lt;/dynamic-source&gt;
+            &lt;/dynamic-sources&gt;
+            &lt;method id=&quot;source.to.add.or.override&quot; enabled=&quot;true&quot; name=&quot;sourceName&quot; signature=&quot;...&quot; tags=&quot;cross-site&quot;/&gt;
+        &lt;/sources&gt;
+        &lt;tag-lists&gt;
+            &lt;tag-list id=&quot;tag-list.to.add.or.override&quot; name=&quot;Base64 decoding&quot; tags=&quot;base64-decoded&quot;&gt;
+                ...
+            &lt;/tag-list&gt;
+        &lt;/tag-lists&gt;   
+    &lt;/policy&gt;
+&lt;/policies&gt;</code></pre>
+<p>The overrides are applied in the order specified when the define is set, i.e.</p>
+<pre><code>-Dcontrast.policy.overrides=&quot;/path/to/file1;/path/to/file2;...;/path/to/fileN&quot;</code></pre>
+<p>Indicates &quot;file1&quot; will be applied first, then &quot;file2&quot;, all the way to &quot;fileN&quot;. Note that this means file2 will overwrite file1, etc. 
+If a custom [rule, source method, propagator method, or tag-list] element shares the same id attribute as an existing element, then the custom element will replace the existing element.</p>
+<p>For example: if the default rules contains a source method with id=&quot;source1&quot; and an overriding file contains a source method also with id=&quot;source1&quot;, then the Contrast Agent, at runtime, will use the overriding fie&#39;s source method.</p>
+<p>Currently, the override action is completely additive, meaning setting a propagator/source method&#39;s &quot;enabled&quot; attribute to &quot;false&quot; in an overriding policy file will not disable an existing propagator/source method at runtime. This will feature will be implemented soon. </p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Adding Bootstrap Speed Enhancements To The Java Agent</h1>
+            <a class="anchor" id="bootstrap">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Adding Bootstrap Speed Enhancements To The Java Agent"
+description: "Instructions on adding Bootstrap speed enhancements to the Java agent"
+-->
+
+<p>Many of the vulnerabilities Contrast discovers require analyzing the data flow of an application. This data flow analysis involves adding sensors to core classes in the JVM. Much of the runtime performance penalty introduced by those sensors can be avoided by bootstrapping custom versions of these core classes. The changes to these classes are very minimal - in fact, it&#39;s just adding a single field. </p>
+<p>To experiment with this new feature, follow the two steps shown below.</p>
+<h2 id="step-1-generate-a-contrast-bootstrap-jar">Step 1: Generate a contrast-bootstrap.jar</h2>
+<p>We have to generate a custom version of your JVM core classes, because we don&#39;t know which version of the JVM you&#39;re using. You can do this by performing this command with the regular <strong><em>contrast.jar</em></strong> agent you monitor your applications with.</p>
+<p><code>$ java -jar contrast.jar bootstrap</code></p>
+<p>This will create a new <strong>JAR</strong>, called <strong><em>contrast-bootstrap.jar</em></strong>, that contains the modified versions of your core classes.</p>
+<p>If the JRE that your application runs with isn&#39;t the same one used when you call <code>java</code> from the command line, you can pass the location of the correct JRE as a parameter:</p>
+<p><code>$ java -jar contrast.jar bootstrap /path/to/some/other/jre-or-jdk</code></p>
+<h2 id="step-2-add-a-new-jvm-argument">Step 2: Add a New JVM Argument</h2>
+<p>To take advantage of the new bootstrap <strong>JAR</strong> you just created, you must add a new JVM argument to the same place you added the initial <code>-javaagent</code> flag, like this:</p>
+<pre><code>-Xbootclasspath/p:/path/to/contrast-bootstrap.jar</code></pre>
+<p>You should see something like this in the console messages:</p>
+<pre><code>[ContrastEngine] ... Using bootstrapped enhancement! Speed powerup enabled.</code></pre>
+<blockquote>
+<p><strong>Note:</strong> It is critical that the <strong><em>contrast-bootstrap.jar</em></strong> be generated for the correct JRE. If the <strong><em>contrast-bootstrap.jar</em></strong> is generated with the wrong JRE, incompatible classes will be bootstrapped to the JRE and the process will immediately terminate.</p>
+</blockquote>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Java Agent Bytecode Changes</h1>
+            <a class="anchor" id="bytecode">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Java Agent Bytecode Changes"
+description: "Instructions on getting bytecode changes"
+-->
+
+<p>You can ask Contrast to save all of its weavings for analysis by passing a custom system property to the server process:</p>
+<p><code>-Dcontrast.savebytecode=/path/to/bytecode/</code></p>
+<p>This will save the <strong>before</strong> and <strong>after</strong> copies of any class that Contrast weaved sensors into during the process, into the given directory. These will be useful for Contrast analysts hoping to understand more complex issues. After running with this feature enabled, the directory given will have a directory full of packages like this:</p>
+<p><a href="assets/images/KB1-d04.png" rel="lightbox" title="Directory Packages"><img class="thumbnail" src="assets/images/KB1-d04.png"></a></p>
+<p>This feature was introduced in <strong>Contrast 2.4.1</strong>.</p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/User.png" width="75" height="75">
+        <p class="label3">User</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">Agents</p></li>
+                <li>Java Agent</li>
+                    <li><a href="user_javainstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_javaconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_javafaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+                <li>.NET Agent</li>
+                    <li><a href="user_netinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_netconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_netfaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+<!--
+                <li>Node.js Agent</li>
+                    <li><a href="user_nodeinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_nodeconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_nodefaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                <br>
+-->
+
+                <br>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Guide</li>
+                    <li><a href="user_tsguideapp.html" class="label10">&#8226; Application</a></li>
+                    <li><a href="user_tsguidecrawl.html" class="label10">&#8226; Crawler</a></li>
+                    <li><a href="user_tsguidelib.html" class="label10">&#8226; Library</a></li>
+                    <li><a href="user_tsguiderep.html" class="label10">&#8226; Report</a></li>
+                    <br>
+
+
+                <li>Troubleshooting</li>
+
+                    <li><a href="user_tsfaq.html#glossary" class="label9">Glossary</a></li>
+                    <li><a href="user_tsfaq.html#support" class="label9">Supported Technologies</a></li>
+                    <li><a href="user_tsfaq.html#upgrade" class="label9">Upgrading TeamServer</a></li>
+                    <li><a href="user_tsfaq.html#restart" class="label9">Restarting Contrast</a></li>
+                    <li><a href="user_tsfaq.html#info" class="label9">Captured Information</a></li>
+                    <li><a href="user_tsfaq.html#change" class="label9">Application Data</a></li>
+                    <li><a href="user_tsfaq.html#app" class="label9">Application On-Boarding</a></li>
+                    <li><a href="user_tsfaq.html#list" class="label9">Application Not Appearing</a></li>
+                    <li><a href="user_tsfaq.html#coverage" class="label9">Code Coverage</a></li>
+                    <li><a href="user_tsfaq.html#recent" class="label9">Most Recent Library Version</a></li>
+                    <li><a href="user_tsfaq.html#open" class="label9">Open-Source Libraries</a></li>
+                    <li><a href="user_tsfaq.html#url" class="label9">Increase Of App URLs</a></li>
+                    <li><a href="user_tsfaq.html#ip" class="label9">IP Address &amp; Hostname</a></li>
+                    <li><a href="user_tsfaq.html#bug" class="label9">Bug Tracker Integration</a></li>
+                    <li><a href="user_tsfaq.html#sample" class="label9">Sampling</a></li>
+                    <li><a href="user_tsfaq.html#error" class="label9">BASE_DIRECTORY Error</a></li>
+                    <li><a href="user_tsfaq.html#thread" class="label9">New Native Thread Error</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>User</li>
+            <li>TeamServer</li>
+            <li class="label6">Troubleshooting</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Glossary</h1>
+            <a class="anchor" id="glossary">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Glossary"
+description: "Glossary of terms"
+-->
+
+<p>Definitions of commonly-used terms associated with Contrast technology are as follows:</p>
+<h4 id="contrast">Contrast</h4>
+<p><strong>Contrast</strong> is a new security technology for finding vulnerabilities in an application. It finds vulnerabilities by instrumenting the application and virtual machine with sensors and watching the stream of generated events for patterns that represent vulnerabilities. The term <strong>Contrast</strong> encompasses the entire suite of technologies around this product, including the <em>JVM plugin</em> (the <em>engine</em>), and the Contrast site (the <em>TeamServer</em>).</p>
+<hr>
+<h4 id="contrast-jvm-plugin-agent-">Contrast JVM Plugin (Agent)</h4>
+<p>The <strong>Contrast JVM Plugin</strong> is a Java agent that is installed in the application server that is hosting the application(s) to be analyzed. This <em>engine</em> generates <em>traces</em> that contain vulnerability results detected by the <em>engine</em> while the application is operating. It periodically sends these <em>traces</em> to its associated <em>TeamServer</em> for further analysis by a human being.</p>
+<hr>
+<h4 id="contrast-site-teamserver-">Contrast Site (TeamServer)</h4>
+<p>The <strong>Contrast site</strong> is a web application that receives <em>traces</em> from Contrast <em>engines</em> and allows the analyst to view and triage the results.</p>
+<hr>
+<h4 id="creation-event">Creation Event</h4>
+<p>When an <em>untrusted data source</em> provides data to the application, a <strong>Creation Event</strong> (or <strong>Source Event</strong>) is generated that documents what occurred. This information is stored with the <em>tracked</em> data object that is created and is used to describe where untrusted data came from if a <em>rule</em> generates a <em>trace</em>.</p>
+<hr>
+<h4 id="custom-event">Custom Event</h4>
+<p>Each <strong>event</strong> contains the runtime values of the underlying <em>object</em>, the parameters to the method invoked, the return from the method, and the runtime stack trace.</p>
+<hr>
+<h4 id="duplicate-trace-elimination">Duplicate Trace Elimination</h4>
+<p>The Contrast <em>engine</em> will detect the same vulnerability conditions over and over in an application, and this would normally cause the same <em>trace</em> to be generated repetitively. To address this, there is <strong>duplicate trace elimination</strong> logic in both the <em>engine</em> and the <em>TeamServer</em> to eliminate duplicate <em>traces</em>. The <a href="user_tsguideapp.html#diff">full article</a> on this topic describes the specific duplicate elimination rules that are enforced.</p>
+<hr>
+<h4 id="event">Event</h4>
+<p>An <strong>event</strong> is generated when the running application calls code that Contrast has instrumented with a <em>sensor</em>.</p>
+<hr>
+<h4 id="policy-file">Policy File</h4>
+<p>A <strong>policy file</strong> contains all the <em>rulepacks</em> to use in the <em>engine</em> along with some configuration information.</p>
+<hr>
+<h4 id="propagation">Propagation</h4>
+<p>In Contrast, <strong>propagation</strong> happens anytime untrusted data is transferred to another <em>object</em>. When propagation happens in a running program, that generates a <em>propagation event</em>. How propagation is actually modeled in Contrast is defined by the <em>propagation rules</em> within the <em>rules</em> in use by your <em>engine</em>.</p>
+<hr>
+<h4 id="propagation-event">Propagation Event</h4>
+<p>A <strong>propagation event</strong> is generated when a <em>propagation</em> condition is met in a running program as defined by a <em>propagation rule</em>. When the conditions of the <em>rule</em> are met, a <em>propagation event</em> is generated that tracks the tainted data and <em>trace</em> information from the source object to the destination object. The destination object is considered <em>tracked</em>.</p>
+<hr>
+<h4 id="propagation-rule">Propagation Rule</h4>
+<p>To model how <em>propagation</em> actually works in a running application, we write <strong>propagation rules</strong>. These rules identify the methods that cause <em>propagation</em> and how the <em>propagation</em> passes from one object to another. When we model how a method might cause <em>propagation</em>, we consider the <em>source</em> and the destination. These may be any combination of an <em>object</em>, the parameters to a method, and the result of the method. For example, the <code>StringBuffer.append()</code> method propagates untrusted data from the first parameter to the <em>object</em> (the <code>StringBuffer</code>). This is a <strong>P2O Propagation</strong> in Contrast terms. Similarly, the <code>toString()</code> method on a tracked <em>object</em> causes the untrusted data to propagate from the <em>object</em> to the method result (the String returned by <code>toString()</code>). In Contrast this is an <strong>O2R Propagation</strong>. Again, any combination is possible, including untrusted data propagating from one source to many destinations, or even many destinations to a single source.</p>
+<hr>
+<h4 id="propagator">Propagator</h4>
+<p>A <strong>propagator</strong> is a method that accepts tainted input and stores or produces tainted output. Propagators and their propagation behavior are identified and defined by <em>propagation rules</em>.</p>
+<hr>
+<h4 id="rule">Rule</h4>
+<p>A <strong>rule</strong> defines a pattern for the <em>engine</em> to look for while monitoring a running application. If the pattern is matched, the <em>engine</em> generates a <em>trace</em> to send to the <em>TeamServer</em>. Each pattern consists of a series of methods ending in a <em>trigger</em>. Each of these methods can also be required. If these methods are detected, the pattern does not match.</p>
+<hr>
+<h4 id="rulepack">Rulepack</h4>
+<p>A <strong>rulepack</strong> identifies a collection of <em>rules</em>. A core set of <em>rules</em> are delivered with Contrast, but can be customized and supplemented with custom <em>rules</em> per organization and per application if the customer&#39;s license allows.</p>
+<hr>
+<h4 id="scope">Scope</h4>
+<p>A method <strong>scope</strong> can be defined for a <em>rule</em>. When an application&#39;s execution leaves the scope defined for a <em>rule</em>, the <em>engine</em> will check the conditions of the <em>rule</em> as defined by its <em>events</em> to determine if a <em>trace</em> should be generated.</p>
+<hr>
+<h4 id="security-control">Security Control</h4>
+<p>A <strong>security control</strong> is a security mechanism that does something to make input data safe, such as validate input, encode output, check for data level authorization, etc. Security Controls that don&#39;t specifically look at data to make a security check, such as validating whether a user is authorized to invoke a particular method, are simply defined as <em>events</em>, which can be monitored by a <em>rule</em>.</p>
+<hr>
+<h4 id="sensor">Sensor</h4>
+<p>A <strong>sensor</strong> is the instrumentation that Contrast adds to the running application. The sensor&#39;s job is to gather data from the immediate method context, generate a simple <em>event</em>, and send it to the Contrast <em>engine</em>.</p>
+<hr>
+<h4 id="source">Source</h4>
+<p>This is the short name for an <strong>untrusted data source</strong>.</p>
+<hr>
+<h4 id="trace">Trace</h4>
+<p>A <strong>trace</strong> is a series of events that represent a vulnerability. Traces are generated by the <em>engine</em> anytime that a series of events matches a runtime <em>rule</em>. Traces can be viewed in the <em>TeamServer</em>.</p>
+<hr>
+<h4 id="tracked">Tracked</h4>
+<p>When data flows from an <em>untrusted data source</em> into an <em>object</em>, that <em>object</em> is considered <strong>tracked</strong>. When data from a tracked <em>object</em> flows into another <em>object</em> through a <em>propagator</em>, then that <em>object</em> is also tracked. <em>Events</em> can be defined in <em>rules</em> that consider whether an <em>object</em> is tracked or not as part of the <em>event</em> definition.</p>
+<hr>
+<h4 id="trigger">Trigger</h4>
+<p>A <strong>trigger</strong> is part of a <em>rule</em> pattern that indicates that the Contrast <em>engine</em> should go back through the collected <em>events</em> to see if that <em>rule</em> has been matched.</p>
+<hr>
+<h4 id="untrusted-data-source">Untrusted Data Source</h4>
+<p>This is a <strong>source</strong> of dangerous input to the application. It&#39;s typically directly from the end user and an HTTP request, but it could be from a back-end partner feed, the application&#39;s own database, or any other source considered unsafe.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Supported Technologies</h1>
+            <a class="anchor" id="support">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Supported Technologies"
+description: "List of supported technologies"
+-->
+
+<h2 id="java">Java</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Supported JDKS</th>
+<th style="text-align:left">Supported Containers</th>
+<th style="text-align:left">Supported Application Frameworks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Oracle JDK 1.5, 1.6, 1.7, 1.8</td>
+<td style="text-align:left">Tomcat 4, 5, 6, 7, 8</td>
+<td style="text-align:left">Java EE</td>
+</tr>
+<tr>
+<td style="text-align:left">Open JDK 1.5, 1.6, 1.7</td>
+<td style="text-align:left">JBoss 4.2, 5, 5.1, 6.1, 7, 7.1</td>
+<td style="text-align:left">Servlet/JSP</td>
+</tr>
+<tr>
+<td style="text-align:left">IBM 1.5 (2008+), 1.6</td>
+<td style="text-align:left">Jetty 6, 7, 8, 9</td>
+<td style="text-align:left">Spring/Spring Boot</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">GlassFish 3, 4</td>
+<td style="text-align:left">Hibernate</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">WebSphere 6.1, 7, 8.5</td>
+<td style="text-align:left">Jersey</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">WebLogic 9, 10, 11g, 12c</td>
+<td style="text-align:left">Struts</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">JRun 4</td>
+<td style="text-align:left">Struts2</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">Netty 3.x, 4.x</td>
+<td style="text-align:left">Wicket</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">JSF</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">ColdFusion</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">J2SE</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">DropWizard</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-net">.NET</h2>
+<p>Refer to the <a href="user_netfaq.html#supp">.NET Agent Supported Technologies</a> page.</p>
+<p>Contrast works on a lot of other stuff, but we just haven&#39;t gotten around to building testing infrastructure around it. If you&#39;re really interested in us supporting another technology, and have a compelling reason to do so, <a href="mailto:bugs@contrastsecurity.com">let us know!</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How To Upgrade Contrast TeamServer</h1>
+            <a class="anchor" id="upgrade">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How to Upgrade Contrast Team Server"
+description: "Guidelines for upgrading the EOP TeamServer"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>To upgrade your on premises Contrast Team Server installation:</p>
+<ul>
+<li>Log in to Contrast Hub (<a href="https://hub.contrastsecurity.com/h">https://hub.contrastsecurity.com/h</a>)</li>
+<li>Download the latest version of Contrast for the OS you&#39;re using</li>
+<li>Before you launch the installer, ensure that: <ul>
+<li>The current version of Team Server is running</li>
+<li>Whether the current version of Team Server installed was done with root privileges</li>
+</ul>
+</li>
+<li>Run the installer with the save level of privileges as the previous install</li>
+<li>Follow its prompts - TeamServer will restart on its own when necessary </li>
+</ul>
+<p>Your Team Server will now apply any needed upgrades to your database and Contrast data on it&#39;s first boot.</p>
+<p>It is difficult for us to make any assumptions about the data stored in an On-Premise database, so while it is extremely rare it is possible that the upgrade process can encounter errors. In the event you encounter an error while upgrading your Team Server the best option is to roll-back to the previous version and restore your database to the state prior to the upgrade process then open a ticket and we will assist you to resolve the errors that you encountered during upgrade. </p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How To Restart Contrast</h1>
+            <a class="anchor" id="restart">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How To Restart Contrast"
+description: "Instructions on restarting Contrast"
+-->
+
+<h2 id="linux">Linux</h2>
+<p>Run:</p>
+<p><code>sudo service contrast-server restart</code></p>
+<h2 id="windows">Windows</h2>
+<p>Run:</p>
+<p><code>net stop &quot;Contrast Server&quot;</code></p>
+<p>Once the service is completely shutdown, run:</p>
+<p><code>net start &quot;Contrast Server&quot;</code></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">What Information Does Contrast Capture?</h1>
+            <a class="anchor" id="info">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "What Information Does Contrast Capture?"
+description: "Explanation of what information Contrast captures"
+-->
+
+<h2 id="does-contrast-capture-sensitive-information-">Does Contrast capture sensitive information?</h2>
+<p>Contrast collects a lot of application analytics - stuff like URLs, file paths, jar names, and other relatively non-sensitive stuff. It also sends all the data related to security-relevant events. If a method occurs that is an integral part of a vulnerability, all the aspects of that event - the object, return value, parameters, and more are sent back to the Contrast site for you to analyze. Contrast has no way of knowing if any of this data is sensitive or not.</p>
+<p>For example, let&#39;s imagine there is an XSS vulnerability in the login code. It&#39;s likely that the username and password will be sent back as part of the XSS trace. If Contrast is installed on a <strong>Development</strong> or <strong>QA</strong> instance as recommended, then hopefully there isn&#39;t any production or sensitive data involved.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Does Contrast Change Application Data?</h1>
+            <a class="anchor" id="change">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Does Contrast Change Application Data?"
+description: "Answer to whether Contrast changes application data"
+-->
+
+<h4 id="no-">No.</h4>
+<p>Contrast is a passive technology. We change your bytecode at runtime to install our sensors, but we don&#39;t change your data or how your code flows.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Troubleshooting Application On-Boarding</h1>
+            <a class="anchor" id="app">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "My server appears on the Contrast site, but my application does not."
+description: "Troubleshooting the on-boarding of an application agent."
+-->
+
+<h2 id="scenario-your-application-hasn-t-been-browsed-to-yet-">Scenario: Your application hasn&#39;t been browsed to yet.</h2>
+<p>Contrast won&#39;t &quot;see&quot; your application until it gets used. You must visit the application after you start up your server successfully with Contrast. Once it does get accessed, Contrast will spend a few seconds analyzing it. You may notice a pause when you first access your application as this analysis is taking place. It shouldn&#39;t take very long - even big applications should take less than a minute.</p>
+<h2 id="scenario-your-application-is-running-on-an-unsupported-container-">Scenario: Your application is running on an unsupported container.</h2>
+<p>Contrast is only officially supported on the following containers:</p>
+<ul>
+<li>Tomcat 5, 6, 7, 8</li>
+<li>Jetty 6, 7, 8, 9</li>
+<li>JBoss 5.1, 6.1, 7, 7.1</li>
+<li>GlassFish 3</li>
+<li>WebSphere 6.0, 7.0, 8.5</li>
+<li>WebLogic 9, 10g, 11c, 12c</li>
+<li>IIS 6+ </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">An Application Is Not Appearing In The List</h1>
+            <a class="anchor" id="list">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "An Application Is Not Appearing In The List"
+description: "Explanation as to why an app may not appear in the list"
+-->
+
+<p>There are a few reasons why this could happen:</p>
+<ol>
+<li><p>The server on which the app is running hasn&#39;t had Contrast successfully installed. Check out <strong>standard</strong> or file a ticket with the <a href="user_javafaq.html#log">diagnostic log output file</a> attached to see what&#39;s happening. If your server isn&#39;t appearing in the Contrast site, check out the <a href="user_javafaq.html#agent">Troubleshooting</a> page.</p>
+</li>
+<li><p>The app is running at the root context and has no <code>&lt;display-name&gt;</code> in <strong><em>web.xml</em></strong>. Contrast needs a name to uniquely identify an application, so if an app runs at the root, it requires a <code>&lt;display-name&gt;</code> to be set to provide this unique name. You can use the <em>contrast.rootapp</em> system property to specify the name of an app running at the root if a <code>&lt;display-name&gt;</code> can&#39;t be added.</p>
+</li>
+<li><p>The app has been archived, or an app with the same name and context path has been archived in the past.</p>
+</li>
+</ol>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Contrast Says I Have 100% Code Coverage - I Don't Think That's Right</h1>
+            <a class="anchor" id="coverage">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Contrast Says I Have 100% Code Coverage - I Don't Think That's Right"
+description: "Explanation as to why Contrast may show 100% code coverage"
+-->
+
+<p>Did you recently <strong>Reset</strong> your application? If so, that&#39;s what it looks like!</p>
+<h2 id="why-would-it-matter-to-reset-the-application-">Why Would It Matter To Reset The Application?</h2>
+<p>Over time, Contrast will report which URLs within your application you are currently exercising. This score may be artificially high when Contrast first starts, as the agent can only report on the URLs that it has actually seen. Combining Contrast with a test suite or an automatic web browsing tool, such as Selenium, will make this score more reliable and highlight gaps in testing that may develop.</p>
+<p>Some other explanations:</p>
+<ul>
+<li>You&#39;re actually getting great code coverage. Crazy, right?</li>
+<li>You&#39;ve set your application timeout too high and nothing is being considered as unexecuted</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Why Is My Library Not Recognized As The Most Recent Version?</h1>
+            <a class="anchor" id="recent">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Why Is My Library Not Recognized As The Most Recent Version?"
+description: "Explanation regarding a library's version"
+-->
+
+<p>This issue is a result of the way that our data sources store information about a library&#39;s version. Because some of the versions are formatted to include the year at the beginning, the sort method reads them as a more up-to-date version. The problem should phase itself out as the industry is moving to a more normalized version convention.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Why Open-Source Libraries In An Application May Show Up As Unknown</h1>
+            <a class="anchor" id="open">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Why Open Source Libraries In An Application May Show Up As Unknown"
+description: "Explanation of open source libraries showing up as unknown"
+-->
+
+<h2 id="issue">Issue</h2>
+<p>We identify libraries by their <strong>SHA-1</strong> digest. Thus, if any repackaging of the library occurs, the digest will be different.</p>
+<h2 id="solution">Solution</h2>
+<p>WebSphere does this repackaging by default. To prevent it, you can add the following JVM system property:</p>
+<p><code>-Dorg.eclipse.jst.j2ee.commonarchivecore.ignore.web.fragment=true</code></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Why The Number Of URLs In An App Increases</h1>
+            <a class="anchor" id="url">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Why The Number Of URLs In An App Increases"
+description: "Explanation as to why the number of URLs increase"
+-->
+
+<p>Contrast is an <strong>Interactive Application Security Testing (IAST)</strong> tool. As such, it is only aware of sections of the application which it has seen. In order to effectively monitor your application, the Contrast agent needs to be running on your server while the application is being exercised. During this phase, Contrast will report the new URLs as it encounters them. The same is true of new URLs added to your application after the initial introduction of the agent. </p>
+<p>Most of the time, the amount that it grows over time will scale down logarithmically, and the minor growth you&#39;ll see won&#39;t have a significant affect on your overall score.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How To Update The TeamServer IP Address And Hostname</h1>
+            <a class="anchor" id="ip">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How To Update The TeamServer IP Address And Hostname"
+description: "Instructions for updating the TeamServer IP address and hostname"
+-->
+
+<p>Updating the TeamServer&#39;s IP address is fairly straightforward. Whether you moved the installation or had to change the hostname or IP address, letting TeamServer know can be done in a few simple steps:</p>
+<ul>
+<li>Log in as the SuperAdmin</li>
+<li>Browse to the <strong>System Settings</strong> page</li>
+<li>Select <strong>General Settings</strong> </li>
+<li>Change the TeamServer URL to <strong><em>IP:port/Contrast</em></strong></li>
+<li>Click <strong><em>Save Configuration</em></strong></li>
+<li><a href="user_tsfaq.html#restart">Restart TeamServer</a> to apply the changes</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> You will have to replace your agents so they know which new address to report to</p>
+</blockquote>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">BugTracker Integration: How To Handle Required Fields When Creating JIRA Tickets From A Vulnerability</h1>
+            <a class="anchor" id="bug">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "BugTracker Integration: How To Handle Required Fields When Creating JIRA Tickets From A Vulnerability"
+description: "Explanation of BugTracker integration"
+-->
+
+<h2 id="issue">Issue</h2>
+<p>TeamServer has a built-in integration with Atlassian&#39;s JIRA issue management system. The integration provides the power of creating JIRA defect tickets directly from TeamServer with all of the necessary information about a vulnerability. The integration will generate an exception when a field tied to a JIRA project is marked as <strong>Required</strong> and TeamServer does not have that information to send to JIRA. The TeamServer integration with JIRA is designed for a lightweight passing of the following values:</p>
+<ul>
+<li>Title</li>
+<li>Summary</li>
+<li>Reporter</li>
+<li>Assignee</li>
+</ul>
+<p>The remaining fields will either default to their defined default values or they will remain <strong>NULL</strong>. TeamServer will not pass any additional content to JIRA via the integration.</p>
+<h2 id="solution">Solution</h2>
+<p>At the present moment there are no workarounds within Contrast TeamServer to handle required fields. The most effective workaround is to configure the field in JIRA as <strong>Optional</strong>.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Sampling</h1>
+            <a class="anchor" id="sample">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Sampling"
+description: "Explanation and tips regarding sampling"
+-->
+
+<h2 id="what-is-sampling-">What Is Sampling?</h2>
+<p>Sampling is a mode of operation in Contrast that greatly reduces the runtime performance penalty of the security analysis. It reduces the performance by eliminating redundant analysis on the same URLs over and over. The idea is that once a URL has been properly <em>sampled</em>, you can stop monitoring during requests for that URL.</p>
+<p>You can enable sampling while downloading an engine in the <strong>Download the Engine</strong> step of the installation wizard. To do this, perform the following steps:</p>
+<ul>
+<li>Select <strong>I want to configure a proxy or customize my settings</strong></li>
+<li>Select the <strong>Sampling</strong> tab and check the <strong>Use Sampling</strong> checkbox</li>
+</ul>
+<p>At this point, you can input <strong>Baseline</strong>, <strong>Frequency</strong> and <strong>Window</strong> values.</p>
+<h2 id="setting-sampling-values">Setting Sampling Values</h2>
+<p>The default values for <strong>Baseline</strong>, <strong>Frequency</strong> and <strong>Window</strong> will help a lot, but you may want to configure these values more precisely.</p>
+<p><strong>Baseline:</strong> This is how many times a URL needs to be analyzed before it is considered <em>sampled</em>. Once a URL has been hit this number of times, Contrast will be <em>turned off</em> during future requests for that URL, which will allow them to be processed a lot faster. </p>
+<p><strong>Frequency:</strong> After the <strong>Baseline</strong> samples of a URL have been taken, only every <strong>N</strong>th request will be analyzed fully. Frequency is that <strong>N</strong> value.</p>
+<p><strong>Window:</strong> After this many seconds passes, the <em>sampling window</em> will be reset and the <strong>Baseline</strong> samples will be drawn again.</p>
+<h2 id="enabling-sampling-in-java-agent-via-system-properties">Enabling Sampling In Java Agent Via System Properties</h2>
+<p>You can also enable sampling by passing in the <code>-Dcontrast.sampling</code> JVM System property. Passing an empty system property will enable sampling with a:</p>
+<blockquote>
+<p><strong>Frequency</strong> of 5
+<strong>Baseline</strong> of 5
+<strong>Window</strong> of 180 </p>
+</blockquote>
+<p>Alternatively, you can use <code>-Dcontrast.sampling</code> = X, Y, Z where: </p>
+<blockquote>
+<p>X = <strong>Baseline</strong>
+Y = <strong>Frequency</strong> 
+Z = <strong>Window</strong></p>
+</blockquote>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">When I Try To Start TeamServer I Receive An Error That BASE_DIRECTORY Must Be Set</h1>
+            <a class="anchor" id="error">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "When I Try To Start TeamServer I Receive An Error That BASE_DIRECTORY Must Be Set"
+description: "Explanation of BASE_DIRECTORY error"
+-->
+
+<h2 id="issue">Issue</h2>
+<p>This is an indication that you have a <strong><em>CATALINA_HOME</em></strong> directory set already in your system environment. Some products that use Tomcat require this to be set in the environment and unfortunately it steps on our startup scripts.</p>
+<h2 id="solution">Solution</h2>
+<p>The simplest way to resolve this error is to edit the <strong><em>CONTRAST_HOME/server/bin/start-teamserver.sh</em></strong> file and set the <strong><em>CATALINA_HOME</em></strong> to Contrast&#39;s Tomcat directory by adding the following:</p>
+<pre><code class="language-sh"># Address hard-coded environment variable for CATALINA_HOME - Set this directory to your 
+# $CONTRAST_HOME/server directory
+set CATALINA_HOME=/opt/contrast/server</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">"Unable To Create New Native Thread" Error In Contrast Server</h1>
+            <a class="anchor" id="thread">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: ""Unable To Create New Native Thread" Error In Contrast Server"
+description: "Explanation of the "unable to create new native thread" error"
+-->
+
+<h2 id="issue">Issue</h2>
+<p>If you are seeing something similar to the error below in your <strong><em>/opt/Contrast/contrast-error.log</em></strong> you may be bumping up against the thread limit set by your operating system.</p>
+<pre><code>SEVERE: Servlet.service() for servlet [spring] in context with path [/Contrast] threw exception 
+[Request processing failed; nested exception is java.util.concurrent.ExecutionException: 
+java.lang.OutOfMemoryError: unable to create new native thread] with root cause
+java.lang.OutOfMemoryError: unable to create new native thread
+ at java.lang.Thread.start0(Native Method)
+ at java.lang.Thread.start(Thread.java:714)</code></pre>
+<h2 id="solution">Solution</h2>
+<p>To address this issue, you will need to increase the number of threads that can be started by the Contrast user in your <strong><em>/etc/security/limits.d/90-nproc.conf</em></strong> file.</p>
+<blockquote>
+<p><strong>Note:</strong> To modify a system configuration file, you must have root access or the ability to sudo. Consult your system administrator for additional details.</p>
+</blockquote>
+<p>You can add the line <code>&lt;contrast-username&gt;     soft        nproc         unlimited</code> to the end of the file and restart the contrast-server using the command <code>sudo service contrast-server restart</code></p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

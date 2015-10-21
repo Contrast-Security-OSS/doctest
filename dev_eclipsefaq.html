@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Eclipse FAQ | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+ 
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+ 
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Developer.png" width="75" height="75">
+        <p class="label1">Developer</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">API</p></li>
+                <li><a href="dev_api3.html">Open API</a></li>
+                <li><a href="dev_api1.html">API v1</a></li>
+                <li><a href="dev_api2.html">API v2</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Eclipse</p></li>
+                <li><a href="dev_eclipseinstall.html">Installation</a></li><li>
+                </li><li><a href="dev_eclipseguide.html">Guide</a></li>
+                <li>Troubleshooting</li>
+                    <li><a href="dev_eclipsefaq.html#find" class="label9">Where to Find &amp; Install</a></li>
+                    <li><a href="dev_eclipsefaq.html#report" class="label9">Reported Usage Metrics</a></li>
+                    <li><a href="dev_eclipsefaq.html#turnoff" class="label9">Turning Off Usage Metrics</a></li>   
+                    
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+ 	<div class="breadcontainer">
+    	<ol class="breadcrumb">
+        	<li>Developer</li>
+        	<li>Eclipse</li>
+        	<li class="label6">Troubleshooting</li>
+    	</ol>
+ 	</div>
+</div>
+
+
+ <div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Where To Find &amp; Install Contrast For Eclipse</h1>
+ 			<a class="anchor" id="find">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+
+
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Where can my developers find and install Contrast for Eclipse?"
+description: "Where can my developers find and install Contrast for Eclipse?"
+-->
+
+<h2 id="where-can-my-developers-find-and-install-contrast-for-eclipse-">Where can my developers find and install Contrast for Eclipse?</h2>
+<p>Eclipse users can install Contrast for Eclipse directly through the Eclipse Marketplace by first searching for “Contrast.”  An installation link and instructions are available <a href="http://www.contrastsecurity.com/eclipse">here</a>.   </p>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Contrast For Eclipse Reported Usage Metrics</h1>
+ 			<a class="anchor" id="report">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+
+
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "What usage metrics does Contrast for Eclipse report?"
+description: "What usage metrics does Contrast for Eclipse report?"
+-->
+
+<h2 id="what-usage-metrics-does-contrast-for-eclipse-report-">What Usage Metrics Does Contrast for Eclipse Report?</h2>
+<p>Contrast for Eclipse monitors user interaction with the plugin in order to help us make the tool as user friendly as possible. This allows us to focus on areas that developers find most useful, while helping us figure out how to make other features more accessible. Our goal is to use these metrics to better improve your experience with Contrast for Eclipse, and make securing your applications as painless as possible.</p>
+<h3 id="what-we-collect-">What we collect:</h3>
+<ul>
+<li>The IP address from which the plugin was downloaded</li>
+<li>The number and type of servers you&#39;re monitoring</li>
+<li>The number of applications you&#39;re monitoring</li>
+<li>The features within the plugin you are most using</li>
+</ul>
+<h3 id="what-we-don-t-collect-">What we don&#39;t collect:</h3>
+<ul>
+<li>The host names, IP addresses, or URLs of your servers</li>
+<li>The names of your applications</li>
+<li>The types of vulnerabilities in your code</li>
+<li>The libraries you&#39;re using in your code</li>
+</ul>
+<p>We collect anonymized usage statistics to better improve your Contrast for Eclipse experience </p>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Turning Off Usage Metrics Collection</h1>
+ 			<a class="anchor" id="turnoff">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+
+
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Is there a way to turn off the collection of usage metrics?"
+description: "Is there a way to turn off the collection of usage metrics?"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>Contrast for Eclipse includes an option to disable its default function of collecting and sending usage metrics back to the developers. For more information on these usage metrics, see <a href="dev_eclipsefaq.html#report">Reported Usage Metrics</a>.</p>
+<p>This preference can be toggled in Eclipse by navigating to <strong>File &gt; Preferences &gt; Contrast</strong>.</p>
+<p>Users who wish to opt out in advance need to modify the preference before the plugin is initialized. To do this, there are a couple of viable options: modifying the <strong><em>.prefs</em></strong> file or using a proprietary plugin to directly modify preferences through API calls.</p>
+<h3 id="modifying-the-prefs-files-">Modifying the .prefs files:</h3>
+<p>This method is probably the most straightforward and involves implementing a two-step process:</p>
+<ul>
+<li>Locate the <strong><em>.prefs</em></strong> file associated with your installation of the plugin. If the plugin has not been started yet, then this file probably does not exist. It should be created and placed in the correct location: <code>&lt;workspace-location&gt;/.metadata/.plugins/org.eclipse.core.runtime/.settings/</code></li>
+<li>The file to edit or create will be called <strong><em>com.contrastsecurity.eclipse.prefs</em></strong></li>
+<li>Modify the key for the preference you wish to override and change its value as desired. In this case: <code>report_usage=false</code></li>
+</ul>
+<p>This can be done manually for each installation of the plugin or can be scripted for scalability across multiple installations and users.</p>
+<h3 id="using-the-eclipse-api-to-override-preferences-">Using the Eclipse API to override preferences:</h3>
+<p>This method takes more effort to implement, but can be much more powerful. Because it involves the creation of an Eclipse plugin, this approach is more involved and only recommended if it is necessary to have fine-grained control over how users manage their preferences, or to manage the preferences many users/installations in a scalable way. It can be an appealing solution for organizations that manage a central p2 repository for Eclipse and would like to modify the preferences for multiple plugins and users.</p>
+<p>To get started, it is necessary to use the Eclipse APIs to get a reference to the Contrast plugin&#39;s preference store:</p>
+<pre><code>IPreferenceStore contrastPrefs = new ScopedPreferenceStore(new InstanceScope(), &quot;com.contrastsecurity.eclipse&quot;);</code></pre>
+<p>A preference store is simply the map Eclipse uses to store a plugin&#39;s preferences as key-value pairs. With a handle on the preference store, it is possible to do things like add a preference change listener to prevent users from toggling the preference on. From here, simply set the desired value for the preference:</p>
+<pre><code>contrastPrefs.setValue(&quot;report_usage&quot;, false);</code></pre>
+<p>The above code says &quot;modify the following preference for this workspace.&quot; The scope parameter can be modified to any IScopeContext for more personal control over what scope the preference change will impact. For more information, see <a href="https://wiki.eclipse.org/FAQ_What_is_a_preference_scope%3F%22">Eclipse FAQ: What is a preference scope?</a></p>
+<p>It is recommended that this code be run on Eclipse startup, before the Contrast plugin is initialized, by calling it from the plugin&#39;s Activator class.</p>
+<p>For more information on modifying Eclipse preferences and best practices, read <a href="http://www.vogella.com/tutorials/EclipsePreferences/article.html#preferences_plugin.ini&quot;">this article</a>.</p>
+<p>The following can be useful starting points for those who wish to implement such a plugin with no previous plugin development experience: </p>
+<ul>
+<li><p><a href="http://www.vogella.com/tutorials/EclipsePlugIn/article.html">Extending the Eclipse IDE - Plug-in development</a></p>
+</li>
+<li><p><a href="http://help.eclipse.org/luna/index.jsp?topic=%2Forg.eclipse.rse.doc.isv%2Fguide%2Ftutorial%2FpdeProject.html">Creating a Plug-in Project</a></p>
+</li>
+</ul>
+
+			</a>
+ 	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

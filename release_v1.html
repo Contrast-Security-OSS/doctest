@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Release Notes | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="button">
+        <button type="button" class="btn btn-danger btn-block"> Release Notes
+    </button></div>
+
+    <div class="scroll">
+        <div class="navitems2">
+            <ul>
+                <!-- <li><p class="label5">All</p></li> -->
+                <br>
+                <li><a href="release_v3.html">Version 3</a></li>
+                    
+                <li><a href="release_v2.html">Version 2</a></li><li>
+
+                </li><li>Version 1</li>
+                    <li><a href="release_v1.html#110" class="label9">1.1.0</a></li>
+                    <li><a href="release_v1.html#101" class="label9">1.0.1</a></li>
+                    <li><a href="release_v1.html#100" class="label9">1.0.0</a></li>
+        
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Release Notes</li>
+            <li>All</li>
+            <li class="label6">Version 1</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label7">Contrast 1.1.0 Release Notes, December 27, 2012</h1>
+            <a class="anchor" id="110">
+                <div class="actions">
+                    
+                    <div class="iconbar">
+                       <div class="iconbar">
+  <a href="#" target="new"></a>
+</div>
+
+
+
+                    </div>
+                    
+                </div>
+                <!--
+title: "Contrast 1.1 Release Notes, December 27, 2012"
+description: "Contrast 1.1 Release Notes, December 27, 2012"
+-->
+
+<h2 id="new-features-">New Features:</h2>
+<ul>
+<li>Added support for WebSphere 6.1, 7.0 and 8.5 (for 6.1, you JRE must be from 2008 or later).</li>
+<li>Added support for the IBM J9 JVM.</li>
+<li>Several runtime performance improvements.</li>
+<li>Separated API Keys to a &quot;read&quot; and &quot;write&quot; key set for better security.</li>
+<li>Added REST API for accessing applications, traces, and more.</li>
+<li>Added proxy authentication support (Basic, Digest and NTLM).</li>
+<li>Added beta installers for JBoss, Tomcat, WebSphere and Jetty.</li>
+</ul>
+<h2 id="fixes-">Fixes:</h2>
+<ul>
+<li>Removed broken links and redirects.</li>
+<li>Excluded Java Proxy classes from coverage measurements.</li>
+<li>Fixed first-time usage false positive and tag combination false negative corner cases.</li>
+<li>Occasional timeouts after logging in.</li>
+<li>Fixed a few small bugs in the ad-hoc bug reporting. </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label7">Contrast 1.0.1 Release Notes, September 14th, 2012</h1>
+            <a class="anchor" id="101">
+                <div class="actions">
+                    
+                    <div class="iconbar">
+                       <div class="iconbar">
+  <a href="#" target="new"></a>
+</div>
+
+
+
+                    </div>
+                    
+                </div>
+                <!--
+title: "Contrast 1.0.1 Release Notes, September 14th, 2012"
+description: "Contrast 1.0.1 Release Notes, September 14th, 2012"
+-->
+
+<h2 id="new-features-">New Features:</h2>
+<ul>
+<li>Streamlined engine communication and processing, boosting performance.</li>
+<li>Added automatic generation of Web Application Firewall (WAF) rules.</li>
+<li>Fixed SSL bug on GlassFish 3x that prevented engines from reporting data.</li>
+<li>Added REST API for accessing applications, traces, and more.</li>
+</ul>
+<h2 id="fixes-">Fixes:</h2>
+<ul>
+<li>Added helpful error messages to payment screens.</li>
+<li>Added more information to payment receipts.</li>
+<li>Fixed rule management bug where saving new rules broke previous rules. </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label7">Contrast 1.0-BETA-P10 Release Notes, August 21st, 2012</h1>
+            <a class="anchor" id="100">
+                <div class="actions">
+                    
+                    <div class="iconbar">
+                       <div class="iconbar">
+  <a href="#" target="new"></a>
+</div>
+
+
+
+                    </div>
+                    
+                </div>
+                <!--
+title: "Contrast 1.0.0-BETA-P10 Release Notes, August 21st, 2012"
+description: "Contrast 1.0.0-BETA-P10 Release Notes, August 21st, 2012"
+-->
+
+<h2 id="new-features-">New Features:</h2>
+<ul>
+<li>Updating your organization’s packages now updates your existing coverage scores, according to the new data.</li>
+<li>Changed HttpOnly rule to detect missing flag on “Set-Cookie2” headers, as well.</li>
+<li>Added keyboard navigation to “Event Details” screen.</li>
+<li>Removed HttpServletResponse.sendError() as a sink for XSS (testing shows the message parameter is ignored in modern containers). </li>
+<li>User email addresses can now have the ‘-‘ character.</li>
+<li>Hiding MD5/other unsafe message digest findings when being used for serialization or Java’s internal SSL libraries.</li>
+</ul>
+<h2 id="fixes-">Fixes:</h2>
+<ul>
+<li>Fixed issue in unsafe cryptographic rule that reported AES and RSA as unsafe.</li>
+<li>Fixed reporting HttpOnly for non-cookie headers.</li>
+<li>Fixed NullPointerException for Windows+Java7 users resulting from spaces in container directory path.</li>
+<li>Fixed two problems in code re-creation – static methods from showing as member methods, e.g., “Cipher.getInstance()” was showing up as “cipher.getInstance()” and incorrect constructor snippets, e.g., “void = file = new File(…)”.</li>
+<li>Fixed issue where “Forgot Password” was not properly unlocking the user.</li>
+<li>Fixed issue where clicking on events in the summary page didn’t take you to the event details.</li>
+<li>Fixed issue that caused incorrect rules to be delivered to engines after Contrast team made rule updates.</li>
+<li>Fixed bad hashing algorithm and other findings had incorrect titles. </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

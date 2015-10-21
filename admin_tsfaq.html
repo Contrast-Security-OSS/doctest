@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrator | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Admin.png" width="75" height="75">
+            <p class="label2">Admin</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">TeamServer</p></li>
+                <li><a href="admin_tsinstall.html">Installation</a></li>
+                <li><a href="admin_tsconfig.html">Configuration</a></li>
+                <li>Troubleshooting</li>
+
+                    <li><a href="admin_tsfaq.html#trouble" class="label9">Troubleshooting Installation</a></li>
+                    <li><a href="admin_tsfaq.html#license" class="label9">Updating An EOP License</a></li>
+                    <li><a href="admin_tsfaq.html#org" class="label9">Managing Organizations</a></li>
+                    <li><a href="admin_tsfaq.html#user" class="label9">User Accounts</a></li>
+                    <li><a href="admin_tsfaq.html#admin" class="label9">Administrator Dashboard</a></li>
+                    <li><a href="admin_tsfaq.html#cred" class="label9">Understanding Credentials</a></li>
+                    <li><a href="admin_tsfaq.html#super" class="label9">Reset SuperAdmin Password</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Crawler</p></li>
+                <li><a href="admin_crawlinstall.html">Installation</a></li><li>
+                </li><li><a href="admin_crawlconfig.html">Configuration </a></li>
+<!--
+                <li><a href="admin_crawlfaq.html">Troubleshooting</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Administrator</li>
+            <li>TeamServer</li>
+            <li class="label6">Troubleshooting</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Troubleshooting The Installation</h1>
+            <a class="anchor" id="trouble">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Troubleshooting the Installation"
+description: "Common issues encountered by customers while installing the TeamServer EOP."
+-->
+
+<h2 id="corrupt-binary">Corrupt Binary</h2>
+<pre><code>gunzip: sfx_archive.tar.gz: not in gzip format</code></pre>
+<p>If you see this error, something went wrong during the transfer process of the installer. The easiest way to confirm this is to calculate the MD5 of the installer you are attempting to run and compare it to the MD5 hash listed on our Hub site. Most likely this occurred if the file was transferred in ASCII mode instead of binary mode, especially if SCP/SFTP was used. You should transfer the file again, this time explicitly specifying binary mode. </p>
+<h2 id="failed-migration-due-to-access-restrictions">Failed Migration Due to Access Restrictions</h2>
+<pre><code>Error on rename ... (Errcode: 13)</code></pre>
+<p>If you see this error, this means a migration has failed during TeamServer startup. Most likely, this is due to the current user having insufficient privileges to modify files in the directory in which Contrast was installed. You will have to uninstall Contrast and delete the remaining data files and then either elevate the user&#39;s permissions in the installation directory or choose a new directory where the user has full privileges. While it is uncommon, Administrator users can encounter this problem if there are extra file restrictions put in place by your organization.</p>
+<h2 id="superadmin-configuration-unaccessible-in-3-1-3">Superadmin Configuration Unaccessible in 3.1.3</h2>
+<p>There is a known bug in Contrast EOP 3.1.3 which causes the Superadmin Configuration UI to become inaccessible. To resolve this issue, you must create an empty file in the filesystem at <strong><em>$CONTRAST_HOME/data/conf/support.properties</em></strong>. </p>
+<h2 id="multiple-contrast-server-jars">Multiple contrast-server jars</h2>
+<p>There is a known issue in contrast 3.1.1 - 3.1.3 where the contrast-server binary is not replaced during the upgrade process. This could cause classloading issues in the server which cause functionality to become unpredictable. To resolve this issue, simply remove the older jars from the <strong><em>$CONTRAST_HOME/lib</em></strong> directory that start with contrast-server-3.1. There should only be a single contrast-server version in that directory. After removing the files, a restart will be necessary.</p>
+<h2 id="database-backup-gives-error-error-2002-hy000-can-t-connect-to-local-mysql-server-through-socket-tmp-mysql-sock-2-">Database Backup gives error &quot;ERROR 2002 (HY000): Can&#39;t connect to local MySQL server through socket &#39;/tmp/mysql.sock&#39; (2)&quot;</h2>
+<p>In some fresh vanilla installations of Redhat or CentOS it is possible that the server will have an unresolvable hostname. During the installation process we detect the hostname for the server to set configuration parameters for how to connect to the database (coincidentally, this is also the logic that builds the TeamServer URL); for example a default CentOS 5.6 installation will set its hostname to <code>centos.localdomain</code>, however a corresponding entry is not added to the <strong><em>/etc/hosts</em></strong> file. If the hostname is unresolvable the system will default to <code>localhost</code> which works for other areas of the system, however the automated backup uses the <strong>mysqldump</strong> tool which associates the <code>localhost</code> hostname with a file socket connection as opposed to a network socket connection. To resolve this error you need to set the database hostname to either a resolvable hostname or the IP address assigned to the server. This can be done using the encrypted properties editor tool that ships with the product.</p>
+<pre><code>$ cd $CONTRAST_HOME 
+$ bin/edit-properties -e data/esapi -f data/conf/database.properties</code></pre>
+<p>Once you are in the properties editor you can type the name of the property that you would like to change - in this case we want to update the value of the <code>jdbc.host</code> to the new hostname or IP address assigned to the server. Once you have updated this value hit <strong>Q</strong> to quit out of the tool, and select <strong>Y</strong> to save, then enter a comment for your change. You can verify the backup functions by running the <strong><em>$CONTRAST_HOME/bin/db-backup.sh</em></strong> script manually (as the <em>contrast_service</em> user, or whatever user you designated during installation).</p>
+<pre><code>$ cd $CONTRAST_HOME
+sudo -u contrast_service /opt/Contrast/bin/backup-db.sh
+Reading Database Configuration
+Ensuring Database Connectivity: Up
+Backing up Schema: contrast to /opt/Contrast/data/backups/db/contrast.20150223.sql</code></pre>
+<h2 id="service-won-t-start-due-to-missing-sudo-su">Service Won&#39;t Start Due to Missing sudo/su</h2>
+<p>It is possible that on some flavors of linux the <code>sudo</code> and/or <code>su</code> commands will not be available; for instance on the default installation of Amazon Linux within AWS the default is to use the <code>runuser</code> command, which is not currently an option during the installation. While we make our best effort to support as many environments as possible with our Enterprise On-Premises offering, we unfortunately can&#39;t predict every possible scenario and test it internally. However, the good news is that this is a simple issue to resolve! You can resolve this issue by either installing sudo or su on your target server, or if that is not an option; you can edit the <strong><em>$CONTRAST_HOME/bin/contrast-server.initd</em></strong> script directly and update it to reflect your environment. </p>
+<h2 id="can-t-find-your-problem-">Can&#39;t Find Your Problem?</h2>
+<p>Didn&#39;t find what you were looking for? Please submit a ticket to <a href="https://support.contrastsecurity.com/anonymous_requests/new">Support</a> with a description of the issue and the steps that caused it to occur plus any logs or screenshots you can and we will address your issue as soon as possible. </p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">How To Update The EOP License File</h1>
+            <a class="anchor" id="license">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How Do I Update My EOP License File?"
+description: "Overview of the two license update options"
+-->
+
+<p>Contrast Enterprise-On-Premise (EOP) customers may occasionally need a new license file. There are two possible approaches for updating this file. The license can be updated by logging into the application using the SuperAdmin account.  Alternatively, the license file can be replaced on the local file system.</p>
+<h2 id="updating-your-license-file-through-the-ui">Updating Your License File Through The UI</h2>
+<ol>
+<li>Obtain a new license from <a href="https://hub.contrastsecurity.com/h/">Hub</a>, your account manager, or the technical support team</li>
+<li><p>Login to TeamServer with the SuperAdmin account:</p>
+<blockquote>
+<p><strong>URL:</strong> <code>http://teamserver:8080/Contrast/static/ng/admin_index.html#/superadmin/signin</code></p>
+<p><strong>Username:</strong> <em>contrast_superadmin@example.com</em> (replace <em>example.com</em> with the email suffix of the user registered on Hub)</p>
+<p><strong>Password:</strong> Provided when the trial license is originally downloaded from Hub (refer to your account team or Support for the password)</p>
+</blockquote>
+</li>
+<li><p>Navigate to <strong>Settings &gt; License Settings</strong></p>
+</li>
+<li><p>Using a text editor such as Notepad or TextEdit, open the new license file to copy the contents of the license</p>
+</li>
+<li><p>Paste the contents into the text box</p>
+</li>
+<li><p>Click <strong>Update</strong>, which will then inform you that TeamServer will be restarted</p>
+<p> <a href="assets/images/KB1-b02.png" rel="lightbox" title="License Update"><img class="thumbnail" src="assets/images/KB1-b02.png"></a></p>
+</li>
+</ol>
+<h2 id="updating-your-license-file-from-the-teamserver-file-system">Updating Your License File From The TeamServer File System</h2>
+<ol>
+<li><p>Obtain a new license from <a href="https://hub.contrastsecurity.com/h/">Hub</a>, your account manager, or the technical support team</p>
+</li>
+<li><p>Rename the new license file <strong><em>contrast.new.lic</em></strong></p>
+</li>
+<li><p>Stop the Contrast TeamServer service (on Windows use the service control panel, on Linux execute <code>sudo service contrast-server stop</code> or other appropriate command for the distribution/configuration)</p>
+</li>
+<li><p>Back up your existing <strong><em>contrast.lic</em></strong> file in the Contrast data directory (<strong><em>CONTRAST_HOME/data</em></strong>)</p>
+</li>
+</ol>
+<p><em>Note</em>: Make sure you make a copy of <strong><em>contrast.lic</em></strong> during the backup. Don&#39;t move it. As the Team Server needs both the old and new license file to upgrade the license.</p>
+<ol>
+<li><p>Place the new license file in the same data directory. On Linux, confirm the new license file has the same owner, group and permissions as other files in that directory (execute <code>ls -l</code> to list the directory contents with permissions and owners). 
+Execute <code>sudo chown contrast_service:contrast_service contrast.new.lic</code> to change the owner and group. Execute <code>sudo chmod 644 contrast.new.lic</code> to change the permissions.</p>
+</li>
+<li><p>Start the Contrast TeamServer application as normal and the new license will automatically take effect (on Windows use the service control panel, on Linux execute <code>sudo service contrast-server start</code> or other appropriate command for the distribution/configuration).</p>
+</li>
+</ol>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Managing Organizations</h1>
+            <a class="anchor" id="org">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Managing Organizations"
+description: "Guidelines for managing TeamServer organizations."
+-->
+
+<h2 id="adding-an-organization">Adding an Organization</h2>
+<ul>
+<li>From <strong><em>/Contrast/superadmin/login.html</em></strong> log in as <strong>super_admin</strong></li>
+<li>Click on the <strong>Organizations</strong> link in the top menu bar</li>
+<li>Click on the <strong>Add new Organization</strong> link </li>
+<li>Fill out all the fields for your User. Do <strong>not</strong> check <em>Require Email Activation for Administrator?</em> unless you have a mail server set up with TeamServer.</li>
+<li>Log out of <strong>super_admin</strong></li>
+<li>From <strong>/Contrast/login.html</strong>, log in as your new User </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring User Accounts</h1>
+            <a class="anchor" id="user">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring User Accounts"
+description: "Startup guide for adding and editing users."
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>The primary job of the organizational Administrator is to manage your other Contrast users.</p>
+<h2 id="adding-a-user">Adding a User</h2>
+<ul>
+<li>From <strong><em>/Contrast/login.html</em></strong> log in as an admin user</li>
+<li>Click on the <strong>Admin</strong> link in the top menu bar</li>
+<li>Click on the <strong>Manage Users</strong> button </li>
+<li>Click on the <strong>Create New User</strong> button</li>
+<li>Fill out all the fields for your User. Make sure you verify the <strong>Role</strong> and <strong>Can apply license to trial applications?</strong> options so that your User will have the privileges to carry out the actions you intend.</li>
+</ul>
+<p><strong>Stop here if mail server is set up or you are on SAAS – check email for activation link, else continue:</strong></p>
+<ul>
+<li>Click on the <strong>Edit</strong> button next to the new User</li>
+<li>Set a password for your User </li>
+<li>Have that User log in and change their password </li>
+</ul>
+<h2 id="editing-a-user">Editing a User</h2>
+<p>Administrators can edit users and their privileges via the Organization Settings menu. From there, select Users. A list of all credentialed users will be provided. Users can be removed, locked or edited.</p>
+<h2 id="groups">Groups</h2>
+<ul>
+<li>A user&#39;s group dictates what privileges they have - it&#39;s like a role:</li>
+<li>The <strong>view</strong> group. This group has download and install Contrast and view all the Traces in the organization.</li>
+<li>The <strong>edit</strong> group. This group has all the rights of the <strong>view</strong> group, but can also edit Traces, create Engine profiles, and more.</li>
+<li>The <strong>rules_admin</strong> group. This group has all the rights of the <strong>edit</strong> group, but can also manage the rules for the organization and specific applications. Unless you have a license that supports rule customization, this is the essentially the same as the <strong>edit</strong> group.</li>
+<li>The <strong>admin</strong> group. This group has all the rights of the <strong>rules_admin</strong> group, but can also manage users, security settings, password policies, and more. </li>
+</ul>
+<h2 id="password-fields">Password fields</h2>
+<p>If you don&#39;t want to update the user&#39;s password, simply leave these fields blank. Otherwise, you can update a user&#39;s password to any value, as long as it complies with the organizational <a href="admin_tsconfigset.html#pw">Password Policy</a>.</p>
+<h2 id="enabled-field">Enabled field</h2>
+<p>You can quickly lock out a user by unchecking their <strong>Enabled</strong> field.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">The Administrator's Dashboard</h1>
+            <a class="anchor" id="admin">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "The Administrator's Dashboard"
+description: "The Administrator's Dashboard can be a little intimidating at first, especially for new Administrators. Understanding the components on this dashboard can aid administrators in understanding scaling and performance issues as well as helping to troubleshoot user problems and get the most out of your Enterprise Deployment."
+-->
+
+<h2 id="system-messages">System Messages</h2>
+<p>As Contrast becomes an integral part of your development lifecycle, it may become necessary to let users know when things like scheduled downtime will occur or let them know that an update has been applied and Java 1.5 users should update their agents to the latest version. System Messages provides this functionality to Administrators. </p>
+<h3 id="setting-a-new-system-message">Setting a new System Message</h3>
+<p>To set a new System Message access the Administrator&#39;s Dashboard and click the <strong>Manage System Messages</strong> button in the top left corner of the dashboard. 
+This will bring up a dialog that will allow you to set a message that will be broadcast to all users (after login, or immediately if they are already logged in) until the message expires or is deleted.</p>
+<p>When a user logs on and a system message has been set, they will immediately be presented with the message and must acknowledge it before they can continue.</p>
+<h3 id="deactivating-system-messages">Deactivating System Messages</h3>
+<p>Occasionally, you may expect something to take hours and instead it takes only a few minutes. In those cases you may with to deactivate an active system message. To do so, access the Manage System Messages dialog and click the &quot;Active Messages&quot; tab. </p>
+<p>To delete a message, click the (  X  ) button next to the message you would like to remove.</p>
+<h2 id="charts-and-metrics">Charts and Metrics</h2>
+<p>The bulk of the Administrator&#39;s Dashboard is made up of various charts and tables that display valuable information about what is going on with the TeamServer application. In the top left, under the Manage System Messages button is a drop-down that will allow you to set the refresh rate of these charts and tables.</p>
+<p><a href="assets/images/KB4-c03_4.png" rel="lightbox" title="Update Frequency Dropdown"><img class="thumbnail" src="assets/images/KB4-c03_4.png"></a></p>
+<h3 id="agent-activity">Agent Activity</h3>
+<p>The Agent Activity chart displays how much traffic is coming in to the TeamServer from Contrast Agents. This includes various types of traffic that an agent may send such as App Updates, Traces, and Coverage information.</p>
+<p><a href="assets/images/KB4-c03_5.png" rel="lightbox" title="Agent Activity"><img class="thumbnail" src="assets/images/KB4-c03_5.png"></a></p>
+<p>Administrators can use this chart to identify peak times, average traffic metrics and make determinations about scaling their TeamServer deployment.</p>
+<h3 id="queue-breakdown">Queue Breakdown</h3>
+<p>The Queue Breakdown chart breaks down all the traffic that Contrast Agents are sending to the TeamServer and provides insight into how effectively the TeamServer is handling that traffic. If queues seem to be growing out of control faster than the TeamServer can handle them it is a good indication that scaling up or out is necessary.</p>
+<p><a href="assets/images/KB4-c03_6.png" rel="lightbox" title="Queue Breakdown Chart"><img class="thumbnail" src="assets/images/KB4-c03_6.png"></a></p>
+<p>This view also gives you the option to clear the queues if you believe a problem has occurred and clearing the queues could resolve this problem (or if instructed to do so by a Contrast Support Agent). While extremely uncommon it is possible that if corrupted data makes it into one of the Contrast queues, it could freeze the queue and stop processing.</p>
+<h3 id="logged-in-users">Logged in Users</h3>
+<p>The logged in users chart displays all users who are currently logged in to either the User&#39;s or Administrative interface. Clicking on details will show you additional information about the session.</p>
+<h3 id="stats">Stats</h3>
+<p>The stats component show various bits of information about the JVM and system that TeamServer is running on.</p>
+<p><a href="assets/images/KB4-c03_8.png" rel="lightbox" title="Server &amp; Memory Statistics Bars"><img class="thumbnail" src="assets/images/KB4-c03_8.png"></a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Credentials: Managing Access Accounts And Passwords</h1>
+            <a class="anchor" id="cred">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "EOP TeamServer credentials: Managing access accounts and passwords."
+description: "EOP TeamServer credentials: Managing access accounts and passwords."
+-->
+
+<h2 id="how-do-credentials-work-in-teamserver-">How do credentials work in TeamServer?</h2>
+<p>There are two important credentials for managing a TeamServer instance:</p>
+<ul>
+<li><a href="https://hub.contrastsecurity.com/">The Hub account</a></li>
+<li><a href="http://MyTeamServer:8080/Contrast/superadmin/login.html">The SuperAdmin account</a></li>
+</ul>
+<p>There is only one Hub account per customer.  When the Hub account is activated, the user will be issued an activation link via email, which takes the user directly to a change password feature (a process required to finish activating the account). It is crucial that the user SAVE THIS PASSWORD, as it is necessary for logging in to Hub to obtain license and product updates.  The user&#39;s Hub password is also encrypted inside the license file, and will be the initial password for the default admin account after installation.</p>
+<p>After installation the following login screen should be displayed: </p>
+<p><a href="http://MyTeamServer:8080/Contrast/login.html">http://MyTeamServer:8080/Contrast/login.html</a></p>
+<p><a href="assets/images/KB4-c01_1.png" rel="lightbox" title="TeamServer Login"><img class="thumbnail" src="assets/images/KB4-c01_1.png"></a></p>
+<p>The hostname ‘MyTeamServer’ shown in the above URL should be either be the IP address or hostname setup during TeamServer installation.</p>
+<p>At this login screen, the default admin will enter his/her Hub account credentials (email address and password) to access the TeamServer as the default admin account provisioned automatically during installation.</p>
+<h3 id="superadmin-access-to-teamserver-">SuperAdmin Access to TeamServer:</h3>
+<p>There is a separate credential for managing the TeamServer installation, called SuperAdmin.</p>
+<ul>
+<li>username: contrast_superadmin@example.com</li>
+<li>password: (contact Support)</li>
+</ul>
+<p>If the Hub user account is john.doe@mycompany.com, the SuperAdmin convention is:
+contrast_superadmin@mycompany.com</p>
+<p>Note: This password is the password automatically provisioned in TeamServer when the license file was downloaded from Hub.</p>
+<h2 id="references-">References:</h2>
+<ul>
+<li>Standard Login URL: <a href="http://MyTeamServer:8080/Contrast/login.html">http://MyTeamServer:8080/Contrast/login.html</a></li>
+<li>SuperAdmin URL: <a href="http://MyTeamServer:8080/Contrast/superadmin/login.html">http://MyTeamServer:8080/Contrast/superadmin/login.html</a> </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Reset The SuperAdmin Password</h1>
+            <a class="anchor" id="super">
+                <div class="actions">
+                    <div class="iconbar">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Reset the superadmin password"
+description: "EOP resetting of the SuperAdmin password"
+-->
+
+<h2 id="use-this-procedure-to-reset-the-superadmin-password-in-the-contrast-teamserver-for-windows-">Use this procedure to reset the superadmin password in the Contrast TeamServer for Windows:</h2>
+<ul>
+<li>Stop the Contrast Server service.</li>
+<li>Launch a command prompt (cmd.exe) as Administrator by right-clicking on <strong><em>cmd.exe</em></strong> and selecting <strong>Run As Administrator</strong>.</li>
+<li>Go to the <strong><em>Contrast\bin directory</em></strong> (on most systems this will be <strong><em>C:\Program Files\Contrast\bin</em></strong>)</li>
+<li>Enter the following command to edit the JVM options:<pre><code>notepad contrast-server.vmoptions</code></pre>
+</li>
+<li>Add the following options to the file (replacing your.email.domain.com with your email domain):<pre><code>-Dreset.superadmin=true
+-Dsuperadmin.username=contrast_superadmin@&lt;your.email.domain.com&gt;
+-Dsuperadmin.password=&lt;password&gt;</code></pre>
+</li>
+<li>Save the file and exit Notepad.</li>
+<li>Enter the following command to start the Contrast service:<pre><code>net start &quot;Contrast Server&quot;</code></pre>
+</li>
+<li>Verify you are able to log in with the new password.</li>
+<li>Enter the following command to stop the Contrast service:<pre><code>net stop &quot;Contrast Server&quot;</code></pre>
+</li>
+<li>Enter the following command to edit the JVM options:<pre><code>notepad contrast-server.vmoptions</code></pre>
+</li>
+<li>Remove the options added in step 5.</li>
+<li>Save the file and exit Notepad.</li>
+<li>Exit the command prompt.</li>
+<li>Start the Contrast Server service as normal, i.e. from the <strong>Services</strong> control panel applet.</li>
+</ul>
+<h2 id="use-this-procedure-to-reset-the-superadmin-password-in-the-contrast-teamserver-for-linux-">Use this procedure to reset the superadmin password in the Contrast TeamServer for Linux:</h2>
+<ul>
+<li>Shut down Contrast Server</li>
+<li>Open a command prompt as ‘root’ (or open a normal terminal/shell and use sudo or su to become root)</li>
+<li>Go to the <strong><em>$CONTRAST_INSTALLATION</em></strong> directory (on most systems this will be <strong><em>/opt/Contrast</em></strong>)</li>
+<li>Type the following command:<pre><code>export INSTALL4J_ADD_VM_PARAMS=&quot;$INSTALL4J_ADD_VM_PARAMS -Dreset.superadmin=true -Dsuperadmin.username=contrast_superadmin@&lt;your.email.domain.com&gt; -Dsuperadmin.password=&lt;new password&gt;”</code></pre>
+</li>
+<li>Start the contrast server by running:<pre><code>bin/contrast-server start</code></pre>
+When the server comes up, you should now be able to use the password you specified in the command line. It is recommended when this is done to stop the server (<code>bin/contrast-server stop</code>) and start it up as you normally would (unless you normally start the server using this method), then exit the shell to clear the password from the <code>INSTALL4J_ADD_VM_PARAMS</code> environment variable. </li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

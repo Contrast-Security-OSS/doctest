@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/User.png" width="75" height="75">
+        <p class="label3">User</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">Agents</p></li>
+                <li>Java Agent</li>
+                    <li><a href="user_javainstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_javaconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_javafaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+                <li>.NET Agent</li>
+                    <li><a href="user_netinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_netconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_netfaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+<!--
+                <li>Node.js Agent</li>
+                    <li><a href="user_nodeinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_nodeconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_nodefaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                <br>
+
+-->
+
+                <br>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Guide</li>
+                    <li><a href="user_tsguideapp.html" class="label10">&#8226; Application</a></li>
+                    <li><a href="user_tsguidecrawl.html" class="label10">&#8226; Crawler</a></li>
+                    <li><a href="user_tsguidelib.html" class="label10">&#8226; Library</a></li>
+                    <li><a href="user_tsguiderep.html" class="label10">&#8226; Report</a></li>
+                    <br>
+
+                <li><a href="user_tsfaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>User</li>
+            <li>Agents</li>
+            <li>Java Agent</li>
+            <li class="label6">Installation</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing On Tomcat</h1>
+            <a class="anchor" id="tomcat">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing on Tomcat"
+description: "Tomcat installation process using Windows or startup script"
+-->
+
+<h2 id="running-contrast-from-startup-bat-or-sh-">Running Contrast from &quot;startup.bat&quot; (or &quot;.sh&quot;)</h2>
+<p>If you run Tomcat from <strong>startup.bat</strong>, we suggest creating a new startup script, <strong>startup-with-contrast.bat</strong>. It should enable the Contrast JVM parameters and call the startup script:</p>
+<pre><code class="language-sh">set JAVA_OPTS=&quot;%JAVA_OPTS% -javaagent:${DOWNLOADS}\contrast.jar&quot;
+call ${TOMCAT_DIR} \bin\startup.bat</code></pre>
+<p>Of course, you&#39;ll have to substitute the path to <strong><em>contrast.jar</em></strong> and your Tomcat server for your environment. This new script will make it easy to start up your server with or without Contrast.</p>
+<h2 id="running-contrast-on-the-tomcat-service-in-windows">Running Contrast on the Tomcat service in Windows</h2>
+<p>If you run Tomcat from <strong>as a service</strong>, changing the JVM options to add the agent requires opening the Tomcat service manager. You can do this by double clicking the Tomcat icon in the System tray (or right clicking and hitting <strong>Configure</strong>.) If the icon is not there, you might have to start it manually by running <strong><em>tomcat7w.exe</em></strong> in the Tomcat bin directory.</p>
+<p><a href="assets/images/KB2-a01_1.png" rel="lightbox" title="System Tray Icon"><img class="thumbnail" src="assets/images/KB2-a01_1.png"></a></p>
+<p>Switching to the Java tab will show you where you need to add the <code>-javaagent</code> flag:</p>
+<p><a href="assets/images/KB2-a01_2.png" rel="lightbox" title="Tomcat Properties"><img class="thumbnail" src="assets/images/KB2-a01_2.png"></a></p>
+<h2 id="see-also">See Also</h2>
+<p>Not using startup scripts or the Windows service? Here&#39;s how to run Contrast from other Tomcat Launchers:</p>
+<ul>
+<li><p><a href="user_javainstall.html#apache">Running Contrast on Tomcat with Maven Apache Tomcat Plugin</a></p>
+</li>
+<li><p><a href="user_javainstall.html#eclipse">Running Contrast on an Eclipse WTP Application</a></p>
+</li>
+<li><p><a href="user_javainstall.html#intellij">Running Contrast on an IntelliJ Application</a></p>
+</li>
+<li><p><a href="user_javainstall.html#netbeans">Running Contrast on a NetBeans Application</a></p>
+</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast On Tomcat With Maven Apache Tomcat Plugin</h1>
+            <a class="anchor" id="apache">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast on Tomcat with Maven Apache Tomcat Plugin"
+description: "Overview of the process for installation of Contrast on an application using the Apache Maven Tomcat plugin"
+-->
+
+<p>This document will outline the process for installing Contrast on an application using the Apache Maven Tomcat plugin.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong>contrast.jar</strong>) from the Contrast site.</p>
+<h2 id="option-1-maven-profile">Option 1: Maven Profile</h2>
+<p>Add a profile to your <strong>pom.xml</strong> that adds the <code>-javaagent</code> flag to the <code>JAVA_OPTS</code> variable.</p>
+<pre><code class="language-sh">&lt;profiles&gt;
+   &lt;profile&gt;
+      &lt;id&gt;run-with-contrast&lt;/id&gt;
+      &lt;activation&gt;
+         &lt;property&gt;
+            &lt;name&gt;contrast.enabled&lt;/name&gt;
+            &lt;value&gt;true&lt;/value&gt;
+         &lt;/property&gt;
+      &lt;/activation&gt;
+      &lt;build&gt;
+         &lt;plugins&gt;
+            &lt;plugin&gt;
+               &lt;groupId&gt;org.apache.tomcat.maven&lt;/groupId&gt;
+               &lt;artifactId&gt;tomcat7-maven-plugin&lt;/artifactId&gt;
+               &lt;version&gt;2.3&lt;/version&gt;
+               &lt;configuration&gt;
+                  &lt;systemProperties&gt;
+                     &lt;JAVA_OPTS&gt;-javaagent:/path/to/contrast.jar&lt;/JAVA_OPTS&gt;
+                  &lt;/systemProperties&gt;
+               &lt;/configuration&gt;
+            &lt;/plugin&gt;
+         &lt;/plugins&gt;
+      &lt;/build&gt;
+   &lt;/profile&gt;
+&lt;/profiles&gt;</code></pre>
+<p>Once the profile has been added you can launch a Contrast-enabled application using the system property <code>contrast.enabled=true</code> or by manually activating the <code>run-with-contrast</code> profile.</p>
+<pre><code class="language-sh">mvn tomcat:run-war -Dcontrast.enabled=true
+mvn tomcat:run-war -Prun-with-contrast</code></pre>
+<h2 id="option-2-maven_opts-">Option 2: <code>MAVEN_OPTS</code></h2>
+<ol>
+<li>If you&#39;re <strong>forking</strong> your JVM, set your <code>MAVEN_OPTS</code> environment variable to contain Contrast&#39;s JVM parameters.
+If you&#39;re <strong>NOT forking</strong> your JVM, set the <code>mvn</code> command to use the following JVM parameters like a normal process would:<pre><code class="language-sh">-javaagent:${DOWNLOADS}/contrast.jar</code></pre>
+</li>
+<li>Run your <code>tomcat:run-war</code> or other Maven goal normally. Note that library analytics won&#39;t be collected if a goal besides <code>run-war</code> is chosen.</li>
+<li>A Contrast startup message should appear in the <strong>Console</strong> (allow 1-2 minutes extra time for server startup)</li>
+<li>Navigate to your application, and allow an extra minute for it to start up</li>
+</ol>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing On GlassFish</h1>
+            <a class="anchor" id="glass">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing on GlassFish"
+description: "Agent installation using the GlassFish container"
+-->
+
+<h2 id="configuring-glassfish">Configuring GlassFish</h2>
+<p>If you launch GlassFish yourself, you&#39;ll have to add Contrast&#39;s JVM parameter to the <strong><em>domain.xml</em></strong> file in your domain directory, i.e. <strong><em>${GLASSFISH_DIR}\domains\domain1</em></strong>.</p>
+<pre><code>&lt;!-- Within the your profile&#39;s &quot;java-config&quot; element, add the following lines: --&gt;
+&lt;jvm-options&gt;-javaagent:${DOWNLOADS}\contrast.jar&lt;/jvm-options&gt;</code></pre>
+<p>Of course, you will need to substitute the path to <strong><em>contrast.jar</em></strong> and the GlassFish server for your environment.</p>
+<h2 id="see-also">See Also</h2>
+<p>Running Contrast from Other GlassFish Launchers:</p>
+<ul>
+<li><p><a href="user_javainstall.html#glassnetbeans">Running Contrast on GlassFish with NetBeans</a></p>
+</li>
+<li><p><a href="user_javainstall.html#glassintellij">Running Contrast on GlassFish with IntelliJ</a></p>
+</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast On GlassFish With IntelliJ</h1>
+            <a class="anchor" id="glassintellij">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast on GlassFish with IntelliJ"
+description: "Agent configuration using the GlassFish IntelliJ IDE"
+-->
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This document will outline the process for installing Contrast on an application using the IntelliJ IDE, running GlassFish. Prerequisites
+Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the Contrast site.</p>
+<h3 id="instructions">Instructions</h3>
+<ul>
+<li>On the menu bar, click the <strong>Start/Run</strong> icon next to the GlassFish service</li>
+<li>Wait for the server to finish launching</li>
+</ul>
+<p><a href="assets/images/KB2-c03_1.png" rel="lightbox" title="Launch Server"><img class="thumbnail" src="assets/images/KB2-c03_1.png"></a></p>
+<ul>
+<li>Navigate to the GlassFish Server Administration Console (usually <a href="http://localhost:4848/">http://localhost:4848/</a>)</li>
+<li>After the console has finished loading, Select <strong><em>Configurations &gt; server-config</em></strong></li>
+<li>Select <strong>JVM Settings</strong></li>
+</ul>
+<p><a href="assets/images/KB2-c03_2.png" rel="lightbox" title="Server Administration Console: Configurations"><img class="thumbnail" src="assets/images/KB2-c03_2.png"></a></p>
+<p><a href="assets/images/KB2-c03_3.png" rel="lightbox" title="JVM Settings"><img class="thumbnail" src="assets/images/KB2-c03_3.png"></a></p>
+<ul>
+<li>Select the tab for <strong>Profiler</strong></li>
+<li>Add the Name <strong>Contrast</strong></li>
+<li>Add the following JVM Options:</li>
+</ul>
+<pre><code>
+-javaagent:${DOWNLOADS}/contrast.jar</code></pre>
+<ul>
+<li>Select <strong>Save</strong></li>
+</ul>
+<p><a href="assets/images/KB2-c03_4.png" rel="lightbox" title="Profiler Tab"><img class="thumbnail" src="assets/images/KB2-c03_4.png"></a></p>
+<p><a href="assets/images/KB2-c03_5.png" rel="lightbox" title="Profiler Name"><img class="thumbnail" src="assets/images/KB2-c03_5.png"></a></p>
+<p><a href="assets/images/KB2-c03_6.png" rel="lightbox" title="Save JVM Options"><img class="thumbnail" src="assets/images/KB2-c03_6.png"></a></p>
+<ul>
+<li>Click on the <strong>Start/Run</strong> icon next to the GlassFish service trom the top menu bar and select <strong>Restart Server</strong></li>
+<li>A Contrast startup message should appear in the GlassFish server log Console (allow 1-2 minutes extra time for server startup).</li>
+</ul>
+<p><a href="assets/images/KB2-c03_7.png" rel="lightbox" title="Restart Server"><img class="thumbnail" src="assets/images/KB2-c03_7.png"></a></p>
+<p><a href="assets/images/KB2-c03_8.png" rel="lightbox" title="Startup Message"><img class="thumbnail" src="assets/images/KB2-c03_8.png"></a></p>
+<ul>
+<li>After GlassFish has finished the startup process, IntelliJ will open a new web browser.</li>
+<li>Navigate to your application, and allow an extra minute for it to start up.</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast On GlassFish With NetBeans</h1>
+            <a class="anchor" id="glassnetbeans">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast on GlassFish with NetBeans"
+description: "Agent configuration using the GlassFish NetBeans IDE"
+-->
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the Contrast site.</p>
+<h3 id="instructions">Instructions</h3>
+<ul>
+<li>Select the <strong>Services</strong> Tab</li>
+<li>Under <strong>Servers</strong> right click on the GlassFish Server and select <strong>Start</strong></li>
+<li>Wait for the server to finish launching</li>
+</ul>
+<p><a href="assets/images/KB2-c02_1.png" rel="lightbox" title="Services Tab"><img class="thumbnail" src="assets/images/KB2-c02_1.png"></a></p>
+<p><a href="assets/images/KB2-c02_2.png" rel="lightbox" title="Start GlassFish Server"><img class="thumbnail" src="assets/images/KB2-c02_2.png"></a></p>
+<p><a href="assets/images/KB2-c02_3.png" rel="lightbox" title="Server Launched"><img class="thumbnail" src="assets/images/KB2-c02_3.png"></a></p>
+<ul>
+<li>Navigate to the GlassFish Server Administration Console (usually <a href="http://localhost:4848/">http://localhost:4848/</a>)</li>
+<li>After the console has finished loading, Select <strong><em>Configurations &gt; server-config</em></strong></li>
+<li>Select <strong>JVM Settings</strong></li>
+</ul>
+<p><a href="assets/images/KB2-c02_4.png" rel="lightbox" title="GlassFish Server Admin Console"><img class="thumbnail" src="assets/images/KB2-c02_4.png"></a></p>
+<p><a href="assets/images/KB2-c02_5.png" rel="lightbox" title="Configurations"><img class="thumbnail" src="assets/images/KB2-c02_5.png"></a></p>
+<p><a href="assets/images/KB2-c02_6.png" rel="lightbox" title="JVM Settings"><img class="thumbnail" src="assets/images/KB2-c02_6.png"></a></p>
+<ul>
+<li>Select the tab for <strong>JVM Options</strong></li>
+<li>Add the following JVM options:</li>
+</ul>
+<pre><code>
+-javaagent:${DOWNLOADS}/contrast.jar</code></pre>
+<ul>
+<li>Select <strong>Save</strong></li>
+</ul>
+<p><a href="assets/images/KB2-c02_7.png" rel="lightbox" title="JVM Options Tab"><img class="thumbnail" src="assets/images/KB2-c02_7.png"></a></p>
+<p><a href="assets/images/KB2-c02_8.png" rel="lightbox" title="Add JM Options"><img class="thumbnail" src="assets/images/KB2-c02_8.png"></a></p>
+<ul>
+<li>In NetBeans, right click on the GlassFish Server and select <strong>Stop</strong></li>
+<li>After the server has finished shutting down, right click on the project and select <strong>Run</strong></li>
+<li>A Contrast startup message should appear in the GlassFish server log Console (allow 1-2 minutes extra time for server startup).</li>
+</ul>
+<p><a href="assets/images/KB2-c02_9.png" rel="lightbox" title="Stop GlassFish Server"><img class="thumbnail" src="assets/images/KB2-c02_9.png"></a></p>
+<p><a href="assets/images/KB2-c02_10.png" rel="lightbox" title="Run Project"><img class="thumbnail" src="assets/images/KB2-c02_10.png"></a></p>
+<p><a href="assets/images/KB2-c02_11.png" rel="lightbox" title="Startup Message"><img class="thumbnail" src="assets/images/KB2-c02_11.png"></a></p>
+<ul>
+<li>After GlassFish has finished the startup process, NetBeans will switch to the HTTP Server Monitor mode and open a new web browser.</li>
+<li>Navigate to your application, and allow an extra minute for it to start up.</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing On Jetty</h1>
+            <a class="anchor" id="jetty">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing on Jetty"
+description: "Agent installation using the Jetty container"
+-->
+
+<h2 id="running-contrast-from-the-command-line-or-script-">Running Contrast from the command line or script:</h2>
+<p>Installing on Jetty is easy. Add the following lines to your <strong><em>${JETTY_DIR}\start.ini</em></strong> file:</p>
+<pre><code>-javaagent:${DOWNLOADS}/contrast.jar</code></pre>
+<p>Of course, you&#39;ll have to substitute the path to contrast.jar and server for your environment.</p>
+<h2 id="see-also">See Also</h2>
+<p>Not using <strong><em>jetty.ini</em></strong>? Running Contrast from Other Jetty Launchers:</p>
+<ul>
+<li><p><a href="user_javainstall.html#jettyrun">Running Contrast on Jetty with Maven Jetty Plugin</a></p>
+</li>
+<li><p><a href="user_javainstall.html#eclipse">Running Contrast on an Eclipse WTP Application</a></p>
+</li>
+<li><p><a href="user_javainstall.html#intellij">Running Contrast on an IntelliJ Application</a></p>
+</li>
+<li><p><a href="user_javainstall.html#glassintellij">Running Contrast on GlassFish with IntelliJ</a></p>
+</li>
+<li><p><a href="user_javainstall.html#netbeans">Running Contrast on GlassFish with NetBeans</a></p>
+</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running On Jetty</h1>
+            <a class="anchor" id="jettyrun">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running on Jetty"
+description: "Agent on-boarding for Jetty container"
+-->
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the TeamServer.</p>
+<h2 id="instructions">Instructions</h2>
+<ul>
+<li>Set your <code>MAVEN_OPTS</code> environment variable to contain Contrast&#39;s JVM parameters:</li>
+</ul>
+<pre><code>-javaagent:${DOWNLOADS}/contrast.jar</code></pre>
+<ul>
+<li>Run your jetty:run or other Maven target normally.</li>
+<li>A Contrast startup message should appear in the Console (allow 1-2 minutes extra time for server startup).</li>
+<li>Navigate to your application, and allow an extra minute for it to start up.</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing Contrast On JBoss 5 And Higher Versions</h1>
+            <a class="anchor" id="jboss">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing Contrast on JBoss 5 and Higher Versions"
+description: "JBoss5 and higher agent installation process using Windows or startup script"
+-->
+
+<h2 id="running-jboss-from-run-bat-or-standalone-bat-or-sh-">Running JBoss from run.bat or standalone.bat (or .sh)</h2>
+<p>Installing on JBoss is easy. If you run JBoss from <strong><em>domain.bat</em></strong>, <strong><em>standalone.bat</em></strong>, or <strong><em>run.bat</em></strong> with a <strong><em>.conf</em></strong> file, we suggest modifying the configuration file. It should enable the Contrast JVM parameters and then return to the start up script. To do this, simply append the following line to the end of your <strong><em>.conf</em></strong> file: </p>
+<pre><code>set JAVA_OPTS=-javaagent:{path-to-jboss-direcotry}\contrast.jar %JAVA_OPTS%</code></pre>
+<p>Of course, you&#39;ll have to substitute the path to <strong><em>contrast.jar</em></strong> and your JBoss server directory for your environment. </p>
+<h2 id="running-jboss-6-eap-jboss-7-x-in-domain-mode">Running JBoss 6 EAP/JBoss 7.X in Domain Mode</h2>
+<p>If you&#39;re running in domain mode (using <strong><em>domain.bat</em></strong> or <strong><em>domain.sh</em></strong>), you&#39;ll have to add the <code>-javaagent</code> switch to the JVM options in <strong><em>$JBOSS_HOME/domain/configuration/domain.xml</em></strong>. Here&#39;s an example file snippet:</p>
+<pre><code>
+&lt;server-group ...&gt;
+  &lt;jvm name=&quot;default&quot;&gt;
+    &lt;jvm-options&gt;
+      &lt;option value=&quot;-javaagent:/path/to/contrast.jar&quot;/&gt;
+    &lt;/jvm-options&gt;
+  &lt;/jvm&gt;
+...
+&lt;/server-group&gt;</code></pre>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><p><a href="user_javainstall.html#eclipse">Running Contrast on an Eclipse WTP application</a></p>
+</li>
+<li><p><a href="user_javainstall.html#intellij">Running Contrast on an IntelliJ application</a></p>
+</li>
+<li><p><a href="user_javainstall.html#glassintellij">Running Contrast on GlassFish with IntelliJ</a></p>
+</li>
+<li><p><a href="user_javainstall.html#glassnetbeans">Running Contrast on GlassFish with NetBeans</a></p>
+</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing Contrast on WebSphere</h1>
+            <a class="anchor" id="web">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing Contrast on WebSphere"
+description: "JBoss5 and higher agent installation process using Windows or startup script"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>If you launch WebSphere yourself, you&#39;ll have to add Contrast&#39;s JVM parameter to the <strong><em>server.xml</em></strong> file in your cell directory, i.e. </p>
+<pre><code>${WEBSPHERE_DIR}\AppServer\profiles\AppSrv01\config\cells\&lt;CellName&gt;\nodes\&lt;NodeName&gt;\servers\server1\server.xml
+
+&lt;jvmEntries genericJvmArguments=&quot;-javaagent:${DOWNLOADS}/contrast.jar -Xshareclasses:none -Xmx512m&quot;&gt;
+   ...
+&lt;/jvmEntries&gt;</code></pre>
+<p>Of course, you&#39;ll have to substitute the path to <strong><em>contrast.jar</em></strong> and your WebSphere server for your environment.</p>
+<h2 id="installing-contrast-through-the-websphere-administration-console">Installing Contrast through the WebSphere Administration Console</h2>
+<p>You can also install Contrast through the WebSphere administration console. These instructions are for WebSphere 8.0/8.5 - instructions for other versions are included in the link below.</p>
+<p>The following steps are from the <a href="http://www-01.ibm.com/support/docview.wss?uid=swg21417365">Websphere support site</a> (includes documentation for other versions):</p>
+<h3 id="application-server">Application Server</h3>
+<ul>
+<li>In the Administration Console select <strong>Servers</strong></li>
+<li>Expand <strong>Server Type</strong> and select <strong>WebSphere application servers</strong></li>
+<li>Click on the name of your server</li>
+<li>Expand <strong>Java and Process Management</strong> and select <strong>Process Definition</strong>.</li>
+<li>Under the <strong>Additional Properties</strong> section, click <strong>Java Virtual Machine</strong>.</li>
+<li>Scroll down and locate the textbox for Generic JVM arguments.</li>
+</ul>
+<h3 id="node-agent">Node Agent</h3>
+<ul>
+<li>In the <strong>Administration Console</strong>, select <strong>System Administration</strong></li>
+<li>Select <strong>Node agents</strong></li>
+<li>Choose which <em>nodeagent</em> to edit</li>
+<li>In the <strong>Server Infrastructure</strong> section, expand <strong>Java and Process Management</strong> and select <strong>Process Definition</strong>.</li>
+<li>Under the <strong>Additional Properties</strong> section, click <strong>Java Virtual Machine</strong>.</li>
+<li>Scroll down and locate the textbox for Generic JVM arguments.</li>
+</ul>
+<h3 id="deployment-manager">Deployment Manager</h3>
+<ul>
+<li>In the <strong>Administration Console</strong>, select <strong>System Administration</strong></li>
+<li>Select <strong>Deployment manager</strong></li>
+<li>In the <strong>Server Infrastructure</strong> section, expand <strong>Java and Process Management</strong> and select <strong>Process Definition</strong>.</li>
+<li>Under the <strong>Additional Properties</strong> section, click <strong>Java Virtual Machine</strong>.</li>
+<li>Scroll down and locate the textbox for Generic JVM arguments.</li>
+<li>Add this text to the Generic JVM arguments, as noted in the screenshot below: </li>
+</ul>
+<pre><code>-javaagent:${DOWNLOADS}/contrast.jar -Xshareclasses:none</code></pre>
+<p><a href="assets/images/KB2-e01.png" rel="lightbox" title="Generic JVM Arguments"><img class="thumbnail" src="assets/images/KB2-e01.png"></a></p>
+<p>Note that IBM J9 does not allow the Java Instrumentation API to alter core Java classes when using the <a href="http://www.ibm.com/developerworks/library/j-ibmjava4/index.html">Shared Classes</a> feature, so this must be disabled by specifying <code>-Xshareclasses:none</code> in your JVM parameters, as shown above.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing On WebLogic</h1>
+            <a class="anchor" id="logic">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing on WebLogic"
+description: "Guideliness for configuring agents on WebLogic"
+-->
+
+<h2 id="getting-started-on-unix">Getting Started on Unix</h2>
+<p>If you launch WebLogic yourself, you&#39;ll have to add Contrast&#39;s JVM parameter to the <strong><em>startWebLogic</em></strong> file in your installation&#39;s bin directory.
+For UNIX-based operating systems, the path to this file looks like this:</p>
+<pre><code>/path/to/appserver/userprojects/domains/base_domain/bin/startWebLogic.sh</code></pre>
+<p>In this file, before the Java execution step, add the Contrast engine as a <code>-javaagent</code> to the <code>JAVA_OPTIONS</code> environment variable:</p>
+<pre><code>export JAVA_OPTIONS=&quot;$JAVA_OPTIONS -javaagent:/path/to/contrast.jar&quot;</code></pre>
+<hr>
+<h2 id="getting-started-on-windows">Getting Started on Windows</h2>
+<p>For Windows systems, the path looks like this:</p>
+<pre><code>C:\Oracle\Middleware\userprojects\domains\base_domain\bin\startWebLogic.bat</code></pre>
+<p>At the beginning of the file, add the Contrast engine as a <code>-javaagent</code> to the <code>JAVA_OPTIONS</code> environment variable:</p>
+<pre><code>set JAVA_OPTIONS=&quot;%JAVA_OPTIONS%&quot; -javaagent:&quot;C:\path\to\contrast.jar&quot;</code></pre>
+<p>Of course, you&#39;ll have to substitute the path to <strong><em>contrast.jar</em></strong> and your WebLogic server for your environment.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing Contrast on Google App Engine</h1>
+            <a class="anchor" id="google">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing Contrast on Google App Engine"
+description: "Guidelines for configuring an agent with the Google App Engine"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>To install the Contrast agent in your Google App Engine environment, please follow the following instructions.</p>
+<p>Note that Contrast only works in your locally deployed (dev/test) instance of App Engine. The Google App Engine cloud doesn&#39;t support the Java instrumentation libraries required by Contrast, but the locally deployed instance of App Engine does.</p>
+<p>Assuming you are using Maven to deploy your application as described <a href="https://developers.google.com/appengine/docs/java/gettingstarted/creating">here</a>, you need to edit your <strong><em>pom.xml</em></strong> file under <code>&lt;build&gt;/&lt;plugins&gt;/&lt;plugin&gt;</code> with a <code>groupid</code> of: <code>&lt;groupId&gt;com.google.appengine&lt;/groupId&gt;</code> and <code>artifactid</code> of: <code>&lt;artifactId&gt;appengine-maven-plugin&lt;/artifactId&gt;</code></p>
+<p>Add the following block: </p>
+<pre><code>&lt;configuration&gt;
+  &lt;jvmFlags&gt;
+    &lt;jvmFlag&gt;-javaagent:/path_to_contrast/contrast.jar&lt;/jvmFlag&gt;
+    &lt;jvmFlag&gt;-Dcontrast.rootapp=NAMEOFYOURAPP&lt;/jvmFlag&gt;
+  &lt;/jvmFlags&gt;
+&lt;/configuration&gt;</code></pre>
+<p>to end up with something like: </p>
+<pre><code>&lt;plugin&gt;
+  &lt;groupId&gt;com.google.appengine&lt;/groupId&gt;
+  &lt;artifactId&gt;appengine-maven-plugin&lt;/artifactId&gt;
+  &lt;version&gt;1.9.0&lt;/version&gt;
+  &lt;configuration&gt;
+    &lt;jvmFlags&gt;
+      &lt;jvmFlag&gt;-javaagent:/path_to_contrast/contrast.jar&lt;/jvmFlag&gt;
+      &lt;jvmFlag&gt;-Dcontrast.rootapp=NAMEOFYOURAPP&lt;/jvmFlag&gt;
+    &lt;/jvmFlags&gt;
+  &lt;/configuration&gt;
+&lt;/plugin&gt;</code></pre>
+<p>NOTE: If you don&#39;t provide the <code>-Dcontrast.rootapp jvmFlag</code>, Contrast will simply refer to your application by the name <code>ROOT</code>.</p>
+<p>Once this is done, you can simply run: </p>
+<pre><code>mvn clean install
+mvn appengine:devserver</code></pre>
+<p>Now your application will launch with the Contrast agent monitoring the application.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast On An Eclipse WTP Application</h1>
+            <a class="anchor" id="eclipse">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast on an Eclipse WTP Application"
+description: "Overview of the process for installation of Contrast on an application using Eclipse WTP"
+-->
+
+<p>This document will outline the process for installing Contrast on an application using the Eclipse IDE, running any application server from the Web Tools Platform (WTP) plugin.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the Contrast site.</p>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>Double click on the server the application runs on in the <strong>Servers</strong> tab</li>
+<li>Hit the <strong>Open launch configuration</strong> link</li>
+</ol>
+<p><a href="assets/images/KB2-f02_1.gif" rel="lightbox" title="Servers Tab"><img class="thumbnail" src="assets/images/KB2-f02_1.gif"></a></p>
+<p><a href="assets/images/KB2-f02_2.gif" rel="lightbox" title="Open Launch Configuration"><img class="thumbnail" src="assets/images/KB2-f02_2.gif"></a></p>
+<ol>
+<li>Select the <strong>Arguments</strong> tab</li>
+<li>Enter the <code>-javaagent:/your/path/to/contrast.jar</code> in <strong>VM Options</strong></li>
+</ol>
+<p><a href="assets/images/KB2-f02_3.png" rel="lightbox" title="VM Options"><img class="thumbnail" src="assets/images/KB2-f02_3.png"></a></p>
+<ol>
+<li>Hit <strong>Apply</strong> and then <strong>Ok</strong></li>
+<li>Start the <strong>Server</strong></li>
+</ol>
+<p><a href="assets/images/KB2-f02_4.gif" rel="lightbox" title="Start The Server"><img class="thumbnail" src="assets/images/KB2-f02_4.gif"></a></p>
+<ol>
+<li>A Contrast startup message should appear in the <strong>Server</strong> console (allow 1-2 minutes extra time for server startup)</li>
+</ol>
+<p><a href="assets/images/KB2-f02_5.gif" rel="lightbox" title="Startup Message"><img class="thumbnail" src="assets/images/KB2-f02_5.gif"></a></p>
+<ol>
+<li>Navigate to your application, and allow an extra minute for it to start up</li>
+</ol>
+<p>As an alternative to modifying your existing Run Configuration, you could create a new server, i.e. <strong>Apache Tomcat 6.x with Contrast</strong>, and add the Contrast JVM parameters to it as shown above.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing On Grails</h1>
+            <a class="anchor" id="grails">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing on Grails"
+description: "Agent installation using Grails"
+-->
+
+<h2 id="running-contrast-from-the-command-line-or-script-">Running Contrast from the command line or script:</h2>
+<p>To add a JVM option like Contrast requires, you should set a <code>GRAILS_OPTS</code> environment variable, like this:</p>
+<pre><code>export GRAILS_OPTS=&quot;$GRAILS_OPTS -javaagent:${DOWNLOADS}/contrast.jar&quot;
+
+grailsw run-app</code></pre>
+<p>Of course, you&#39;ll have to substitute the path to contrast.jar. This is trivial to do, but if you don&#39;t already use <code>GRAILS_OPTS</code> to set your JVM options, this will clobber the default JVM options! This could cause <code>OutOfMemoryErrors</code> and other issues.</p>
+<p>The default JVM options are as follows:</p>
+<pre><code>-server -Xmx768M -Xms64M -XX:PermSize=32m -XX:MaxPermSize=256m -Dfile.encoding=UTF-8</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing On ColdFusion</h1>
+            <a class="anchor" id="cold">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing on ColdFusion"
+description: "ColdFusion installation process"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>To monitor ColdFusion applications that run on a Tomcat server, like in the default ColdFusion 10 configuration, follow the normal instructions for installing Contrast onto Tomcat.</p>
+<p><a href="user_javainstall.html#tomcat">Installing Contrast on Tomcat</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing Via The ColdFusion Administrator</h1>
+            <a class="anchor" id="coldadmin">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing via the ColdFusion Administrator"
+description: "ColdFusion installation process via the ColdFusion Adminstrator"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>The easiest way to install Contrast is in the ColdFusion Administrator. These instructions work in any environment supporting ColdFusion, including IIS.</p>
+<ul>
+<li>Expand Server Settings and hit <strong>Java and JVM</strong></li>
+<li>Under <strong>JVM Arguments</strong>, enter <code>-javaagent:/path/to/contrast.jar</code>. This path to the <strong><em>contrast.jar</em></strong> can be an absolute or relative path. We recommend absolute as its easier to get correct. Note: the <code>-Dcontrast.timeout</code> property in this example is not necessary, but can be used in networks with poor connectivity. </li>
+</ul>
+<p><a href="assets/images/KB2-i03.jpg" rel="lightbox" title="JVM Arguments"><img class="thumbnail" src="assets/images/KB2-i03.jpg"></a></p>
+<ul>
+<li>Once configured to use the Contrast agent, you need to restart your ColdFusion server. Restarting the server that ColdFusion is running in, like IIS or Tomcat may not result in ColdFusion itself restarting. To do this, we recommend you stop the ColdFusion server using: <strong><em>$CF_HOME\bin\cfstop.bat</em></strong> (or its equivalent if not in Windows), and then starting the ColdFusion server again using: <strong><em>$CF_HOME\bin\cfstart.bat</em></strong>.</li>
+<li>To confirm that the Contrast agent is working properly, when you run <strong><em>cfstart.bat</em></strong>, you should see entries like these in your console: <pre><code>C:\ColdFusion9\bin&gt;cfstart.bat
+[ContrastEngine] Thu Apr 10 21:03:39 EDT 2014 Starting Contrast (build 2.7.0-20140405-0133) Pat. 8,458,789 B2
+...
+[ContrastEngine] Thu Apr 10 21:03:42 EDT 2014 Initializing Contrast. This could take a few minutes...
+[ContrastEngine] Thu Apr 10 21:03:56 EDT 2014 Starting JVM...
+Starting Macromedia JRun 4.0 (Build 108858), coldfusion server</code></pre>
+</li>
+<li>If you do not see &quot;Starting Contrast ...&quot; when you first run <strong><em>cfstart.bat</em></strong> then you likely have a configuration error in your <code>javaagent</code> setup for Contrast.</li>
+<li>If for some reason you want to disable Contrast, but the Administrator interface won&#39;t start, you can remove the flag directly inside <strong><em>$CF_HOME/bin/jvm.config</em></strong> (CF 9) or <strong><em>$CF_HOME/runtime/bin/config</em></strong> (CF 10) and search for <code>javaagent</code>.</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing ColdFusion On JRun</h1>
+            <a class="anchor" id="jrun">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing ColdFusion on JRun"
+description: "ColdFusion installation process on JRun"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>You can put the <code>-javaagent</code> JVM option into the <code>java.args</code> property in <strong><em>${JRUN}/bin/jvm.config</em></strong>.</p>
+<pre><code>#
+# VM configuration
+#
+...
+java.args=-javaagent:/path/to/contrast.jar -Xmx512m -Dsun.io.useCanonCaches=false -XX:MaxPermSize=192m ...</code></pre>
+<p>Make sure to leave all the other JVM options in place! Once the server is restarted, Contrast will begin sending analytics for all the active applications.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Installing Contrast On DropWizard</h1>
+            <a class="anchor" id="wizard">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing Contrast on DropWizard"
+description: "DropWizard installation of the Contrast Java Agent"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>Here&#39;s an example of how to run the Java Agent with your standalone/fatjar Dropwizard application:</p>
+<pre><code>
+java -javaagent:/path/to/contrast.jar -Dcontrast.appname=&quot;AppNameToReportUnder&quot; -jar /path/to/your/app.jar server /path/to/your/appconfig.yml</code></pre>
+<p>The Java Agent will not be able to accurately count library usage if your project was configured to shade dependencies into your application&#39;s jar. Instead, the Java Agent will report a list of jars based on the information gathered from the pom.properties files provided with the included libraries.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast On An IntelliJ Application</h1>
+            <a class="anchor" id="intellij">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast on an IntelliJ Application"
+description: "Overview of the process for installation of Contrast on an application using IntelliJ"
+-->
+
+<p>This document will outline the process for installing Contrast on an application using IntelliJ IDE&#39;s supported application servers.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the Contrast site.</p>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>Click on <strong>Run</strong> in the application toolbar then click on the <strong>Edit Configuration</strong> menu item from the dropdown</li>
+<li>Select the IntelliJ Server configuration instance</li>
+<li>Select the <strong>Server</strong> tab and enter the Contrast launcher string in <strong>VM Options</strong><pre><code class="language-sh">-javaagent:${DOWNLOADS}/contrast.jar -noverify</code></pre>
+</li>
+</ol>
+<p><a href="assets/images/KB2-f04_1.png" rel="lightbox" title="Edit Configuration"><img class="thumbnail" src="assets/images/KB2-f04_1.png"></a></p>
+<p><a href="assets/images/KB2-f04_2.png" rel="lightbox" title="VM Options"><img class="thumbnail" src="assets/images/KB2-f04_2.png"></a></p>
+<ol>
+<li>Hit <strong>Apply</strong> and then <strong>Ok</strong></li>
+<li>Start the <strong>Server</strong></li>
+<li>A Contrast startup message should appear in the <strong>Server</strong> console (allow 1-2 minutes extra time for server startup)</li>
+</ol>
+<p><a href="assets/images/KB2-f04_3.png" rel="lightbox" title="Startup Message"><img class="thumbnail" src="assets/images/KB2-f04_3.png"></a></p>
+<ol>
+<li>Navigate to your application, and allow an extra minute for it to start up</li>
+</ol>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_javainstall.html#glassintellij">Running Contrast on GlassFish with IntelliJ</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast On A NetBeans Application</h1>
+            <a class="anchor" id="netbeans">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast on a NetBeans Application"
+description: "Overview of the process for installation of Contrast on an application using the NetBeans IDE with JBoss"
+-->
+
+<p>This document will outline the process for installing Contrast on an application using the NetBeans IDE with JBoss.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the Contrast site.</p>
+<h2 id="instructions">Instructions</h2>
+<ol>
+<li>Open the NetBeans project</li>
+<li>Select <strong>Tools &gt; Servers</strong></li>
+<li>Select the server you wish to add Contrast to (in this example, <strong>JBoss</strong>), and click on the <strong>Platform</strong> tab</li>
+</ol>
+<p><a href="assets/images/KB2-f03_1.png" rel="lightbox" title="Platform Tab"><img class="thumbnail" src="assets/images/KB2-f03_1.png"></a></p>
+<ol>
+<li>Add Contrast&#39;s JVM options to the <strong>VM Options</strong> field<pre><code class="language-sh">-javaagent:${DOWNLOADS}/contrast.jar</code></pre>
+</li>
+</ol>
+<p><a href="assets/images/KB2-f03_2.png" rel="lightbox" title="VM Options"><img class="thumbnail" src="assets/images/KB2-f03_2.png"></a></p>
+<ol>
+<li>Select <strong>Run &gt; Run Main Project</strong> or right-click on the project and select <strong>Run</strong></li>
+</ol>
+<p><a href="assets/images/KB2-f03_3.png" rel="lightbox" title="Run Project"><img class="thumbnail" src="assets/images/KB2-f03_3.png"></a></p>
+<ol>
+<li>A Contrast startup message should appear in the <strong>Server</strong> console (allow 1-2 minutes extra time for server startup)</li>
+</ol>
+<p><a href="assets/images/KB2-f03_4.png" rel="lightbox" title="Startup Message"><img class="thumbnail" src="assets/images/KB2-f03_4.png"></a></p>
+<ol>
+<li>Navigate to your application, and allow an extra minute for it to start up</li>
+</ol>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_javainstall.html#glassnetbeans">Running Contrast on GlassFish with NetBeans</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Running Contrast With The Cohehaus Maven Cargo Plugin</h1>
+            <a class="anchor" id="cargo">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Running Contrast with the Cohehaus Maven Cargo Plugin"
+description: "This document will outline the process for installing Contrast on an application using the Cargo plugin by Codehaus."
+-->
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Download the Contrast plugin (<strong><em>contrast.jar</em></strong>) from the Contrast site.</p>
+<h2 id="instructions">Instructions</h2>
+<ul>
+<li>Add a <code>&lt;cargo.jvmargs&gt;</code> property to the <code>&lt;properties&gt;</code> section of <code>&lt;configuration&gt;</code> in your <strong><em>pom.xml</em></strong>, like this:</li>
+</ul>
+<pre><code>&lt;build&gt;
+  &lt;plugins&gt;
+    &lt;plugin&gt;
+      &lt;groupId&gt;org.codehaus.cargo.maven2&lt;/groupId&gt;
+      &lt;artifactId&gt;cargo-maven2-plugin&lt;/artifactId&gt;
+      &lt;configuration&gt;
+        &lt;container&gt;
+          &lt;containerId&gt;tomcat5x&lt;/containerId&gt;
+          [...]
+        &lt;/container&gt;
+        &lt;configuration&gt;
+          &lt;properties&gt;
+            &lt;cargo.jvmargs&gt;-javaagent:${DOWNLOADS}/contrast.jar -noverify&lt;/cargo.jvmargs&gt;
+          &lt;/properties&gt;
+        &lt;/configuration&gt;
+        [...]
+      &lt;/configuration&gt;
+    &lt;/plugin&gt;
+  &lt;/plugins&gt;
+&lt;/build&gt;</code></pre>
+<ul>
+<li>Run your Maven target or Cargo unit test normally.</li>
+<li>A Constart startup message should appear in the Console before your server messages appear (allow 1-2 minutes extra time for server startup).</li>
+<li>Navigate to your application, and allow an extra minute for it to start up.</li>
+</ul>
+<p>For more information on adding JVM arguments to Cargo container, consult the <a href="https://codehaus-cargo.github.io/cargo/Configuration+properties.html">Cargo documentation</a>.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Getting Started With Vert.x</h1>
+            <a class="anchor" id="vertx">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+	
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Getting Started with Vert.x"
+description: "Configuring Vert.x"
+-->
+
+<h2 id="getting-start-with-vert-x">Getting Start with Vert.x</h2>
+<p>Support of the Vert.x framework within the Java Agent is based on the Contrast Netty implementation, specifically the ability to follow key data events through Vert.x&#39;s messaging system.</p>
+<h3 id="configuring-vert-x-web-applications-with-the-java-agent">Configuring Vert.x Web Applications with the Java Agent</h3>
+<h4 id="recommended-approach-">Recommended Approach:</h4>
+<p>The simplest approach for configuring the Contrast Java Agent with a Vert.x Web Application is to  package the web application as a standalone or <em>fat</em> jar. This can be achieved by including the following plugin in the <strong><em>POM.xml</em></strong> file:</p>
+<pre><code class="language-xml"><span class="tag">&lt;<span class="title">plugin</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="title">groupId</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">artifactId</span>&gt;</span>maven-shade-plugin<span class="tag">&lt;/<span class="title">artifactId</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">version</span>&gt;</span>2.3<span class="tag">&lt;/<span class="title">version</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">executions</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">execution</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="title">phase</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">goals</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">goal</span>&gt;</span>shade<span class="tag">&lt;/<span class="title">goal</span>&gt;</span>
+            <span class="tag">&lt;/<span class="title">goals</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">configuration</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">transformers</span>&gt;</span>
+                    <span class="tag">&lt;<span class="title">transformer
+</span>                        <span class="attribute">implementation</span>=<span class="value">"org.apache.maven.plugins.shade.resource.
+                        ManifestResourceTransformer"</span>&gt;</span>
+                        <span class="tag">&lt;<span class="title">manifestEntries</span>&gt;</span>
+                            <span class="tag">&lt;<span class="title">Main-Class</span>&gt;</span>io.vertx.core.Starter<span class="tag">&lt;/<span class="title">Main-Class</span>&gt;</span>
+                            <span class="comment">&lt;!-- change the Main-Verticle property to match 
+                            the name if your main Verticle class--&gt;</span>
+                            <span class="tag">&lt;<span class="title">Main-Verticle</span>&gt;</span>com.contrastsecurity.examples.
+                            vertx.ApplicationMainVerticle<span class="tag">&lt;/<span class="title">Main-Verticle</span>&gt;</span>
+                        <span class="tag">&lt;/<span class="title">manifestEntries</span>&gt;</span>
+                    <span class="tag">&lt;/<span class="title">transformer</span>&gt;</span>
+                <span class="tag">&lt;/<span class="title">transformers</span>&gt;</span>
+                <span class="tag">&lt;<span class="title">artifactSet</span> /&gt;</span>
+            <span class="tag">&lt;/<span class="title">configuration</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">execution</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">executions</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">plugin</span>&gt;</span></code></pre>
+<p>Once the standalone jar is assembled, include <code>-javaagent:/PATH/TO/YOUR/contrast.jar</code> as one of the JVM arguments:</p>
+<pre><code class="language-bash">java -javaagent:/PATH/TO/YOUR/contrast.jar &lt;other_options&gt; 
+-jar /PATH/TO/YOUR/application.jar</code></pre>
+<h4 id="alternative-configuration-">Alternative Configuration:</h4>
+<p>Alternatively, the Contrast Java Agent can be configured as a <code>JVM_OPT</code> in the &quot;vertx&quot; script file:</p>
+<p><strong>NOTE:</strong> the paths to the application&#39;s dependencies will need to be included in the vertx script&#39;s <code>CLASSPATH</code> property.</p>
+<pre><code class="language-bash">JVM_OPTS=<span class="string">"-XX:+UseBiasedLocking -XX:BiasedLockingStartupDelay=0 
+-javaagent:/PATH/TO/YOUR/contrast.jar"</span></code></pre>
+<p>Once this is configured, launch the web application via the command <strong>vertx run</strong> passing the path to the main Verticle as a parameter:</p>
+<pre><code class="language-bash">vertx run /PATH/TO/YOUR/src/MainVerticle.java</code></pre>
+<p>The Vert.x application is unlikely to have a <strong><em>/WEB-INF/web.xml</em></strong> file, from which the Contrast Java Agent can identify the application name. If this is the case, please define the application name via <code>-Dcontrast.appname=AppName</code> property when launching the Vert.x application with Contrast enabled. For example:</p>
+<pre><code class="language-bash">java -javaagent:/PATH/TO/YOUR/contrast.jar 
+-Dcontrast.appname=<span class="string">"&lt;Name_to_show_on_TeamServer&gt;"</span> &lt;other options&gt; 
+-jar /PATH/TO/YOUR/application.jar</code></pre>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

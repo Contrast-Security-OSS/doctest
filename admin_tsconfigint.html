@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrator | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Admin.png" width="75" height="75">
+            <p class="label2">Admin</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">TeamServer</p></li>
+                <li><a href="admin_tsinstall.html">Installation</a></li>
+                <li><a href="admin_tsconfig.html">Configuration</a></li>
+
+                    <li class="label10">&#8226; Integration</li>
+                        <li><a href="admin_tsconfigint.html#ad2" class="label9">Microsoft Active Directory</a></li>
+                        <li><a href="admin_tsconfigint.html#ldap" class="label9">LDAP Authentication</a></li>
+                        <br>
+
+                        <li><a href="admin_tsconfigset.html" class="label10">&#8226; Settings</a></li>
+                        <br>
+
+                <li><a href="admin_tsfaq.html">Troubleshooting</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Crawler</p></li>
+                <li><a href="admin_crawlinstall.html">Installation</a></li><li>
+                </li><li><a href="admin_crawlconfig.html">Configuration </a></li>
+<!--
+                <li><a href="admin_crawlfaq.html">Troubleshooting</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Administrator</li>
+            <li>TeamServer</li>
+            <li>Configuration</li>
+            <li class="label6">Integration</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring Microsoft Active Directory</h1>
+            <a class="anchor" id="ad2">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/integration" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring Active Directory"
+description: "TeamServer can be configured to connect to a Microsoft Active Directory."
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>TeamServer can be configured to connect to a Microsoft Active Directory. Configuring this integration using the Active Directory connector is a simpler path in most circumstances because Microsoft Active Directory has a well-defined structure for directories leaving fewer possibilities and a more direct configuration. </p>
+<h2 id="what-you-ll-need">What You&#39;ll Need</h2>
+<p>Before integrating with your Active Directory for Authentication, there are some pieces of information that you will need and you will need to create two groups for use by Contrast. It is best to have your Active Directory administrators on hand to assist with group creation and the settings.</p>
+<h2 id="contrast-authentication-groups">Contrast Authentication Groups</h2>
+<p>An important distinction is that Contrast does not perform Data Access Control using the integrated Active Directory Servers, that is to say that roles and access to data within the application are handled by the application and the roles set for users by the Organization Administrators. That being said, there is an Access Control check when logging in (or creating new users) to ensure that the provided user does in fact belong to the correct group within the Active Directory.</p>
+<p><strong>Contrast Users Group</strong> This group allows users to be added to an organization and login to the standard user interface. This is the group that most of your users will need to be a member of.</p>
+<p><strong>Contrast Admin Group</strong> This group allows users to log in to the Super Administrative interface. This interface should only be accessible to application and system administrators.</p>
+<p>It is important to note that a user can not belong to both the Users and Admin group.</p>
+<h2 id="configuring-the-integration">Configuring The Integration</h2>
+<p>The following information will be needed to integrate Contrast into your Active Directory for Authentication:</p>
+<ul>
+<li><strong>Connection URL</strong> - This will be a url in the format <code>&lt;protocol&gt;://&lt;hostname&gt;:&lt;port&gt;</code><ul>
+<li><strong>Protocol</strong> - Should be one of ldap or ldaps (ldaps is LDAP over SSL, additional configuration may be needed. See the section on Self-Signed or Private CA Signed Certificates below)</li>
+<li><strong>Hostname</strong> - This is either the DNS hostname or IP Address of the Active Directory server. In multi-tenant forests, this should be the Global Catalog Server.</li>
+<li><strong>Port</strong> - This is the port that Contrast should connect to. For standard directories (single-tenant, single-domain) this should be either port 389 for ldap or 636 for ldaps. In multi-tenant or multi-domain forests, this will be either 3268 for ldap or 3269 for ldaps.</li>
+</ul>
+</li>
+<li><strong>Base DN</strong> - The base dn is a Distinguished Name that represents the global base level contain for your Active Directory environment. This is usually just your domain or sub-domain name. For example, if your login domain is example.com, then your Base DN would be dc=example,dc=com</li>
+<li><strong>Username</strong> - This is the username of a user who can bind to the directory to perform search functionality. Generally this should be a service user configured in the directory explicitly for use by Contrast and needs read-only access.</li>
+<li><strong>Password</strong> - This is the password for the Bind user described above.</li>
+</ul>
+<h2 id="advanced-settings">Advanced Settings</h2>
+<ul>
+<li><strong>User DN Suffix</strong> - By default, this is set to CN=Users as this is the default container for Active Directories. However, if your Active Directory is configured differently, then this will be the path to the top-most container where users are stored in the directory. For instance, if your users are stored in the <strong>DN</strong> <em>CN=Engineering,CN=GlobalUsers,DC=intranet,dc=example,dc=com</em> and your <strong>Base DN</strong> is <em>DC=intranet,DC=example,DC=com</em> then the value of the User DN Suffix will be <em>CN=Engineering,DC=GlobalUsers</em></li>
+<li><strong>Group DN Suffix</strong> - If left blank, then the User DN Suffix will also be used for Groups, this is the default model for Active Directories. However, if your directory is setup differently, you can point this to where your groups are stored within the directory using the same rules given for the User DN Suffix option.</li>
+</ul>
+<h2 id="connecting-to-a-microsoft-active-directory">Connecting to a Microsoft Active Directory</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protocol</td>
+<td>The protocol that should be used to communicate with the LDAP server. Will be one of LDAP or LDAPS (LDAP w/ SSL)</td>
+<td>LDAP</td>
+</tr>
+<tr>
+<td>Hostname</td>
+<td>The hostname to connect to when communicating with the LDAP server.</td>
+<td>localhost</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>The port to connect to when communicating with the LDAP server.</td>
+<td>389 (ldap), 636 (ldaps)</td>
+</tr>
+<tr>
+<td>Search Base</td>
+<td>This is the Base DN (Distinguished Name) to use when communicating with the LDAP server.</td>
+<td>dc=contrastsecurity,dc=com</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c09_1.png" rel="lightbox" title="Connecting To Your Server"><img class="thumbnail" src="assets/images/KB4-c09_1.png"></a></p>
+<h2 id="binding-to-the-active-directory">Binding to the Active Directory</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Username</td>
+<td>This is the full DN (Distinguished Name) of the User Account that the application should use when connecting to the LDAP server.</td>
+<td>cn=Directory Manager</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>This is the password of the User Account that the application should use when connecting to the LDAP server.</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c09_2.png" rel="lightbox" title="Binding To Your Server"><img class="thumbnail" src="assets/images/KB4-c09_2.png"></a></p>
+<h2 id="using-a-service-user">Using a Service User</h2>
+<p>It is recommended that a dedicated read-only user be created specifically for connecting TeamServer to the Active Directory. The user should be have read permission to the Directory and it can be limited only to the Search Base.</p>
+<h2 id="testing-active-directory-connection">Testing Active Directory Connection</h2>
+<p>Like setting up LDAP, after configuring your connection details and bind credentials, you will want to ensure connectivity to the server by using the <strong>Test Connection</strong> button located below the form. Once connectivity has been verified, click over to the <strong>Advanced</strong> tab </p>
+<h3 id="configuring-advanced-settings">Configuring Advanced Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td>User Base DN</td>
+<td>This is the Base DN where users are stored in the directory. In most Active Directory installations this will be cn=Users</td>
+<td>cn=Users</td>
+</tr>
+<tr>
+<td>User ID Attribute</td>
+<td>This is the attribute on the user that will be used as the username when users are logging in to the application.</td>
+<td>Email Address</td>
+</tr>
+<tr>
+<td>Follow Referrals</td>
+<td>In Multi-Tenant/Multi-Domain Enterprise Forests, LDAP queries may be referred to another server for more details.</td>
+<td>Disabled</td>
+</tr>
+<tr>
+<td>Limit Referrals</td>
+<td>Limit to how many referrals should be followed when AD replies with a Referral response.</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c09_3.png" rel="lightbox" title="Advanced Settings"><img class="thumbnail" src="assets/images/KB4-c09_3.png"></a></p>
+<h2 id="selecting-the-user-id-attribute">Selecting the User ID Attribute</h2>
+<p>It is important to pick the correct User ID Attribute when setting up the Active Directory integration so that users can use the username that they are most familiar with.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Login ID</td>
+<td>This is the AD sAMAccountName attribute, generally this is just the username that you log in to Windows with</td>
+</tr>
+<tr>
+<td>Email Address</td>
+<td>This is the AD mail attribute, containing the email address of the user.</td>
+</tr>
+<tr>
+<td>User Principal</td>
+<td>This is the AD userPrincipal attribute, containing the full username</td>
+</tr>
+</tbody>
+</table>
+<h2 id="testing-the-configuration">Testing the Configuration</h2>
+<p>Once all of the configuration options are set, you can use the <strong>Query for Groups</strong> button at the bottom of the <strong>Groups</strong> tab to pull back a list of groups for the Contrast Admins and Contrast Users groups to be set in the &quot;Groups&quot; tab. Once you are happy with your selections, verify that you are able to log in as both a user and a superadmin using the <strong>Test Login</strong> button near the bottom of the form.</p>
+<p><a href="assets/images/KB4-c09_4.png" rel="lightbox" title="Test Login"><img class="thumbnail" src="assets/images/KB4-c09_4.png"></a></p>
+<p><strong>NOTE</strong> - If testing a login seems to take an excessive amount of time, this is likely a result of having the wrong setting for the Follow Referrals option on the Advanced Settings screen, flip the setting and you should be able to verify login functionality quickly.</p>
+<p>After all settings are verified that and test logins are successful, click the &quot;Save&quot; button to write out the configuration to disk. A prompt about the implications of changing the Authentication Mode will be shown then TeamServer will be restarted to effect the new configuration changes.</p>
+<h2 id="using-self-signed-or-privately-signed-certificates">Using Self-Signed or Privately Signed Certificates</h2>
+<p>If you configure your Active Directory integration to connect to your server using SSL, you may need to import your server&#39;s certificate into a new trust store to be used by the Contrast JRE. First you will need to acquire the server&#39;s certificate from your administrators in PKCS#12 format. If you are using a Self-Signed Certificate, this will be the actual AD Server&#39;s Certificate. If you have a Private CA, you will want the CA Certificate for that Server.</p>
+<p>After you have the certificate for the server, you will need to create a trust store that contains that certificate. Run the following commands from a command shell in the directory where Contrast is inst
+alled as Administrator.</p>
+<pre><code>$ mkdir data/conf/ssl
+$ jre/bin/keytool -import -file &lt;path to certificate&gt; -alias &lt;hostname&gt; \
+  -keystore data/conf/ssl/truststore.jks</code></pre>
+<p>After you have created your truststore containing either your server&#39;s or ca certificate. You will need to add the following lines into the <strong><em>bin/contrast-server.vmoptions</em></strong> file:</p>
+<pre><code>-Djavax.net.ssl.trustStore=&lt;full path to truststore&gt;
+-Djavax.net.ssl.trustStorePassword=&lt;password you set for the trust store, if any&gt;</code></pre>
+<p>You should now be able to restart the Contrast Server service and queries against your Active Directory will use SSL.</p>
+
+            </a>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring LDAP Authentication</h1>
+            <a class="anchor" id="ldap">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/integration" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring LDAP Authentication"
+description: "An LDAP Directory is a collection of Users and Group. LDAP (Lightweight Directory Access Protocol) is an Internet protocol that web applications can use to look up those Users and Groups from the LDAP Server."
+-->
+
+<h2 id="overview">Overview</h2>
+<p>An LDAP Directory is a collection of Users and Group. LDAP (Lightweight Directory Access Protocol) is an Internet protocol that web applications can use to look up those Users and Groups from the LDAP Server. We provide integration with many different types of LDAP Servers including:</p>
+<ul>
+<li>OpenLDAP</li>
+<li>OpenDS</li>
+<li>ApacheDS</li>
+<li>Fedora Directory Server</li>
+<li>Sun Directory Server Enterprise Edition (DSEE)</li>
+<li>Microsoft Active Directory </li>
+<li>Generic LDAP Servers</li>
+</ul>
+<p>When to use this option: Connecting to an LDAP Directory Server is useful if your Users and Groups are managed in a corporate directory and you want to delegate the responsibility of managing user access for the application to your corporate directory administrators.</p>
+<h2 id="what-you-ll-need">What You&#39;ll Need</h2>
+<p>Before integrating with your Enterprise LDAP Servers for Authentication, there are some pieces of information that you will need and you will need to create two groups for use by Contrast.</p>
+<h2 id="contrast-authentication-groups">Contrast Authentication Groups</h2>
+<p>An important distinction is that Contrast does not perform Data Access Control using the integrated LDAP Servers, that is to say that roles and access to data within the application are handled by the application and the roles set for users by the Organization Administrators. That being said, there is an Access Control check when logging in (or creating new users) to ensure that the provided user does in fact belong to the correct group within the LDAP Directory.</p>
+<h3 id="contrast-users-group">Contrast Users Group</h3>
+<p>This group allows users to be added to an organization and login to the standard user interface. This is the group that most of your users will need to be a member of.</p>
+<h3 id="contrast-admin-group">Contrast Admin Group</h3>
+<p>This group allows users to log in to the Super Administrative interface. This interface should only be accessible to application and system administrators.</p>
+<p>It is important to note that a user can not belong to both the Users and Admin group.</p>
+<h3 id="connecting-to-an-ldap-directory-in-teamserver">Connecting to an LDAP Directory in TeamServer</h3>
+<p>The first thing to configure in TeamServer is how the application should connect with the LDAP server. </p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protocol</td>
+<td>The protocol that should be used to communicate with the LDAP server. Will be one of LDAP or LDAPS (LDAP w/ SSL)</td>
+<td>LDAP</td>
+</tr>
+<tr>
+<td>Hostname</td>
+<td>The hostname to connect to when communicating with the LDAP server.</td>
+<td>localhost</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>The port to connect to when communicating with the LDAP server.</td>
+<td>389 (ldap), 636 (ldaps)</td>
+</tr>
+<tr>
+<td>Search Base</td>
+<td>This is the Base DN (Distinguished Name) to use when communicating with the LDAP server.</td>
+<td>dc=contrastsecurity,dc=com</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c10_1.png" rel="lightbox" title="Connecting To Your Server"><img class="thumbnail" src="assets/images/KB4-c10_1.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Method</td>
+<td>The method to use when connecting to the LDAP Server. This can be one of Anonymous, Simple, DIGEST-MD5 or CRAM-MD5</td>
+<td>Simple</td>
+</tr>
+<tr>
+<td>SASL Realm</td>
+<td>When using DIGEST or CRAM Authentication an LDAP Administrator may specify different realms to separate context within the Directory</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>This is the full Distinguished Name (DN) of the user that should BIND to the directory to perform queries and check authentication</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>The is the password for the BIND user specified in the Username field</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c10_2.png" rel="lightbox" title="Binding To Your Server"><img class="thumbnail" src="assets/images/KB4-c10_2.png"></a></p>
+<h2 id="bind-methods">BIND Methods</h2>
+<p>There are 4 supported types of BIND that can be used by TeamServer. Each of these types has different required fields:</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Required Fields</th>
+<th>Optional Fields</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anonymous</td>
+<td>Administrators can provide anonymous read-only access to the directory.</td>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>Simple</td>
+<td>Standard Username+Password Authentication. The username and password are verified, as provided by the LDAP Server</td>
+<td>Username, Password</td>
+<td></td>
+</tr>
+<tr>
+<td>DIGEST-MD5</td>
+<td>A Username and Password are provided and hashed using MD5 prior to sending to the server to be authenticated.</td>
+<td>Username, Password</td>
+<td>SASL Realm</td>
+</tr>
+<tr>
+<td>CRAM-MD5</td>
+<td>A Pre-Authentication Challege is issued by the LDAP Server which is then sent back along with the MD5 hashed Username and Password to be authenticated.</td>
+<td>Username, Password</td>
+<td>SASL Realm</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-a-service-user">Using a Service User</h2>
+<p>It is recommended that a dedicated user be used for binding to the LDAP Directory. This Service User should be setup as either a read-only or read-write user depending on how TeamServer is set to interact with the LDAP Directory.</p>
+<h2 id="testing-ldap-connection">Testing LDAP Connection</h2>
+<p>Once the connection to the LDAP Server has been configured, test the connection to ensure the app will be able to connect to the LDAP Server and perform queries by clicking the &quot;Test Connection&quot; button located near the bottom of the form. </p>
+<h2 id="finding-users-in-the-directory">Finding Users in the Directory</h2>
+<p>The following information is needed to instruct Contrast how to search for users in the directory:</p>
+<ul>
+<li><strong>User Management</strong> - LDAP Managed (standard) or Contrast Managed. If you select Contrast Managed, then Contrast will use the LDAP Server as a credential store and will manage the users within the directory.</li>
+<li><strong>Authentication Strategy</strong> - Bind (Standard) or Compare. If you select Compare, Contrast will compare a pre-hashed value to the value stored in the user password attribute field.</li>
+<li><strong>User Base DN</strong> - This is the container (under the global base DN) where Contrast should start searching for users. In most organizations, this will be a single container (e.g. ou=Users) but you should verify with your LDAP administrator that you are searching the right container.</li>
+<li><strong>Use Subtrees</strong> - Whether searches should be performed recursively in all subtrees of the User Base DN.</li>
+<li><strong>Object Class</strong> - In most deployments, this will be inetOrgPerson</li>
+<li>User ID Attribute - This is the attribute that should be used for logging in to Contrast. In most deployments this will be uid</li>
+<li><strong>First Name Attribute</strong> - The attribute which contains the user&#39;s first name. Defaults to givenName</li>
+<li><strong>Last Name Attribute</strong> - The attribute which contains the user&#39;s last name. Defaults to sn</li>
+<li><strong>Email Attribute</strong> - The attribute which contains the user&#39;s email address. Defaults to mail</li>
+<li><strong>Password Attribute</strong> - If you selected &quot;Compare&quot; for the Authentication Strategy, this is the attribute that will contain the hashed password for the user. Defaults to userPassword.</li>
+</ul>
+<h3 id="configuring-how-to-find-users-and-groups">Configuring How to Find Users and Groups</h3>
+<p>To fully integrate with an LDAP Directory, TeamServer needs to know not only how to connect to the LDAP Server but also how to find Users and Groups within the Directory itself.</p>
+<h3 id="ldap-user-management">LDAP User Management</h3>
+<p><a href="assets/images/KB4-c10_3.png" rel="lightbox" title="User Management"><img class="thumbnail" src="assets/images/KB4-c10_3.png"></a></p>
+<p>It is possible to have an LDAP server dedicated to TeamServer for authentication, if this is the case and you wish to set it up to do so, Contrast can manage the users in the Directory by setting the User Management selection to &quot;Contrast Manages LDAP&quot;. In this mode, users will be added to the LDAP directory when they are added to the application. Most users will leave this set to &quot;LDAP Manages Contrast&quot; which means that Contrast will only read from LDAP and users must be added to the correct group in the directory before they can be added to the application.</p>
+<h2 id="configuring-how-users-are-located-in-the-directory">Configuring How Users are Located in the Directory</h2>
+<p>The next step is to instruct TeamServer how it should find users within the directory. In most cases the vast majority of these settings can be left to their default values.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base DN</td>
+<td>This is the DN where users are located within the LDAP server, note that you should not include the Search DN in this value as it will be automatically appended on.</td>
+<td>CN=Users</td>
+</tr>
+<tr>
+<td>User Subtrees</td>
+<td>Whether subtrees of the Base DN should be included when searching for users. For most LDAP deployments you will want to leave this set to enabled.</td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td>Object Class</td>
+<td>This is the LDAP Object Class for User objects in the directory. The default setting should be correct for most LDAP deployments.</td>
+<td>inetOrgPerson</td>
+</tr>
+<tr>
+<td>User ID Attribute</td>
+<td>This is the LDAP field that should be identified as the User ID, this will be the username that users use when logging in to contrast.</td>
+<td>uid</td>
+</tr>
+<tr>
+<td>First Name Attribute</td>
+<td>This is the LDAP field that contains a user&#39;s first name. The default setting should be correct for most LDAP deployments.</td>
+<td>givenName</td>
+</tr>
+<tr>
+<td>Last Name Attribute</td>
+<td>This is the LDAP field that contains a user&#39;s last name. The default setting should be correct for most LDAP deployments.</td>
+<td>sn</td>
+</tr>
+<tr>
+<td>Email Attribute</td>
+<td>This is the LDAP field that contains a user&#39;s email address. The default setting should be correct for most LDAP deployments.</td>
+<td>mail</td>
+</tr>
+<tr>
+<td>Authentication Strategy</td>
+<td>This is how we will attempt to authenticate users when they provide their credentials. Bind means the application will send the user&#39;s credentials to the server for authentication; while Compare means the server will hash the user&#39;s credentials and compare them to the value of the Password attribute</td>
+<td>Bind</td>
+</tr>
+<tr>
+<td>Password Attribute</td>
+<td>This is the LDAP field that contains a user&#39;s password. This is only used for &quot;Compare&quot; authentication strategy and the default should be correct for most LDAP deployments</td>
+<td>userPassword</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c10_4.png" rel="lightbox" title="Finding Users"><img class="thumbnail" src="assets/images/KB4-c10_4.png"></a></p>
+<h2 id="configuring-how-groups-are-located-in-the-directory">Configuring How Groups are Located in the Directory</h2>
+<p>The last step in configuring the LDAP integration is to configure how TeamServer finds Groups in the directory.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group Type</td>
+<td>There are two types of groups in LDAP, depending on the functionality that your server provides and how it&#39;s configured this will be one of Static or Dynamic groups. See a breakdown of both below.</td>
+<td>Static</td>
+</tr>
+<tr>
+<td>Base DN</td>
+<td>Like the User Base DN, this is the DN where the application can find groups in your LDAP server and should not contain the Search Base. This field is only applicable to static groups.</td>
+<td>ou=Groups</td>
+</tr>
+<tr>
+<td>Group Subtree</td>
+<td>Configures whether subtrees of the Base DN should be included when searching for groups in the directory. This field is only applicable to static groups.</td>
+<td>Enabled</td>
+</tr>
+<tr>
+<td>Object Class</td>
+<td>This field is not required, as this is somewhat standard across LDAP deployments. If left blank, the application will use the default value of group, groupOfUsers, groupOfUniqueUsers. This field is only applicable to static groups.</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Group Member Attribute</td>
+<td>This is the attribute within a group object in the directory that will contain the members of that group. This may differ for your LDAP deployment so ensure that you are using the correct attribute with your LDAP administrator. This field is only applicable to static groups.</td>
+<td>uniqueMember</td>
+</tr>
+<tr>
+<td>Member of Attribute</td>
+<td>This is the attribute within a user object that will contain the groups that user is a member of. This may differ for your LDAP deployment so ensure that you are using the correct attribute with your LDAP administrator. This field is only applicable to dynamic groups.</td>
+<td>memberOf</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c10_5.png" rel="lightbox" title="Finding User Groups"><img class="thumbnail" src="assets/images/KB4-c10_5.png"></a></p>
+<p>The different between a Static and Dynamic group is the way group membership is managed. In a static group, the group tracks it&#39;s members through an attribute on the object, usually something along the lines of uniqueMember. In Dynamic groups the User object is responsible for tracking it&#39;s own membership and groups are added dynamically to the user object when the user becomes a member of a group.</p>
+<h2 id="selecting-groups-for-authentication-to-teamserver">Selecting Groups for Authentication to TeamServer</h2>
+<p><a href="assets/images/KB4-c10_6.png" rel="lightbox" title="Group Authentication"><img class="thumbnail" src="assets/images/KB4-c10_6.png"></a></p>
+<p>Once you have verified all of your configuration values are correct and you&#39;ve tested your connection we can select the groups that will be used by the application for providing access to log in to the TeamServer UI. Click on the &quot;Query for Groups&quot; button near the bottom of the form to enable the group selection boxes. Use the drop-downs to select the groups designated for Contrast Admin and Contrast Users. </p>
+<h2 id="testing-the-ldap-configuration">Testing the LDAP Configuration</h2>
+<p>Now that you have configured your application to connect to LDAP, setup User and Group mapping information and selected your group, it&#39;s time to perform the final validation step prior to writing these settings out to the configuration files. The final step is to verify the group and user mappings are correctly configured by testing some logins. To test, click on the &quot;Test Login&quot; button near the bottom of the form. </p>
+<p><a href="assets/images/KB4-c10_7.png" rel="lightbox" title="Test Login"><img class="thumbnail" src="assets/images/KB4-c10_7.png"></a></p>
+<p>You can test both normal users and superadmin accounts through this form. When you are able to successfully test your login for both user types you can finally use the &quot;Save&quot; button and you will receive a warning about the impact of changing authentication type in TeamServer. Accept the changes and restart your TeamServer and you will now be able to login using the accounts that belong to groups within the directory.</p>
+
+            </a>
+    </div>
+</div>
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

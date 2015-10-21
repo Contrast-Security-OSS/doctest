@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer REST API Version 2 | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+ 
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+ 
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Developer.png" width="75" height="75">
+        <p class="label1">Developer</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">API</p></li>
+                <li><a href="dev_api3.html">Open API</a></li>
+                <li><a href="dev_api1.html">API v1</a></li>
+                <li>API v2</li>
+
+                    <li><a href="dev_api2.html#intro" class="label9">Introduction</a></li>
+                    <li><a href="dev_api2.html#endpoint" class="label9">API Endpoints</a></li>
+                    <li><a href="dev_api2.html#access" class="label9">Accessing The API</a></li>
+                    <li><a href="dev_api2.html#hateoas" class="label9">HATEOAS Links</a></li>
+                    <li><a href="dev_api2.html#data" class="label9">Data Expansion</a></li>
+                    <li><a href="dev_api2.html#paging" class="label9">Paging &amp; Filtering</a></li>
+                    <li><a href="dev_api2.html#response" class="label9">Response Codes</a></li>
+                    <li><a href="dev_api2.html#apps" class="label9">App API Resources</a></li>
+                    <li><a href="dev_api2.html#engine" class="label9">Engine API Resources</a></li>
+                    <li><a href="dev_api2.html#server" class="label9">Server API Resources</a></li>
+                    <li><a href="dev_api2.html#trace" class="label9">Trace API Resources</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Eclipse</p></li>
+                <li><a href="dev_eclipseinstall.html">Installation</a></li><li>
+                </li><li><a href="dev_eclipseguide.html">Guide</a></li>
+                <li><a href="dev_eclipsefaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+ 	<div class="breadcontainer">
+    	<ol class="breadcrumb">
+        	<li>Developer</li>
+        	<li>API</li>
+        	<li class="label6">API v2</li>
+    	</ol>
+ 	</div>
+</div>
+
+ <div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Introduction To The TeamServer REST API</h1>
+ 			<a class="anchor" id="intro">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Introduction To The TeamServer REST API"
+description: "Overview of REST API"
+-->
+
+<p>Contrast offers a HATEOS-compliant <strong>REST API</strong> that allows you to collect nearly all of the same information that is accessible in your web account. You can get vulnerability information, coverage data, download agents, and more through the API. Our goal is to make sure Contrast offers data to allow complete integration into your existing Continuous Integration (CI), SIEM software, or other business intelligence dashboards.</p>
+<p>We&#39;re always adding more endpoints, but if you&#39;d like to see something added to the API, <a href="https://support.contrastsecurity.com/tickets/new">file a ticket</a> and let&#39;s talk about it!</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="dev_api2.html#access">Accessing the API</a></p>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">API Endpoints</h1>
+ 			<a class="anchor" id="endpoint">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "API Endpoints"
+description: "Explanation of API endpoints"
+-->
+
+<p>The API is available to both <strong>SaaS</strong> and <strong>Enterprise On-Premise</strong> users. The endpoint for SaaS users is the same for everyone, while for On-Premise users it will depend on where the TeamServer application is installed on the client&#39;s network.</p>
+<p><code>https://app.contrastsecurity.com/Contrast/api</code></p>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Accessing The API</h1>
+ 			<a class="anchor" id="access">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "Accessing The API"
+description: "Instructions on how to access the API"
+-->
+
+<p>To begin using the Contrast API, you will need to retrieve your <strong>API Key</strong> from the server. To do this, you will need to log in to your TeamServer account and have the application email you a generated API Key.</p>
+<ol>
+<li>Log in to TeamServer</li>
+<li>Click the <strong>Down</strong> arrow next to your login name in the page header</li>
+<li>Click on <strong>API Key</strong></li>
+<li>Click either <strong>Email me the current API Key</strong> or <strong>Rotate the key and email me a new key</strong></li>
+</ol>
+<p>Once you have retrieved your API Key, you will set this, along with your authorization credentials, as headers on each request to the API.</p>
+<table>
+<thead>
+<tr>
+<th>Header</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API Key</strong></td>
+<td>The API Key retrieved above (Plaintext)</td>
+</tr>
+<tr>
+<td><strong>Authorization</strong></td>
+<td><em>Base64-encoded</em> credentials (username: <em>service-key</em>)</td>
+</tr>
+<tr>
+<td><strong>Accept</strong></td>
+<td><code>application/xml</code>, <code>application/json</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="sample-request">Sample Request</h2>
+<pre><code>curl -HAccept:application/json -HAuthorization:test -HAPI-Key:test https://app.contrastsecurity.com/Contrast/api/applications</code></pre>
+<h2 id="sample-response">Sample Response</h2>
+<pre><code>[
+  {
+    &quot;links&quot;: [
+      {
+        &quot;rel&quot;: &quot;server&quot;,
+        &quot;method&quot;: &quot;GET&quot;
+        &quot;href&quot;: &quot;https://app.contrastsecurity.com/Contrast/api/application/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/server&quot;
+      },
+      ...
+    ],
+    &quot;appId&quot;: &quot;c0d6b545-6377-483e-8b0c-f2e2e2aa8684&quot;,
+    &quot;name&quot;: &quot;Test Application&quot;
+    ...
+  }
+]</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">HATEOAS Links</h1>
+ 			<a class="anchor" id="hateoas">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "HATEOAS Links"
+description: "Information about HATEOAS links"
+-->
+
+<p>Each API call response includes an array of <strong>HATEOAS (Hypermedia as the Engine of Application State)</strong> links. The beauty of HATEOAS is that it allows you to interact and construct an API flow solely through the hyperlinks we provide you. You no longer need to hardcode logic into your client in order to use our API. We provide HATEOAS links for each call and for transactions within a call, if available.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HREF</td>
+<td>URL of the related HATEOAS link you can use for subsequent calls to the API.</td>
+</tr>
+<tr>
+<td>REL</td>
+<td>The relation of the link to the current resource you have retrieved.</td>
+</tr>
+<tr>
+<td>METHOD</td>
+<td>The HTTP method to use for the related call.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-of-hateoas-links">Example of HATEOAS Links</h2>
+<pre><code>{
+  &quot;links&quot;: [
+    {
+      &quot;href&quot;: &quot;https://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684&quot;,
+      &quot;rel&quot;: &quot;self&quot;,
+      &quot;method&quot;: &quot;GET&quot;
+    },
+    {
+      &quot;href&quot;: &quot;https://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/server&quot;,
+      &quot;rel&quot;: &quot;server&quot;,
+      &quot;method&quot;: &quot;GET&quot;
+    }
+  ]
+}</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Data Expansion</h1>
+ 			<a class="anchor" id="data">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "Data Expansion"
+description: "Information on data expansion"
+-->
+
+<p>Any data enclosed in a HATEOAS link as a <strong>GET</strong> for a resource can be expanded to be included in the resource result itself. To add a <strong>Data Expansion</strong> to an API call, you will add the <code>expand</code> parameter to the API Resource call. Each of the resources listed in this documentation lists the data available for expansion under the resource being queried.</p>
+<h2 id="sample-request">Sample Request</h2>
+<pre><code>curl -HAccept:application/json -HAuthorization:test -HAPI-Key:test https://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/?expand=server</code></pre>
+<h2 id="sample-response">Sample Response</h2>
+<pre><code>[
+  {
+    &quot;links&quot;: [ ... ],
+    &quot;app-id&quot;: &quot;c0d6b545-6377-483e-8b0c-f2e2e2aa8684&quot;,
+    &quot;name&quot;: &quot;Test Applications&quot;,
+    &quot;short-name&quot;: &quot;Test&quot;,
+    &quot;group-name&quot;: null,
+    &quot;path&quot;: &quot;/test&quot;,
+    &quot;language&quot;: &quot;Java&quot;,
+    &quot;license&quot;: &quot;Trial&quot;,
+    &quot;lastSeen&quot;: 23472983488,
+    &quot;server&quot;: {
+      &quot;server-id&quot;: 1,
+      &quot;last-startup-message-received&quot;: 2/27/2014 17:30:00,
+      ...
+    }
+  }
+]</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Paging &amp; Filtering</h1>
+ 			<a class="anchor" id="paging">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "Paging And Filtering"
+description: "Information on paging and filtering"
+-->
+
+<p>The following parameters can be used for <strong>paging and filtering</strong> results on GET calls that return multiple results.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>count</em></strong></td>
+<td>The number of results to return (default <em>-1</em> to return all results)</td>
+</tr>
+<tr>
+<td><strong><em>start_index</em></strong></td>
+<td>The index within the collection to return as the first result of the page</td>
+</tr>
+<tr>
+<td><strong><em>sort_by</em></strong></td>
+<td>The field on which to sort within the returned result (Only <em>Strings</em>, <em>Numbers</em> or <em>Timestamps</em>)</td>
+</tr>
+<tr>
+<td><strong><em>sort_order</em></strong></td>
+<td>The direction in which to sort the collection (<em>asc</em> or <em>desc</em>)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<pre><code>curl -HAccept:application/json -HAuthorization:test -HAPI-Key:test https://app.contrastsecurity.com/Contrast/api/applications/?count=10&amp;start_index=11&amp;sort_by=name&amp;sort_order=desc</code></pre>
+<hr>
+<p>Additionally, there are also pre-generated filters for filtering data in useful ways. This list will continue to grow as we add more filters based on user feedback and client need.</p>
+<table>
+<thead>
+<tr>
+<th>Resource Type</th>
+<th>Filter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>Libraries</em></strong></td>
+<td>withCVE</td>
+<td>Filter out libraries that do not have any CVE&#39;s associated with them.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>To use a filter on a request, simply add the filter parameter and any parameters required by that filter to the URL.</p>
+<pre><code>curl -HAccept:application/json -HAuthorization:test -HAPI-Key:test https://app.contrastsecurity.com/Contrast/api/applications/{app-id}/libraries/?filter=withCVE</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Response Codes</h1>
+ 			<a class="anchor" id="response">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "Response Codes"
+description: "List of response codes"
+-->
+
+<table>
+<thead>
+<tr>
+<th>Response Status Code</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><em>200</em></strong></td>
+<td>The operation was successful</td>
+</tr>
+<tr>
+<td><strong><em>404</em></strong></td>
+<td>Resource not found</td>
+</tr>
+<tr>
+<td><strong><em>439</em></strong></td>
+<td>Too Many Requests</td>
+</tr>
+<tr>
+<td><strong><em>500</em></strong></td>
+<td>Server Error</td>
+</tr>
+</tbody>
+</table>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Applications API Resources</h1>
+ 			<a class="anchor" id="apps">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+			 	<!--
+title: "Applications API Resources"
+description: "Resource Guide to Applications"
+-->
+
+<h2 id="data-objects">Data Objects</h2>
+<h3 id="application">Application</h3>
+<p>An <strong>Application</strong> represents a single application under Contrast monitoring.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">The unique identifier for the application</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The display name of the application under monitoring in Contrast</td>
+</tr>
+<tr>
+<td style="text-align:left">short-name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The short name of the application under monitoring in Contrast</td>
+</tr>
+<tr>
+<td style="text-align:left">group-name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The name of the group in which the application is designated to belong</td>
+</tr>
+<tr>
+<td style="text-align:left">path</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The context path of the application on its application servers</td>
+</tr>
+<tr>
+<td style="text-align:left">language</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The language the application is implemented in</td>
+</tr>
+<tr>
+<td style="text-align:left">license</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The type of license applied to the application</td>
+</tr>
+<tr>
+<td style="text-align:left">last-seen</td>
+<td style="text-align:left">timestamp</td>
+<td style="text-align:left">The last time the application reported to the Team Server</td>
+</tr>
+<tr>
+<td style="text-align:left">technologies</td>
+<td style="text-align:left">collection<string></string></td>
+<td style="text-align:left">List of Technologies detected in the application by Contrast</td>
+</tr>
+<tr>
+<td style="text-align:left">components</td>
+<td style="text-align:left">collection&lt;<strong>ArchitectureComponent</strong>&gt;</td>
+<td style="text-align:left">List of Components detected in the application by Contrast (Database, LDAP, etc.)</td>
+</tr>
+<tr>
+<td style="text-align:left">* platform-version</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The version of the platform on which this application is running</td>
+</tr>
+<tr>
+<td style="text-align:left">*  platform-vulnerabilities</td>
+<td style="text-align:left">collection<string></string></td>
+<td style="text-align:left">List of vulnerabilities attributed to this version of the platform</td>
+</tr>
+</tbody>
+</table>
+<p>*Only pertinent if the application language is ColdFusion.</p>
+<h4 id="hateoas-links">HATEOAS Links</h4>
+<table>
+<thead>
+<tr>
+<th>Relevance</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>libraries</td>
+<td>The library information for the application</td>
+</tr>
+<tr>
+<td>servers</td>
+<td>Summary information about the servers the application is running on</td>
+</tr>
+<tr>
+<td>stats</td>
+<td>Metrics for the application</td>
+</tr>
+<tr>
+<td>traces</td>
+<td>Summary information about the traces discovered in the application</td>
+</tr>
+</tbody>
+</table>
+<h3 id="application-stats">Application Stats</h3>
+<p>Contains metrics about the <strong>Application</strong>&#39;s interaction with the TeamServer and Contrast as well as high-level vulnerability metrics.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">custom-classes-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of custom classes discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-classes-seen</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of custom classes that have been used/seen by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-classes-loc</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Count of lines of code in custom classes discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-methods-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of custom methods discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-methods-seen</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of custom methods that have been used/seen by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-views-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of custom view discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-views-accessible</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of custom views that are accessible to the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">custom-views-loc</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Count of lines of code in the custom views discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">expiration</td>
+<td style="text-align:left">datetime</td>
+<td style="text-align:left">The date that the application license expires</td>
+</tr>
+<tr>
+<td style="text-align:left">last-seen</td>
+<td style="text-align:left">datetime</td>
+<td style="text-align:left">The date/time that the last communication from the application was recieved by the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">libraries-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Count of libraries in the application&#39;s classpath</td>
+</tr>
+<tr>
+<td style="text-align:left">libraries-stale</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Count of stale/out-of-date libraries</td>
+</tr>
+<tr>
+<td style="text-align:left">* libraries-unknown</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Count of unknown libraries</td>
+</tr>
+<tr>
+<td style="text-align:left">servers-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of Servers reporting the application to Team Server</td>
+</tr>
+<tr>
+<td style="text-align:left">traces-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of Traces reported to the Team Server by the Application.</td>
+</tr>
+<tr>
+<td style="text-align:left">criticals</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of Critical vulnerabilities discovered in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">highs</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of High vulnerabilities discovered in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">mediums</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of Medium vulnerabilities discovered in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">lows</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of Low vulnerabilities discovered in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">notes</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Number of Note vulnerabilities discovered in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">overall-grade</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The overall security grade for the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">ovrall-score</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The calculated overall security score for the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">security-grade</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The grade for vulnerabilities in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">security-score</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The calculated score for vulnerabilities in the Application</td>
+</tr>
+<tr>
+<td style="text-align:left">** platform-grade</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The grade for the Platform on which the Application is running</td>
+</tr>
+<tr>
+<td style="text-align:left">** platform-score</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The calculated score for the Platform on which the Application is running</td>
+</tr>
+</tbody>
+</table>
+<p>*Unknown indicates that the library cannot be found in our database of known libraries. This could indicate the artifact has been repackaged or modified in some way</p>
+<p>** Only pertinent if the application language is ColdFusion</p>
+<h4 id="hateoas-links">HATEOAS Links</h4>
+<table>
+<thead>
+<tr>
+<th>Relevance</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>application</td>
+<td>The application that these stats apply to (not expandable at this level)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="architecture-components">Architecture Components</h3>
+<p>Represents a single architecture component, such as a database or LDAP connection.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">component-id</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">The unique identifier for the component</td>
+</tr>
+<tr>
+<td style="text-align:left">host</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The hostname or address of the remote host </td>
+</tr>
+<tr>
+<td style="text-align:left">port</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The port of the connection to the remote host</td>
+</tr>
+<tr>
+<td style="text-align:left">vendor</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The vendor of the component</td>
+</tr>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The type of component (database, LDAP, webservice)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cve">CVE</h3>
+<p>Information about a CVE that is related to a <strong>Library</strong>.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">availability-impact</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The impact on availability</td>
+</tr>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The name of the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align:left">description</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">A brief description of the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align:left">status</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The status of the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align:left">access-vector</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">How an attacker can exploit the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align:left">access-complexity</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">How difficult exploitation is</td>
+</tr>
+<tr>
+<td style="text-align:left">authentication</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">What level of authentication is required to exploit the vulnerability</td>
+</tr>
+<tr>
+<td style="text-align:left">confidentiality-impact</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The impact on confidentiality</td>
+</tr>
+<tr>
+<td style="text-align:left">integrity-impact</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The impact on data integrity</td>
+</tr>
+<tr>
+<td style="text-align:left">score</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The vulnerability rating score</td>
+</tr>
+</tbody>
+</table>
+<h3 id="library">Library</h3>
+<p>Represents a single library being used by an <strong>Application</strong>.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">library-id</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">The Unique ID of the Library</td>
+</tr>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The filename of the Library on the Filesystem</td>
+</tr>
+<tr>
+<td style="text-align:left">sha1</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The SHA1 Hash of the Library (Ref to Maven Central)</td>
+</tr>
+<tr>
+<td style="text-align:left">url</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The URL to the Library on the FileSystem</td>
+</tr>
+<tr>
+<td style="text-align:left">lines-of-code</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The measured number of lines of code in the library</td>
+</tr>
+<tr>
+<td style="text-align:left">class-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The discovered number of classes in the library artifact</td>
+</tr>
+<tr>
+<td style="text-align:left">used-class-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The number of classes used in the library artifact</td>
+</tr>
+<tr>
+<td style="text-align:left">cve-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The number of CVEs associated with the library artifact</td>
+</tr>
+<tr>
+<td style="text-align:left">version</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The discovered version of the library</td>
+</tr>
+<tr>
+<td style="text-align:left">internal-date</td>
+<td style="text-align:left">datetime</td>
+<td style="text-align:left">The internally referenced release date for the library</td>
+</tr>
+<tr>
+<td style="text-align:left">external-date</td>
+<td style="text-align:left">datetime</td>
+<td style="text-align:left">The externally referenced release date for the library</td>
+</tr>
+<tr>
+<td style="text-align:left">profiled</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Whether the library has been profiled by Contrast</td>
+</tr>
+<tr>
+<td style="text-align:left">common</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Whether the library is a common recognized third-party-library</td>
+</tr>
+<tr>
+<td style="text-align:left">sponsored</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Whether the library is an internally developed library sponsored by the host application</td>
+</tr>
+<tr>
+<td style="text-align:left">cve-count</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The number of <strong>CVEs</strong> mapped to this Library</td>
+</tr>
+<tr>
+<td style="text-align:left">* manifest</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The contents of the libraries manifest file</td>
+</tr>
+</tbody>
+</table>
+<h4 id="hateoas-links">HATEOAS Links</h4>
+<table>
+<thead>
+<tr>
+<th>Relevance</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>* cves</td>
+<td>All of the CVEs that have been mapped to this library</td>
+</tr>
+<tr>
+<td>* servers</td>
+<td>All Servers that have this library installed</td>
+</tr>
+</tbody>
+</table>
+<p>*Only shows up in results if included in the expands list</p>
+<h2 id="api-operations">API Operations</h2>
+<h3 id="list-applications">List Applications</h3>
+<p>Retrieves a list of applications accessible to the authenticated user that are not archived.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications</code></pre>
+<h4 id="request">Request</h4>
+<p>Accepts pagination, filtering, and expansion parameters.</p>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a collection of <strong>Application</strong> objects.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[
+   {
+      &quot;links&quot;:[
+         {
+            &quot;rel&quot;:&quot;self&quot;,
+            &quot;href&quot;:&quot;http://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684&quot;,
+            &quot;method&quot;:&quot;GET&quot;
+         },
+         {
+            &quot;rel&quot;:&quot;traces&quot;,
+            &quot;href&quot;:&quot;http://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/traces&quot;,
+            &quot;method&quot;:&quot;GET&quot;
+         }
+      ],
+      &quot;app-id&quot;:&quot;c0d6b545-6377-483e-8b0c-f2e2e2aa8684&quot;,
+      &quot;name&quot;:&quot;Test&quot;,
+      &quot;short-name&quot;:null,
+      &quot;group-name&quot;:null,
+      &quot;path&quot;:&quot;Test&quot;,
+      &quot;language&quot;:&quot;Java&quot;,
+      &quot;license&quot;:&quot;Trial&quot;,
+      &quot;last-seen&quot;:1383156189931
+   },
+   {
+      &quot;links&quot;:[
+         {
+            &quot;rel&quot;:&quot;self&quot;,
+            &quot;href&quot;:&quot;http://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433&quot;,
+            &quot;method&quot;:&quot;GET&quot;
+
+         },
+         {
+            &quot;rel&quot;:&quot;traces&quot;,
+            &quot;href&quot;:&quot;http://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/traces&quot;,
+            &quot;method&quot;:&quot;GET&quot;
+
+         }
+      ],
+      &quot;app-id&quot;:&quot;8dfdd006-c2a4-4e90-bb24-bc90cbc03433&quot;,
+      &quot;name&quot;:&quot;Test2&quot;,
+      &quot;short-name&quot;:null,
+      &quot;group-name&quot;:null,
+      &quot;path&quot;:&quot;/Test2&quot;,
+      &quot;language&quot;:&quot;Java&quot;,
+      &quot;license&quot;:&quot;Enterprise&quot;,
+      &quot;last-seen&quot;:1383156190115
+   }
+]</code></pre>
+<h3 id="retrieve-an-application">Retrieve An Application</h3>
+<p>Retrieves an <strong>Application</strong> by its unique identifier.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to retrieve</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns an <strong>Application</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[
+   {
+      &quot;links&quot;:[
+         {
+            &quot;rel&quot;:&quot;self&quot;,
+            &quot;href&quot;:&quot;http://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433&quot;,
+            &quot;method&quot;:&quot;GET&quot;
+
+         },
+         {
+            &quot;rel&quot;:&quot;traces&quot;,
+            &quot;href&quot;:&quot;http://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/traces&quot;,
+            &quot;method&quot;:&quot;GET&quot;
+
+         }
+      ],
+      &quot;app-id&quot;:&quot;8dfdd006-c2a4-4e90-bb24-bc90cbc03433&quot;,
+      &quot;name&quot;:&quot;Test2&quot;,
+      &quot;short-name&quot;:null,
+      &quot;group-name&quot;:null,
+      &quot;path&quot;:&quot;/Test2&quot;,
+      &quot;language&quot;:&quot;Java&quot;,
+      &quot;license&quot;:&quot;Enterprise&quot;,
+      &quot;last-seen&quot;:1383156190115
+   }
+]</code></pre>
+<h3 id="retrieve-application-statistics">Retrieve Application Statistics</h3>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}/stats</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to retrieve</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/stats</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns an <strong>ApplicationStats</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+  &quot;expiration&quot; : 1390935787585,
+  &quot;criticals&quot; : 1,
+  &quot;highs&quot; : 1,
+  &quot;mediums&quot; : 0,
+  &quot;lows&quot; : 0,
+  &quot;notes&quot; : 1,
+  &quot;link&quot; : [ {
+    &quot;rel&quot; : &quot;parent&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433?expand=&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;application&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433?expand=&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  } ],
+  &quot;custom-classes-count&quot; : 0,
+  &quot;custom-classes-seen&quot; : 0,
+  &quot;custom-classes-loc&quot; : 0,
+  &quot;custom-methods-count&quot; : 0,
+  &quot;custom-methods-seen&quot; : 0,
+  &quot;custom-views-count&quot; : 34,
+  &quot;custom-views-accessible&quot; : 26,
+  &quot;custom-views-loc&quot; : 325826,
+  &quot;last-seen&quot; : 1383156189931,
+  &quot;traces-count&quot; : 6,
+  &quot;servers-count&quot; : 1,
+  &quot;libraries-count&quot; : 4,
+  &quot;security-score&quot; : 70,
+  &quot;security-grade&quot; : &quot;C&quot;,
+  &quot;libraries-stale&quot; : 0,
+  &quot;libraries-unknown&quot; : 0,
+  &quot;overall-score&quot; : 72,
+  &quot;overall-grade&quot; : &quot;C&quot;
+}</code></pre>
+<h3 id="reset-application">Reset Application</h3>
+<p>Resets an application by deleting all library, coverage, statistics and trace information.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong>USE CAREFULLY</strong></p>
+</blockquote>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to reset</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= -XDELETE https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns the <strong>Application</strong> object after it has been reset.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+  &quot;name&quot; : &quot;Test-App&quot;,
+  &quot;path&quot; : &quot;/Test&quot;,
+  &quot;language&quot; : &quot;Java&quot;,
+  &quot;license&quot; : &quot;Trial&quot;,
+  &quot;link&quot; : [ {
+    &quot;rel&quot; : &quot;self&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/a29c71fd-e586-461a-a611-0c9def4789d1&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;traces&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/a29c71fd-e586-461a-a611-0c9def4789d1/traces&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;servers&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/a29c71fd-e586-461a-a611-0c9def4789d1/servers&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;reset-application&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/a29c71fd-e586-461a-a611-0c9def4789d1&quot;,
+    &quot;method&quot; : &quot;DELETE&quot;
+  } ],
+  &quot;app-id&quot; : &quot;a29c71fd-e586-461a-a611-0c9def4789d1&quot;,
+  &quot;last-seen&quot; : 1383156199821
+}</code></pre>
+<h3 id="retrieve-application-libraries">Retrieve Application Libraries</h3>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}/libraries</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to retrieve</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/libraries</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a collection of <strong>Library</strong> objects.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[ {
+  &quot;filename&quot; : &quot;catalina-4.1.9.jar&quot;,
+  &quot;sha1&quot; : &quot;393466452301a4cc026b43bf5b0fadd7e2444886&quot;,
+  &quot;url&quot; : &quot;file:/C:/Tools/apache-tomcat-6.0.32/webapps/DefaultApp/WEB-INF/lib/catalina-4.1.9.jar\n            &quot;,
+  &quot;version&quot; : null,
+  &quot;profiled&quot; : false,
+  &quot;common&quot; : false,
+  &quot;sponsored&quot; : false,
+  &quot;cveCount&quot; : 4,
+  &quot;manifest&quot; : null,
+  &quot;servers&quot; : null,
+  &quot;vulns&quot; : null,
+  &quot;id&quot; : {
+    &quot;rel&quot; : &quot;self&quot;,
+    &quot;href&quot; : &quot;http://localhost:8080/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/libraries/4&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;link&quot; : [ {
+    &quot;rel&quot; : &quot;self&quot;,
+    &quot;href&quot; : &quot;http://localhost:8080/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/libraries/4&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;cves&quot;,
+    &quot;href&quot; : &quot;http://localhost:8080/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/libraries/4/cves&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;servers&quot;,
+    &quot;href&quot; : &quot;http://localhost:8080/Contrast/api/servers/libraries/4&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  } ],
+  &quot;library-id&quot; : 4,
+  &quot;lines-of-code&quot; : 112217,
+  &quot;internal-date&quot; : &quot;2002-08-10&quot;,
+  &quot;external-date&quot; : &quot;2009-11-08&quot;,
+  &quot;class-count&quot; : 296,
+  &quot;used-class-count&quot; : 0
+} ]</code></pre>
+<h3 id="retrieve-specific-application-library">Retrieve Specific Application Library</h3>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}/libraries/{lib-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">lib-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Library</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">expand</td>
+<td style="text-align:left">Collection<string></string></td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">The extra fields to include in the library - manifest, servers, and CVEs</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/libraries/4</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a single <strong>Library</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+  &quot;filename&quot; : &quot;catalina-4.1.9.jar&quot;,
+  &quot;sha1&quot; : &quot;393466452301a4cc026b43bf5b0fadd7e2444886&quot;,
+  &quot;url&quot; : &quot;file:/C:/Tools/apache-tomcat-6.0.32/webapps/DefaultApp/WEB-INF/lib/catalina-4.1.9.jar\n            &quot;,
+  &quot;version&quot; : null,
+  &quot;profiled&quot; : false,
+  &quot;common&quot; : false,
+  &quot;sponsored&quot; : false,
+  &quot;cveCount&quot; : 4,
+  &quot;manifest&quot; : null,
+  &quot;servers&quot; : null,
+  &quot;vulns&quot; : null,
+  &quot;id&quot; : {
+    &quot;rel&quot; : &quot;self&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/libraries/4&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  },
+  &quot;link&quot; : [ {
+    &quot;rel&quot; : &quot;self&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/libraries/4&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;cves&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/applications/c0d6b545-6377-483e-8b0c-f2e2e2aa8684/libraries/4/cves&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  }, {
+    &quot;rel&quot; : &quot;servers&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/servers/libraries/4&quot;,
+    &quot;method&quot; : &quot;GET&quot;
+  } ],
+  &quot;library-id&quot; : 4,
+  &quot;lines-of-code&quot; : 112217,
+  &quot;internal-date&quot; : &quot;2002-08-10&quot;,
+  &quot;external-date&quot; : &quot;2009-11-08&quot;,
+  &quot;class-count&quot; : 296,
+  &quot;used-class-count&quot; : 0
+}</code></pre>
+<h3 id="retrieve-all-cves-for-a-library">Retrieve All CVEs For A Library</h3>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}/libraries/{lib-id}/cves</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">lib-id</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Library</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">expand</td>
+<td style="text-align:left">Collection<string></string></td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">The extra fields to include in the <strong>CVE</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/libraries/4/cves</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a collection of <strong>CVE</strong> objects.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[ {
+    &quot;name&quot; : &quot;CVE-2012-4418&quot;,
+     &quot;description&quot; : &quot;Apache Axis2 allows remote attackers to forge messages and bypass authentication via an \&quot;XML Signature wrapping                 attack.\&quot;&quot;,
+     &quot;status&quot; : null,
+     &quot;authentication&quot; : &quot;NONE&quot;,
+     &quot;score&quot; : &quot;5.8&quot;,
+     &quot;references&quot; : [ {
+         &quot;name&quot; : &quot;SECUNIA&quot;,
+         &quot;id&quot; : null,
+         &quot;link&quot; : [ {
+             &quot;rel&quot; : &quot;parent&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/libraries/cves/&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         }, {
+             &quot;rel&quot; : &quot;reference&quot;,
+             &quot;href&quot; : &quot;http://secunia.com/advisories/49129&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         } ]
+     } ],
+     &quot;id&quot; : null,
+     &quot;link&quot; : [ ],
+     &quot;availability-impact&quot; : &quot;NONE&quot;,
+     &quot;access-vector&quot; : &quot;NETWORK&quot;,
+     &quot;access-complexity&quot; : &quot;MEDIUM&quot;,
+     &quot;confidentiality-impact&quot; : &quot;PARTIAL&quot;,
+     &quot;integrity-impact&quot; : &quot;PARTIAL&quot;
+    }, {
+     &quot;name&quot; : &quot;CVE-2012-5351&quot;,
+     &quot;description&quot; : &quot;Apache Axis2 allows remote attackers to forge messages and bypass authentication via a SAML assertion that lacks a             Signature element, aka a \&quot;Signature exclusion attack,\&quot; a different vulnerability than CVE-2012-4418.&quot;,
+     &quot;status&quot; : null,
+     &quot;authentication&quot; : &quot;NONE&quot;,
+     &quot;score&quot; : &quot;6.4&quot;,
+     &quot;references&quot; : [ {
+         &quot;name&quot; : &quot;SECUNIA&quot;,
+         &quot;id&quot; : null,
+         &quot;link&quot; : [ {
+             &quot;rel&quot; : &quot;parent&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/libraries/cves/&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         }, {
+             &quot;rel&quot; : &quot;reference&quot;,
+             &quot;href&quot; : &quot;http://secunia.com/advisories/49129&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         } ]
+     } ],
+     &quot;id&quot; : null,
+     &quot;link&quot; : [ ],
+     &quot;availability-impact&quot; : &quot;NONE&quot;,
+     &quot;access-vector&quot; : &quot;NETWORK&quot;,
+     &quot;access-complexity&quot; : &quot;LOW&quot;,
+     &quot;confidentiality-impact&quot; : &quot;PARTIAL&quot;,
+     &quot;integrity-impact&quot; : &quot;PARTIAL&quot;
+    }, {
+     &quot;name&quot; : &quot;CVE-2012-5785&quot;,
+     &quot;description&quot; : &quot;Apache Axis2/Java 1.6.2 and earlier does not verify that the server hostname matches a domain name in the subject&#39;s         Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an         arbitrary valid certificate.&quot;,
+     &quot;status&quot; : null,
+     &quot;authentication&quot; : &quot;NONE&quot;,
+     &quot;score&quot; : &quot;5.8&quot;,
+     &quot;references&quot; : [ {
+         &quot;name&quot; : &quot;SECUNIA&quot;,
+         &quot;id&quot; : null,
+         &quot;link&quot; : [ {
+             &quot;rel&quot; : &quot;parent&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/libraries/cves/&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         }, {
+             &quot;rel&quot; : &quot;reference&quot;,
+             &quot;href&quot; : &quot;http://secunia.com/advisories/49129&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         } ]
+     } ],
+     &quot;id&quot; : null,
+     &quot;link&quot; : [ ],
+     &quot;availability-impact&quot; : &quot;NONE&quot;,
+     &quot;access-vector&quot; : &quot;NETWORK&quot;,
+     &quot;access-complexity&quot; : &quot;MEDIUM&quot;,
+     &quot;confidentiality-impact&quot; : &quot;PARTIAL&quot;,
+     &quot;integrity-impact&quot; : &quot;PARTIAL&quot;
+} ]</code></pre>
+<h3 id="retrieve-a-cve-for-a-library">Retrieve A CVE For A Library</h3>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/applications/{app-id}/libraries/{lib-id}/cves/{cve-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Application</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">lib-id</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the <strong>Library</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">cve-id</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The CVE-Identifier of the <strong>CVE</strong> to retrieve</td>
+</tr>
+<tr>
+<td style="text-align:left">expand</td>
+<td style="text-align:left">Collection<string></string></td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">The extra fields to include in the CVE</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/applications/8dfdd006-c2a4-4e90-bb24-bc90cbc03433/libraries/4/cves/CVE-2012-5351</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a <strong>CVE</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[
+{
+ &quot;name&quot; : &quot;CVE-2012-5351&quot;,
+ &quot;description&quot; : &quot;Apache Axis2 allows remote attackers to forge messages and bypass authentication via a SAML assertion that lacks a Signature element, aka a \&quot;Signature exclusion attack,\&quot; a different vulnerability than CVE-2012-4418.&quot;,
+ &quot;status&quot; : null,
+ &quot;authentication&quot; : &quot;NONE&quot;,
+ &quot;score&quot; : &quot;6.4&quot;,
+ &quot;references&quot; : [ {
+ &quot;name&quot; : &quot;SECUNIA&quot;,
+ &quot;id&quot; : null,
+ &quot;link&quot; : [ {
+ &quot;rel&quot; : &quot;parent&quot;,
+ &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/libraries/cves/&quot;,
+ &quot;method&quot; : &quot;GET&quot;
+ }, {
+ &quot;rel&quot; : &quot;reference&quot;,
+ &quot;href&quot; : &quot;http://secunia.com/advisories/49129&quot;,
+ &quot;method&quot; : &quot;GET&quot;
+ } ]
+ } ],
+ &quot;id&quot; : null,
+ &quot;link&quot; : [ ],
+ &quot;availability-impact&quot; : &quot;NONE&quot;,
+ &quot;access-vector&quot; : &quot;NETWORK&quot;,
+ &quot;access-complexity&quot; : &quot;LOW&quot;,
+ &quot;confidentiality-impact&quot; : &quot;PARTIAL&quot;,
+ &quot;integrity-impact&quot; : &quot;PARTIAL&quot;
+}</code></pre>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Engine API Resources</h1>
+ 			<a class="anchor" id="engine">
+ 				<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+ 				<!--
+title: "Engine API Resources"
+description: "Resource Guide to Engines"
+-->
+
+
+<h2 id="data-objects">Data Objects</h2>
+<h3 id="profile">Profile</h3>
+<p><strong>Profile</strong> represents the configuration used by an <strong>Agent</strong> to report to either the SaaS or your local instance of <strong>TeamServer</strong>.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The name of the profile</td>
+</tr>
+<tr>
+<td style="text-align:left">log-level</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The lowest level of events to log</td>
+</tr>
+<tr>
+<td style="text-align:left">log-file</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The path of the file to which to save the logs</td>
+</tr>
+<tr>
+<td style="text-align:left">use-proxy</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Indicates whether or not the agent will need a proxy to communicate with the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">proxy-host</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The host name of the proxy through which the agent needs to communicate in order to reach the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">proxy-port</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The port number of the proxy through which the agent needs to communicate in order to reach the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">proxy-auth</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The type of authentication used by the proxy through which the agent needs to communicate in order to reach the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">proxy-user</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The user name to be given to the proxy through which the agent needs to communicate in order to reach the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">proxy-password</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The encoded password to be give to the proxy through which the agent needs to communicate in order to reach the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">sampling-baseline</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">How many times a URL needs to be analyzed before it is considered <strong>sampled</strong> by the agent</td>
+</tr>
+<tr>
+<td style="text-align:left">sampling-window</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">How many seconds a <strong>sample</strong> of a URL is considered valid by the agent</td>
+</tr>
+<tr>
+<td style="text-align:left">sampling-frequency</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">The frequency with which <strong>sampled</strong> URLs will be reanalyzed by the agent</td>
+</tr>
+<tr>
+<td style="text-align:left">* stacktrace-capture-mode</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The capture mode of stack traces - <strong>All</strong>, <strong>Some</strong>, or <strong>None</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">override-teamserver-url</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Whether or not the agent should override the default TeamServer URL and use the one included in this profile</td>
+</tr>
+<tr>
+<td style="text-align:left">teamserver-url</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The URL the agent will use in order to reach the TeamServer</td>
+</tr>
+<tr>
+<td style="text-align:left">engine-type</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The engine-type indicates the type of language for which the Agent was designed. It MUST be <code>JAVA</code>, <code>DOTNET_x86</code>, or <code>DOTNET_x64</code> and <strong>MUST BE INCLUDED</strong></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>A <em>stacktrace-capture-mode</em> of <strong>Some</strong> indicates that traces are only saved for the first and last events of a <strong>Trace</strong></li>
+</ul>
+<h2 id="api-operations">API Operations</h2>
+<h3 id="retrieve-profiles">Retrieve Profiles</h3>
+<p>Retrieves a list of user <strong>Profiles</strong>.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>GET https://app.contrastsecurity.com/Contrast/api/engine/profiles</code></pre>
+<h4 id="request">Request</h4>
+<p>Static URL that doesn&#39;t have any custom parameters.</p>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/engine/profiles</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a collection of <strong>Profile</strong> objects.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[ {
+    &quot;name&quot; : &quot;NEW PROFILE&quot;,
+    &quot;id&quot; : {
+     &quot;rel&quot; : &quot;self&quot;,
+     &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%2520PROFILE&quot;,
+     &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+         &quot;rel&quot; : &quot;download&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/NEW%20PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+    }, {
+        &quot;rel&quot; : &quot;self&quot;,
+        &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%2520PROFILE&quot;,
+        &quot;method&quot; : &quot;GET&quot;
+    }, {
+        &quot;rel&quot; : &quot;update&quot;,
+        &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%2520PROFILE&quot;,
+        &quot;method&quot; : &quot;PUT&quot;
+    } ],
+    &quot;sampling-baseline&quot; : 5,
+    &quot;sampling-window&quot; : 180,
+     &quot;sampling-frequency&quot; : 10,
+     &quot;log-level&quot; : &quot;fatal&quot;,
+     &quot;log-file&quot; : &quot;/log/file/path&quot;,
+     &quot;proxy-host&quot; : &quot;localhost&quot;,
+     &quot;proxy-auth&quot; : &quot;Basic&quot;,
+     &quot;proxy-user&quot; : &quot;user_name&quot;,
+     &quot;proxy-pass&quot; : &quot;wdYYyn3+5QkUV264KmSv9w==&quot;,
+     &quot;proxy-port&quot; : 8080,
+     &quot;stacktrace-capture-mode&quot; : &quot;ALL&quot;,
+     &quot;use-proxy&quot; : true,
+     &quot;override-teamserver-url&quot; : false,
+     &quot;engine-type&quot; : &quot;JAVA&quot;
+    }, {
+     &quot;name&quot; : &quot;default&quot;,
+     &quot;id&quot; : {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/default&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+         &quot;rel&quot; : &quot;download&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/default&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/default&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;update&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/default&quot;,
+          &quot;method&quot; : &quot;PUT&quot;
+     } ],
+     &quot;sampling-baseline&quot; : 5,
+     &quot;sampling-window&quot; : 180,
+     &quot;sampling-frequency&quot; : 10,
+     &quot;stacktrace-capture-mode&quot; : &quot;ALL&quot;,
+     &quot;use-proxy&quot; : false,
+     &quot;override-teamserver-url&quot; : false,
+     &quot;engine-type&quot; : &quot;JAVA&quot;
+} ]</code></pre>
+<h3 id="send-profiles">Send Profiles</h3>
+<p>Send a <strong>Profile</strong> created by the user.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>POST https://app.contrastsecurity.com/Contrast/api/engine/profiles</code></pre>
+<h4 id="request">Request</h4>
+<p>Static URL that doesn&#39;t have any custom parameters.</p>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/engine/profiles --data &quot;{&quot;name&quot;:&quot;REST PROFILE&quot;,&quot;sampling-baseline&quot;:5,&quot;sampling-window&quot;:180,&quot;sampling-frequency&quot;:10,&quot;log-level&quot;:&quot;&quot;,&quot;log-file&quot;:&quot;&quot;,&quot;proxy-host&quot;:&quot;&quot;,&quot;proxy-auth&quot;:&quot;&quot;,&quot;proxy-user&quot;:&quot;&quot;,&quot;proxy-pass&quot;:&quot;&quot;,&quot;proxy-port&quot;:&quot;&quot;,&quot;teamserver-url&quot;:&quot;&quot;,&quot;stacktrace-capture-mode&quot;:&quot;ALL&quot;,&quot;use-proxy&quot;:false,&quot;override-teamserver-url&quot;:false,&quot;engine-type&quot;:&quot;JAVA&quot;}&quot;</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns the sent <strong>Profile</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+    &quot;name&quot; : &quot;REST PROFILE&quot;,
+    &quot;id&quot; : {
+    &quot;rel&quot; : &quot;self&quot;,
+    &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/REST%2520PROFILE&quot;,
+     &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+         &quot;rel&quot; : &quot;download&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/REST%20PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/REST%2520PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;update&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/REST%2520PROFILE&quot;,
+         &quot;method&quot; : &quot;PUT&quot;
+     } ],
+     &quot;sampling-baseline&quot; : 5,
+     &quot;sampling-window&quot; : 180,
+     &quot;sampling-frequency&quot; : 10,
+     &quot;log-level&quot; : &quot;&quot;,
+     &quot;log-file&quot; : &quot;&quot;,
+     &quot;proxy-host&quot; : &quot;&quot;,
+     &quot;stacktrace-capture-mode&quot; : &quot;ALL&quot;,
+     &quot;use-proxy&quot; : false,
+     &quot;override-teamserver-url&quot; : false,
+     &quot;engine-type&quot; : &quot;JAVA&quot;
+}</code></pre>
+<h3 id="retrieve-specific-profile">Retrieve Specific Profile</h3>
+<p>Get a <strong>Profile</strong> based on the name provided by the user.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>GET https://app.contrastsecurity.com/Contrast/api/engine/profiles/{profile-name}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">profile-name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The name of the profile you wish to retrieve </td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%20PROFILE</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns the selected <strong>Profile</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+    &quot;name&quot; : &quot;NEW PROFILE&quot;,
+    &quot;id&quot; : {
+     &quot;rel&quot; : &quot;self&quot;,
+     &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%20PROFILE&quot;,
+     &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+         &quot;rel&quot; : &quot;download&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/NEW%20PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%20PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;update&quot;,
+         &quot;href&quot; : &quot;https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%20PROFILE&quot;,
+         &quot;method&quot; : &quot;PUT&quot;
+     } ],
+     &quot;sampling-baseline&quot; : 5,
+     &quot;sampling-window&quot; : 180,
+     &quot;sampling-frequency&quot; : 10,
+     &quot;stacktrace-capture-mode&quot; : &quot;ALL&quot;,
+     &quot;use-proxy&quot; : false,
+     &quot;override-teamserver-url&quot; : false,
+     &quot;engine-type&quot; : &quot;JAVA&quot;
+}</code></pre>
+<h3 id="update-profile">Update Profile</h3>
+<p>Update a <strong>Profile</strong> with changes made by the user.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>PUT https://app.contrastsecurity.com/Contrast/api/engine/profiles/{profile-name}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">profile-name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The name of the profile you wish to update </td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/engine/profiles/UPDATE%20PROFILE
+--data &quot;{&quot;name&quot;:&quot;UPDATE PROFILE&quot;,&quot;sampling-baseline&quot;:5,&quot;sampling-window&quot;:180,&quot;sampling-frequency&quot;:10,&quot;log-level&quot;:&quot;&quot;,&quot;log-file&quot;:&quot;&quot;,&quot;proxy-host&quot;:&quot;&quot;,&quot;proxy-auth&quot;:&quot;&quot;,&quot;proxy-user&quot;:&quot;&quot;,&quot;proxy-pass&quot;:&quot;&quot;,&quot;proxy-port&quot;:&quot;&quot;,&quot;teamserver-url&quot;:&quot;&quot;,&quot;stacktrace-capture-mode&quot;:&quot;ALL&quot;,&quot;use-proxy&quot;:false,&quot;override-teamserver-url&quot;:false,&quot;engine-type&quot;:&quot;JAVA&quot;}&quot;</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns the updated <strong>Profile</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+    &quot;name&quot; : &quot;UPDATE PROFILE&quot;,
+    &quot;id&quot; : {
+     &quot;rel&quot; : &quot;self&quot;,
+     &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/engine/profiles/NEW%2520PROFILE&quot;,
+     &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+         &quot;rel&quot; : &quot;download&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/engine/NEW%20PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/engine/profiles/NEW%2520PROFILE&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;update&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/engine/profiles/NEW%2520PROFILE&quot;,
+         &quot;method&quot; : &quot;PUT&quot;
+     } ],
+     &quot;sampling-baseline&quot; : 5,
+     &quot;sampling-window&quot; : 180,
+     &quot;sampling-frequency&quot; : 10,
+     &quot;log-level&quot; : &quot;&quot;,
+     &quot;log-file&quot; : &quot;&quot;,
+     &quot;proxy-host&quot; : &quot;&quot;,
+     &quot;stacktrace-capture-mode&quot; : &quot;ALL&quot;,
+     &quot;use-proxy&quot; : false,
+     &quot;override-teamserver-url&quot; : false,
+     &quot;engine-type&quot; : &quot;JAVA&quot;
+}</code></pre>
+<h3 id="delete-profile">Delete Profile</h3>
+<p>Delete a <strong>Profile</strong> with the given name.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>DELETE https://app.contrastsecurity.com/Contrast/api/engine/profiles/{profile-name}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">profile-name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The name of the profile you wish to delete </td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/engine/profiles/NEW%20PROFILE
+--data &quot;{&quot;name&quot;:&quot;UPDATE PROFILE&quot;,&quot;sampling-baseline&quot;:5,&quot;sampling-window&quot;:180,&quot;sampling-frequency&quot;:10,&quot;log-level&quot;:&quot;&quot;,&quot;log-file&quot;:&quot;&quot;,&quot;proxy-host&quot;:&quot;&quot;,&quot;proxy-auth&quot;:&quot;&quot;,&quot;proxy-user&quot;:&quot;&quot;,&quot;proxy-pass&quot;:&quot;&quot;,&quot;proxy-port&quot;:&quot;&quot;,&quot;teamserver-url&quot;:&quot;&quot;,&quot;stacktrace-capture-mode&quot;:&quot;ALL&quot;,&quot;use-proxy&quot;:false,&quot;override-teamserver-url&quot;:false,&quot;engine-type&quot;:&quot;JAVA&quot;}&quot;</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns <em>200</em> if the <strong>Profile</strong> was successfully deleted.</p>
+<h3 id="retrieve-agent">Retrieve Agent</h3>
+<p>Get an <strong>Agent</strong> for the given platform: <code>java</code> or <code>dotnet</code>.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>GET https://app.contrastsecurity.com/Contrast/api/engine/{profile}/{platform}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">jvm</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">false</td>
+<td style="text-align:left">The jvm level on which your application runs (Java only)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/engine/default/java?jvm=1.6</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns an <strong>Agent</strong> with which to monitor your <strong>Application</strong>.</p>
+<h4 id="sample-response">Sample Response</h4>
+<p><code>Contrast.jar</code></p>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_tsfaq.html#sample">Sampling</a></p>
+<p><a href="user_tsfaq.html#glossary">Glossary</a></p>
+
+ 			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+	<div class="article">
+	 	<h1 class="label1cat">Server API Resources</h1>
+	 		<a class="anchor" id="server">
+	 			<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+	 			<!--
+title: "Servers API Resources"
+description: "Resource Guide to Servers"
+-->
+
+
+<h2 id="data-objects">Data Objects</h2>
+<h3 id="server">Server</h3>
+<p>A server object representing a single web server monitored by the Contrast agent.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">server-id</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">The unique identifier for the server</td>
+</tr>
+<tr>
+<td style="text-align:left">last-startup-message-received</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The date the last *Startup Message was reported by the Agent on the Server</td>
+</tr>
+<tr>
+<td style="text-align:left">last-activity</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The date the last **AppActivity Message was reported by the Agent on the server</td>
+</tr>
+<tr>
+<td style="text-align:left">last-trace-received</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The date the last <strong>Trace</strong> was reported by the Agent on the server</td>
+</tr>
+<tr>
+<td style="text-align:left">hostname</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The name of the host machine on which the server is running</td>
+</tr>
+<tr>
+<td style="text-align:left">server-path</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The path to the server on the host machine</td>
+</tr>
+<tr>
+<td style="text-align:left">server-type</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Indicates the type of server</td>
+</tr>
+<tr>
+<td style="text-align:left">enabled</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Indicates whether or not the Agent on the server is currently active</td>
+</tr>
+<tr>
+<td style="text-align:left">engine-version</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The version of the Agent currently running on the server, in the form <code>Major.Minor.Patch</code></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>A startup message is sent by the Agent when the server first starts to tell TeamServer that it is still available and to determine what, if any, applications should be monitored</li>
+</ul>
+<p>** An AppActivity message indicates some type of action was performed on the application. These types of messages provide updates to Coverage, Architecture and Library information.</p>
+<h4 id="hateoas-links">HATEOAS Links</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Relevance</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">application</td>
+<td style="text-align:left">The application to which the coverage belongs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="api-operations">API Operations</h2>
+<h3 id="retrieve-servers">Retrieve Servers</h3>
+<p>Retrieves a list of the <strong>Servers</strong> to which the user has access.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>GET https://app.contrastsecurity.com/Contrast/api/servers</code></pre>
+<h4 id="request">Request</h4>
+<p>Static URL that doesn&#39;t have any custom parameters.</p>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/servers</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a collection of <strong>Server</strong> objects.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[ {
+    &quot;hostname&quot; : &quot;DELALTE6520-HM&quot;,
+     &quot;enabled&quot; : true,
+     &quot;applications&quot; : null,
+     &quot;id&quot; : null,
+     &quot;link&quot; : [ ],
+     &quot;server-id&quot; : 1,
+     &quot;last-startup-message-received&quot; : 1389619832000,
+     &quot;last-trace-received&quot; : 1389619927000,
+     &quot;last-activity&quot; : 1389624222000,
+     &quot;server-path&quot; : &quot;c:\\Tools\\apache-tomcat2-7.0.40\\bin\\&quot;,
+    &quot;server-type&quot; : &quot;tomcat7&quot;,
+     &quot;engine-version&quot; : &quot;2.4.8&quot;
+    }, {
+     &quot;hostname&quot; : &quot;DELALTE6520-HM&quot;,
+     &quot;enabled&quot; : true,
+     &quot;applications&quot; : null,
+     &quot;id&quot; : null,
+     &quot;link&quot; : [ ],
+     &quot;server-id&quot; : 2,
+     &quot;last-startup-message-received&quot; : 1389622545000,
+     &quot;last-trace-received&quot; : 1389622712000,
+     &quot;last-activity&quot; : 1389624352000,
+     &quot;server-path&quot; : &quot;c:\\windows\\system32\\inetsrv\\w3wp.exe&quot;,
+     &quot;server-type&quot; : &quot;iis7&quot;,
+     &quot;engine-version&quot; : &quot;-&quot;
+} ]</code></pre>
+<h3 id="get-specific-server">Get Specific Server</h3>
+<p>Retrieve the given <strong>Server</strong>.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>GET https://app.contrastsecurity.com/Contrast/api/servers/{server-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">server-id</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the server for which you want information </td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/servers/1</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a <strong>Server</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+    &quot;hostname&quot; : &quot;DELALTE6520-HM&quot;,
+     &quot;enabled&quot; : true,
+     &quot;applications&quot; : null,
+     &quot;id&quot; : null,
+     &quot;link&quot; : [ ],
+     &quot;server-id&quot; : 1,
+     &quot;last-startup-message-received&quot; : 1389619832000,
+     &quot;last-trace-received&quot; : 1389619927000,
+     &quot;last-activity&quot; : 1389624222000,
+     &quot;server-path&quot; : &quot;c:\\Tools\\apache-tomcat2-7.0.40\\bin\\&quot;,
+     &quot;server-type&quot; : &quot;tomcat7&quot;,
+     &quot;engine-version&quot; : &quot;2.4.8&quot;
+}</code></pre>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_tsfaq.html#glossary">Glossary</a></p>
+
+	 		</a>
+	</div>
+</div>
+
+
+<div class="container-content">
+	<div class="article">
+		<h1 class="label1cat">Trace API Resources</h1>
+			<a class="anchor" id="trace">
+				<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/api/v2" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+		 			</div>
+		 		</div>
+		 		<!--
+title: "Trace API Resources"
+description: "Resource Guide to Traces"
+-->
+
+
+<h2 id="data-objects">Data Objects</h2>
+<h3 id="trace">Trace</h3>
+<p><strong>Trace</strong> represents a vulnerability found within an <strong>Application</strong> under Contrast monitoring.</p>
+<h4 id="fields">Fields</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">uuid</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">The unique identifier of the Trace</td>
+</tr>
+<tr>
+<td style="text-align:left">total-traces-received</td>
+<td style="text-align:left">long</td>
+<td style="text-align:left">The number of times that this Trace has been reported by the Agent</td>
+</tr>
+<tr>
+<td style="text-align:left">last-time-seen</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The number of custom methods discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">first-time-seen</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The number of custom methods visited while under Contrast monitoring</td>
+</tr>
+<tr>
+<td style="text-align:left">status</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The number of custom views discovered by the Contrast Engine</td>
+</tr>
+<tr>
+<td style="text-align:left">sub-status</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The number of accessible custom views</td>
+</tr>
+<tr>
+<td style="text-align:left">platform</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The platform on which the application from which the Trace comes runs </td>
+</tr>
+<tr>
+<td style="text-align:left">language</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The language of the application from which the Trace comes</td>
+</tr>
+<tr>
+<td style="text-align:left">title</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The title of the Trace</td>
+</tr>
+<tr>
+<td style="text-align:left">sub-title</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The sub-title of the Trace </td>
+</tr>
+<tr>
+<td style="text-align:left">reported-to-bug-tracker</td>
+<td style="text-align:left">boolean</td>
+<td style="text-align:left">Indicates if the Trace has been reported to a bug tracker</td>
+</tr>
+<tr>
+<td style="text-align:left">reported-to-bug-tracker-time</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The date a Trace was reported to a bug tracker (won&#39;t be present if <em>reported-to-bug-tracker</em> = <code>false</code>)</td>
+</tr>
+<tr>
+<td style="text-align:left">closed-time</td>
+<td style="text-align:left">date</td>
+<td style="text-align:left">The date a Trace was marked closed/resolved</td>
+</tr>
+<tr>
+<td style="text-align:left">evidence</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The evidence collected that indicates the Trace exists</td>
+</tr>
+<tr>
+<td style="text-align:left">rule-name</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The security rule that the application is in violation of that caused the Trace to be generated</td>
+</tr>
+</tbody>
+</table>
+<h4 id="hateoas-links">HATEOAS Links</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Relevance</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">application</td>
+<td style="text-align:left">The application to which the coverage belongs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="api-operations">API Operations</h2>
+<h3 id="retrieve-traces">Retrieve Traces</h3>
+<p>Retrieves the traces for an <strong>Application</strong> by the application&#39;s identifier.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/traces/{app-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the application for which you want traces</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a <strong>Trace</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>[ {
+     &quot;uuid&quot; : &quot;Y1D7-7IV6-JZ62-PKQ1&quot;,
+     &quot;status&quot; : &quot;Reported&quot;,
+     &quot;platform&quot; : &quot;Sun Microsystems Inc.&quot;,
+     &quot;language&quot; : &quot;Java&quot;,
+     &quot;title&quot; : &quot;Overly Long Session Timeout in (unknown)&quot;,
+     &quot;evidence&quot; : &quot;&lt;div class=&#39;trace-risk-evidence&#39;&gt;272:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;the&amp;nbsp;timeout&amp;nbsp;for&amp;nbsp;a&amp;nbsp;particular&amp;nbsp;session&amp;nbsp;dynamically&amp;nbsp;by&amp;nbsp;using&lt;br/&gt;\n273:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HttpSession.getMaxInactiveInterval().&amp;nbsp;--&amp;gt;&lt;br/&gt;\n274:&amp;nbsp;&lt;br/&gt;\n275:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;session-config&amp;gt;&lt;br/&gt;\n276:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;!--&amp;nbsp;2&amp;nbsp;days&amp;nbsp;--&amp;gt;&lt;br/&gt;\n277:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;session-timeout&amp;gt;2880&amp;lt;/session-timeout&amp;gt;&lt;br/&gt;\n278:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/session-config&amp;gt;&lt;br/&gt;\n279:&amp;nbsp;&lt;br/&gt;\n280:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;mime-mapping&amp;gt;&lt;br/&gt;\n281:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;extension&amp;gt;wmv&amp;lt;/extension&amp;gt;&lt;br/&gt;\n&lt;/div&gt;\n&quot;,
+     &quot;request&quot; : {
+         &quot;protocol&quot; : &quot;http&quot;,
+         &quot;version&quot; : &quot;1.0&quot;,
+         &quot;uri&quot; : &quot;/WebGoat/attack&quot;,
+         &quot;method&quot; : &quot;GET&quot;,
+         &quot;port&quot; : 0,
+         &quot;headers&quot; : [ {
+                 &quot;name&quot; : &quot;Cookie&quot;,
+                 &quot;value&quot; : &quot;.ASPXANONYMOUS=UPl1IIBCzwEkAAAAMDIwMWQ0N2MtMjQ0Mi00ZGMzLWFjM2EtNWY2MTZmMGJlMTMz0; Language=en; Country=US; UMB_UPDCHK=1&quot;
+             }, {
+                 &quot;name&quot; : &quot;Cache-control&quot;,
+                 &quot;value&quot; : &quot;max-age=0&quot;
+             }, {
+                 &quot;name&quot; : &quot;Connection&quot;,
+                 &quot;value&quot; : &quot;keep-alive&quot;
+            }, {
+                 &quot;name&quot; : &quot;Accept-language&quot;,
+                 &quot;value&quot; : &quot;en-US,en;q=0.8,es-419;q=0.6,es;q=0.4&quot;
+             }, {
+                 &quot;name&quot; : &quot;Host&quot;,
+                 &quot;value&quot; : &quot;localhost:9080&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept&quot;,
+                 &quot;value&quot; : &quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&quot;
+             }, {
+                 &quot;name&quot; : &quot;User-agent&quot;,
+                 &quot;value&quot; : &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36&quot;
+             }, {
+                 &quot;name&quot; : &quot;Authorization&quot;,
+                 &quot;value&quot; : &quot;Basic Z3Vlc3Q6Z3Vlc3Q=&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept-encoding&quot;,
+                 &quot;value&quot; : &quot;gzip,deflate,sdch&quot;
+         } ],
+        &quot;parameters&quot; : [ ],
+         &quot;id&quot; : null,
+         &quot;link&quot; : [ ],
+         &quot;query-string&quot; : &quot;&quot;
+     },
+     &quot;events&quot; : null,
+    &quot;id&quot; : {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/Y1D7-7IV6-JZ62-PKQ1?expand&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+             &quot;rel&quot; : &quot;self&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/Y1D7-7IV6-JZ62-PKQ1?expand&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         }, {
+             &quot;rel&quot; : &quot;application&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771?expand&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+     } ],
+     &quot;trace-id&quot; : 2,
+     &quot;total-traces-received&quot; : 1,
+     &quot;last-time-seen&quot; : 1389619653489,
+     &quot;first-time-seen&quot; : 1389619653489,
+     &quot;sub-status&quot; : &quot;&quot;,
+     &quot;sub-title&quot; : &quot;/WEB-INF/web.xml&quot;,
+     &quot;reported-to-bug-tracker&quot; : false,
+     &quot;rule-name&quot; : &quot;session-timeout&quot;
+}, {
+     &quot;uuid&quot; : &quot;YIGJ-4UKM-46F8-O706&quot;,
+     &quot;status&quot; : &quot;Reported&quot;,
+     &quot;platform&quot; : &quot;Sun Microsystems Inc.&quot;,
+     &quot;language&quot; : &quot;Java&quot;,
+     &quot;title&quot; : &quot;Insecure Authentication Protocol in (unknown)&quot;,
+     &quot;evidence&quot; : &quot;&lt;div class=&#39;trace-risk-evidence&#39;&gt;Authorization: Basic Z3Vl...Q6Z3Vlc3Q=&lt;/div&gt;\n&quot;,
+     &quot;request&quot; : {
+         &quot;protocol&quot; : &quot;http&quot;,
+         &quot;version&quot; : &quot;1.0&quot;,
+         &quot;uri&quot; : &quot;/WebGoat/attack&quot;,
+         &quot;method&quot; : &quot;GET&quot;,
+         &quot;port&quot; : 0,
+         &quot;headers&quot; : [ {
+                 &quot;name&quot; : &quot;Cookie&quot;,
+                 &quot;value&quot; : &quot;.ASPXANONYMOUS=UPl1IIBCzwEkAAAAMDIwMWQ0N2MtMjQ0Mi00ZGMzLWFjM2EtNWY2MTZmMGJlMTMz0; Language=en; Country=US; UMB_UPDCHK=1&quot;
+             }, {
+                 &quot;name&quot; : &quot;Cache-control&quot;,
+                 &quot;value&quot; : &quot;max-age=0&quot;
+             }, {
+                 &quot;name&quot; : &quot;Connection&quot;,
+                 &quot;value&quot; : &quot;keep-alive&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept-language&quot;,
+                 &quot;value&quot; : &quot;en-US,en;q=0.8,es-419;q=0.6,es;q=0.4&quot;
+             }, {
+                 &quot;name&quot; : &quot;Host&quot;,
+                 &quot;value&quot; : &quot;localhost:9080&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept&quot;,
+                 &quot;value&quot; : &quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&quot;
+             }, {
+                 &quot;name&quot; : &quot;User-agent&quot;,
+                 &quot;value&quot; : &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36&quot;
+             }, {
+                 &quot;name&quot; : &quot;Authorization&quot;,
+                 &quot;value&quot; : &quot;Basic Z3Vlc3Q6Z3Vlc3Q=&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept-encoding&quot;,
+                 &quot;value&quot; : &quot;gzip,deflate,sdch&quot;
+         } ],
+         &quot;parameters&quot; : [ ],
+         &quot;id&quot; : null,
+         &quot;link&quot; : [ ],
+         &quot;query-string&quot; : &quot;&quot;
+     },
+     &quot;events&quot; : null,
+     &quot;id&quot; : {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/YIGJ-4UKM-46F8-O706?expand&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/YIGJ-4UKM-46F8-O706?expand&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     }, {
+         &quot;rel&quot; : &quot;application&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771?expand&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     } ],
+    &quot;trace-id&quot; : 3,
+     &quot;total-traces-received&quot; : 3,
+     &quot;last-time-seen&quot; : 1389619655592,
+     &quot;first-time-seen&quot; : 1389619654111,
+     &quot;sub-status&quot; : &quot;&quot;,
+     &quot;sub-title&quot; : &quot; in (unknown)&quot;,
+     &quot;reported-to-bug-tracker&quot; : false,
+     &quot;rule-name&quot; : &quot;insecure-auth-protocol&quot;
+},
+...
+}]</code></pre>
+<h3 id="retrieve-specific-trace">Retrieve Specific Trace</h3>
+<p>Retrieves the traces for an <strong>Application</strong> by the application&#39;s identifier.</p>
+<h4 id="resource-uri">Resource URI</h4>
+<pre><code>https://app.contrastsecurity.com/Contrast/api/traces/{app-id}/{trace-id}</code></pre>
+<h4 id="request">Request</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Required</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">app-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the Application for which you want information</td>
+</tr>
+<tr>
+<td style="text-align:left">trace-id</td>
+<td style="text-align:left">guid</td>
+<td style="text-align:left">true</td>
+<td style="text-align:left">The ID of the Trace for which you want information</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sample-request">Sample Request</h4>
+<pre><code>curl -HAccept:application/json -HAPI-Key:test -HAuthorization:dGVzdF91c2VyOnRlc3Q= https://app.contrastsecurity.com/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/</code></pre>
+<h4 id="response">Response</h4>
+<p>Returns a <strong>Trace</strong> object.</p>
+<h4 id="sample-response">Sample Response</h4>
+<pre><code>{
+     &quot;uuid&quot; : &quot;Y1D7-7IV6-JZ62-PKQ1&quot;,
+     &quot;status&quot; : &quot;Reported&quot;,
+     &quot;platform&quot; : &quot;Sun Microsystems Inc.&quot;,
+     &quot;language&quot; : &quot;Java&quot;,
+     &quot;title&quot; : &quot;Overly Long Session Timeout in (unknown)&quot;,
+     &quot;evidence&quot; : &quot;&lt;div class=&#39;trace-risk-evidence&#39;&gt;272:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;the&amp;nbsp;timeout&amp;nbsp;for&amp;nbsp;a&amp;nbsp;particular&amp;nbsp;session&amp;nbsp;dynamically&amp;nbsp;by&amp;nbsp;using&lt;br/&gt;\n273:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HttpSession.getMaxInactiveInterval().&amp;nbsp;--&amp;gt;&lt;br/&gt;\n274:&amp;nbsp;&lt;br/&gt;\n275:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;session-config&amp;gt;&lt;br/&gt;\n276:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;!--&amp;nbsp;2&amp;nbsp;days&amp;nbsp;--&amp;gt;&lt;br/&gt;\n277:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;session-timeout&amp;gt;2880&amp;lt;/session-timeout&amp;gt;&lt;br/&gt;\n278:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;/session-config&amp;gt;&lt;br/&gt;\n279:&amp;nbsp;&lt;br/&gt;\n280:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;mime-mapping&amp;gt;&lt;br/&gt;\n281:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;lt;extension&amp;gt;wmv&amp;lt;/extension&amp;gt;&lt;br/&gt;\n&lt;/div&gt;\n&quot;,
+     &quot;request&quot; : {
+         &quot;protocol&quot; : &quot;http&quot;,
+         &quot;version&quot; : &quot;1.0&quot;,
+         &quot;uri&quot; : &quot;/WebGoat/attack&quot;,
+         &quot;method&quot; : &quot;GET&quot;,
+         &quot;port&quot; : 0,
+         &quot;headers&quot; : [ {
+                 &quot;name&quot; : &quot;Cookie&quot;,
+                 &quot;value&quot; : &quot;.ASPXANONYMOUS=UPl1IIBCzwEkAAAAMDIwMWQ0N2MtMjQ0Mi00ZGMzLWFjM2EtNWY2MTZmMGJlMTMz0; Language=en; Country=US; UMB_UPDCHK=1&quot;
+             }, {
+                 &quot;name&quot; : &quot;Cache-control&quot;,
+                 &quot;value&quot; : &quot;max-age=0&quot;
+             }, {
+                 &quot;name&quot; : &quot;Connection&quot;,
+                 &quot;value&quot; : &quot;keep-alive&quot;
+            }, {
+                 &quot;name&quot; : &quot;Accept-language&quot;,
+                 &quot;value&quot; : &quot;en-US,en;q=0.8,es-419;q=0.6,es;q=0.4&quot;
+             }, {
+                 &quot;name&quot; : &quot;Host&quot;,
+                 &quot;value&quot; : &quot;localhost:9080&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept&quot;,
+                 &quot;value&quot; : &quot;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&quot;
+             }, {
+                 &quot;name&quot; : &quot;User-agent&quot;,
+                 &quot;value&quot; : &quot;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36&quot;
+             }, {
+                 &quot;name&quot; : &quot;Authorization&quot;,
+                 &quot;value&quot; : &quot;Basic Z3Vlc3Q6Z3Vlc3Q=&quot;
+             }, {
+                 &quot;name&quot; : &quot;Accept-encoding&quot;,
+                 &quot;value&quot; : &quot;gzip,deflate,sdch&quot;
+         } ],
+        &quot;parameters&quot; : [ ],
+         &quot;id&quot; : null,
+         &quot;link&quot; : [ ],
+         &quot;query-string&quot; : &quot;&quot;
+     },
+     &quot;events&quot; : null,
+    &quot;id&quot; : {
+         &quot;rel&quot; : &quot;self&quot;,
+         &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/Y1D7-7IV6-JZ62-PKQ1?expand&quot;,
+         &quot;method&quot; : &quot;GET&quot;
+     },
+     &quot;link&quot; : [ {
+             &quot;rel&quot; : &quot;self&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/traces/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771/Y1D7-7IV6-JZ62-PKQ1?expand&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+         }, {
+             &quot;rel&quot; : &quot;application&quot;,
+             &quot;href&quot; : &quot;http://localhost:19080/Contrast/api/applications/45adaa6a-ab7d-4ba1-af2c-5ee1301c1771?expand&quot;,
+             &quot;method&quot; : &quot;GET&quot;
+     } ],
+     &quot;trace-id&quot; : 2,
+     &quot;total-traces-received&quot; : 1,
+     &quot;last-time-seen&quot; : 1389619653489,
+     &quot;first-time-seen&quot; : 1389619653489,
+     &quot;sub-status&quot; : &quot;&quot;,
+     &quot;sub-title&quot; : &quot;/WEB-INF/web.xml&quot;,
+     &quot;reported-to-bug-tracker&quot; : false,
+     &quot;rule-name&quot; : &quot;session-timeout&quot;
+}</code></pre>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_tsfaq.html#glossary">Glossary</a></p>
+
+			</a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

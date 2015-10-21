@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrator | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Admin.png" width="75" height="75">
+            <p class="label2">Admin</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">TeamServer</p></li>
+                <li><a href="admin_tsinstall.html">Installation</a></li>
+                <li>Configuration</li>
+                    <li><a href="admin_tsconfig.html#ts" class="label9">Configure TeamServer</a></li>
+                    <li><a href="admin_tsconfig.html#tomcat" class="label9">Configure Tomcat</a></li>
+                    <li><a href="admin_tsconfig.html#user" class="label9">Configure User Directories</a></li>
+                    <li><a href="admin_tsconfig.html#defect" class="label9">Issue &amp; Defect Management</a></li>
+                    <br>
+
+                        <li><a href="admin_tsconfigint.html" class="label10">&#8226; Integration</a></li>
+                        <li><a href="admin_tsconfigset.html" class="label10">&#8226; Settings</a></li>
+                        <br>
+
+                <li><a href="admin_tsfaq.html">Troubleshooting</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Crawler</p></li>
+                <li><a href="admin_crawlinstall.html">Installation</a></li><li>
+                </li><li><a href="admin_crawlconfig.html">Configuration </a></li>
+<!--
+                <li><a href="admin_crawlfaq.html">Troubleshooting</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Administrator</li>
+            <li>TeamServer</li>
+            <li class="label6">Configuration</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring TeamServer</h1>
+            <a class="anchor" id="ts">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring TeamServer"
+description: "There are a great deal of configurable options to customize how your deployment of TeamServer behaves. You can configure how and when Contrast functions with just a few clicks."
+-->
+
+<h2 id="accessing-teamserver-configuration">Accessing TeamServer Configuration</h2>
+<p>To access the TeamServer configuration options, first log in to the Administrative interface at <strong><em>/Contrast/superadmin/login.html</em></strong> - once you have logged in, click on the <strong>Settings</strong> menu in the navigation bar. </p>
+<h3 id="configuration-menu">Configuration Menu</h3>
+<p>The configuration menu gives you the most options for configuring how the TeamServer behaves, the bulk of the application&#39;s actual configuration is handled through this interface.</p>
+<h3 id="authentication-settings">Authentication Settings</h3>
+<p>See <a href="admin_tsconfig.html#user">Configuring User Directories</a></p>
+<h3 id="database-settings-deprecated-">Database Settings (Deprecated)</h3>
+<p>Database settings will no longer be available after 3.1.0 since the database is embedded and wholly managed outside of the TeamServer application itself.</p>
+<h3 id="auth-mode-settings">Auth Mode Settings</h3>
+<ul>
+<li>Accessing Authentication Settings in TeamServer</li>
+<li>To access the Authentication Settings in TeamServer:</li>
+<li>Login to the Superadmin Application</li>
+<li>Click on the Settings option in the navigation bar</li>
+<li>Click on Authentication in the left navigation</li>
+</ul>
+<p><a href="assets/images/KB4-c02.png" rel="lightbox" title="Authentication Settings"><img class="thumbnail" src="assets/images/KB4-c02.png"></a></p>
+<h2 id="changing-authentication-settings">Changing Authentication Settings</h2>
+<p>When switching between authentication modes it is important to understand the impact that changing will have. First and foremost, any users that have been created under the previous authentication mode will no longer work. There is one exception to this rule. If you use email addresses in the target authentication mode and the email address for users is the same between both the old and new authentication provider the user mappings will continue to work. </p>
+<p>After you have setup your new authentication mode and restarted your server, no users will be able to login to the TeamServer until their accounts are added to a new or existing organization. The best approach for doing this is for the superadmin to take care of the organization administrator accounts then each organization administrator is responsible for the users within that organization. Note that when using a external authentication provider mode (LDAP or AD) the username field when adding a user functions as a live search showing users that are in the proper group and not already users within the application.</p>
+<h3 id="embedded-mode">Embedded Mode</h3>
+<p>When this mode is enabled all authentication is handled by the application and database credentials are stored (using a one-way hash) in the internal Contrast database. No additional configuration is needed for this authentication mode.</p>
+<h3 id="ldap-mode">LDAP Mode</h3>
+<p>See <a href="admin_tsconfigint.html#ldap">Configuring LDAP Authentication</a></p>
+<h3 id="active-directory-mode">Active Directory Mode</h3>
+<p>See <a href="admin_tsconfigint.html#ad">Configuring Active Directory</a> </p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring Embedded Tomcat Instance</h1>
+            <a class="anchor" id="tomcat">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring Embedded Tomcat Instance"
+description: "Guidelines for configuring the embedded Tomcat instance of TeamServer"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>During the installation process, we set some values for the memory used by the embedded Tomcat server on which Contrast runs. Over time, as you add more Applications or find more Vulnerabilities, you may notice a degradation in performance in the Contrast web application. This could be because you&#39;re bumping against the maximum memory allowed for this server. Fortunately, its fairly straight forward to increase your memory settings.
+The first thing you&#39;ll need to do is stop the Contrast server by running the &quot;contrast-server stop&quot; command as an administrator. 
+Once the server is completely stopped (<strong><em>Contrast/logs/contrast-stdout.log</em></strong> ends with &quot;[MysqldResource] shutdown complete&quot;), you&#39;ll be able to change its memory settings. In the Contrast bin directory, <strong><em>c:/Program Files/Contrast/bin</em></strong> or <strong><em>/opt/Contrast/bin</em></strong> by default, you&#39;ll find a file named <strong><em>contrast-server.vmoptions</em></strong>. When you open it, it should look something like this: </p>
+<pre><code>-XX:MaxPermSize=512M
+-Xmx4096M
+-Xms4096M
+-enableassertions
+-server
+-Djava.net.preferIPv4Stack=true
+-XX:+UseTLAB
+-XX:+UseCompressedOops
+-XX:+UseConcMarkSweepGC
+-XX:+UseParNewGC
+-XX:CMSFullGCsBeforeCompaction=1
+-XX:+CMSParallelRemarkEnabled
+-XX:+PrintVMOptions
+-XX:+PrintCommandLineFlags
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:HeapDumpPath=/home/vagrant/contrast/logs
+-Djava.awt.headless=true</code></pre>
+<p>The values that can be updated are <strong>Xms</strong>, the amount of memory allocated to the server on start, and <strong>Xmx</strong>, the maximum memory the server can use, as well as the MaxPermSize. These values can change depending on the memory available on the machine hosting Contrast. Once the change is made simply save the file and start Contrast back up using the <strong><em>contrast-server start</em></strong> command. For more information about JVM tuning, see this <a href="http://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html">guide</a>.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring User Directories</h1>
+            <a class="anchor" id="user">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring User Directories"
+description: "A User Directory is a place where user information, specifically how a user is authenticated to the application is stored. This includes the user's login name and credentials are stored in this directory."
+-->
+
+<h2 id="about-user-directories">About User Directories</h2>
+<p>A User Directory is a place where user information, specifically how a user is authenticated to the application is stored. This includes the user&#39;s login name and credentials are stored in this directory. </p>
+<p>The Embedded Directory stores the username and password in the Contrast Database; the password is stored as a one-way hash (non-reversible encryption). You can also connect to External Directories which will store only the username in the Contrast Database, credentials for login remain in the connected directory and that directory is responsible for performing the actual authentication of the user given the credentials supplied by the user at login. </p>
+<h2 id="configuring-a-user-directory">Configuring a User Directory</h2>
+<p>To configure your user directory:</p>
+<ul>
+<li>Login to the SuperAdmin Application </li>
+<li>Choose Settings from the navigation bar</li>
+<li>Select Authentication from the left navigation</li>
+<li>Select Embedded, LDAP, or Active Directory</li>
+</ul>
+<h2 id="configuring-the-internal-directory">Configuring the Internal Directory</h2>
+<p>There is no specific configuration for the Internal Directory within the Directory Configuration, however your password policy can be configured when you are using the Internal Directory. To access the Password Policy configuration:</p>
+<ul>
+<li>Login to the SuperAdmin Application</li>
+<li>Choose <strong>Settings</strong> from the navigation bar</li>
+<li>Select <strong>Security</strong> from the left navigation </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum Failed Login Attempts</td>
+<td>How many failed attempts before an account is locked out</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Minimum Length</td>
+<td>The minimum length for user passwords</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Minimum Numbers</td>
+<td>The minimum number of numbers required in a password</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Minimum Upper Case</td>
+<td>The minimum number of uppercase letters required in a password</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Minimum Lower Case</td>
+<td>The minimum number or lowercase letters required in a password</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Minimum Symbols</td>
+<td>The minimum number of symbols required in a password</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Password Expiration Time</td>
+<td>How many days between password expiration</td>
+<td>365</td>
+</tr>
+<tr>
+<td>Days after which unusedaccounts automatically lock</td>
+<td>How many days an inactive account will remain active until it is automatically marked inactive</td>
+<td>180</td>
+</tr>
+<tr>
+<td>Active Password History</td>
+<td>Whether to retain a history of user password and disallow password re-use</td>
+<td>Disabled</td>
+</tr>
+<tr>
+<td>Password Retained</td>
+<td>The number of passwords to retain when password history is enabled</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Check Minimum Passwordchange time</td>
+<td>Limit how often a password can be changed.</td>
+<td>Disabled</td>
+</tr>
+<tr>
+<td>Minimum Time</td>
+<td>The number of hours required between password changes</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Check Minimum # of differentcharacters</td>
+<td>Enforce a minimum number of character sets required for a password to be considered valid</td>
+<td>Disabled</td>
+</tr>
+<tr>
+<td># of Characters</td>
+<td>The number of character types required</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><a href="assets/images/KB4-c08.png" rel="lightbox" title="Security Properties"><img class="thumbnail" src="assets/images/KB4-c08.png"></a></p>
+<h2 id="connecting-to-an-external-directory">Connecting to an External Directory</h2>
+<p>When connecting TeamServer to an External Directory there is a little preparation that must be completed prior to configuring the TeamServer. </p>
+<h2 id="how-external-directory-authentication-works">How External Directory Authentication works</h2>
+<p>TeamServer manages it&#39;s own Access Control internally, so group/role management is not delegated to the Directory. As a result, only two groups are required to connect TeamServer to your Directory. One group (Contrast Admins) controls which users can access the SuperAdmin interface while the other (Contrast Users) controls which users can access the user application. Users in the Contrast Users group must be added to new or existing organizations to allow them to log in to the application. </p>
+<p>Contrast recommends the creation of two groups in the directory, dedicated to each of these purposes and as a rule, a user can not belong to both groups. A user is either a TeamServer administrator or a TeamServer user. Directory List accounts can be used as both TeamServer and Organization Administrators so specific user accounts are not tied to those responsibilities.</p>
+<h2 id="types-of-directories-supported">Types of Directories Supported</h2>
+<p>Contrast supports the following types of Directories:</p>
+<ul>
+<li><a href="admin_tsconfigint.html#ldap">Lightweight Directory Access Protocol (LDAP)</a></li>
+<li><a href="admin_tsconfigint.html#ad2">Microsoft Active Directory (AD)</a></li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Issue And Defect Management Systems</h1>
+            <a class="anchor" id="defect">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+                    </div>
+                </div>
+                <!--
+title: "Issue And Defect Management Systems"
+description: "Information on the issue and defect management system"
+-->
+
+<p>TeamServer can connect to an <strong>Issue and Defect Management System</strong> in order to streamline the remediation process. Individual traces or groups of traces can be sent directly to a configured bug tracker for development groups to implement a fix to a discovered vulnerability.</p>
+<h2 id="issue-and-defect-management-system-support">Issue And Defect Management System Support</h2>
+<h3 id="teamserver-supports-integrations-with-">TeamServer Supports Integrations With:</h3>
+<ol>
+<li>Mozilla Bugzilla</li>
+<li>Atlassian JIRA</li>
+<li>Serena Business Manager</li>
+</ol>
+<h3 id="exporting-findings-to-issue-and-defect-management-systems">Exporting Findings To Issue And Defect Management Systems</h3>
+<p>You can choose which information is included when exporting the finding(s).</p>
+<p><a href="assets/images/KB3-f04_1.png" rel="lightbox" title="Export Options"><img class="thumbnail" src="assets/images/KB3-f04_1.png"></a></p>
+<h2 id="integrating-with-unsupported-systems">Integrating With Unsupported Systems</h2>
+<p>If integration with an unsupported system is needed, this can be accomplished in several ways:</p>
+<h3 id="integrate-with-the-teamserver-rest-api">Integrate With The TeamServer REST API</h3>
+<p>You can find complete documentation here: <a href="dev_api1.html#intro">REST API</a></p>
+<h3 id="export-findings-to-csv">Export Findings To CSV</h3>
+<p>Findings can be exported to <strong>Comma-Separated Values (CSV)</strong> and imported into a bug tracker of your choice.</p>
+<h3 id="export-findings-to-xml">Export Findings To XML</h3>
+<p>Individual or groups of findings can be exported to <strong>XML</strong> format and imported into a bug tracker of your choice.</p>
+<p><a href="assets/images/KB3-f04_2.png" rel="lightbox" title="Export Format"><img class="thumbnail" src="assets/images/KB3-f04_2.png"></a></p>
+<h2 id="configuring-atlassian-jira">Configuring Atlassian JIRA</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>A username and password for a credentialed JIRA account</li>
+<li>The user must have permission to create issues in the target project</li>
+<li>A running JIRA instance accessible via HTTP to the Contrast TeamServer</li>
+<li>A project to associate the application instrumented by Contrast</li>
+</ul>
+<h3 id="setting-up-the-jira-integration">Setting Up The JIRA Integration</h3>
+<ol>
+<li>Log in to TeamServer with an <strong>Organization Administrator</strong> account</li>
+<li>Click the <strong>User Dropdown</strong> in the top-right corner (your username)</li>
+<li>Select <strong>Settings</strong> from the dropdown menu</li>
+<li>Select <strong>Bug Trackers</strong> in the left navigation</li>
+<li>Click the <strong>+ Add JIRA</strong> button</li>
+</ol>
+<p><a href="assets/images/KB3-f04_3.png" rel="lightbox" title="JIRA Integration"><img class="thumbnail" src="assets/images/KB3-f04_3.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>A name for the bug tracker entry. It will be displayed when sending findings to bug trackers.</td>
+</tr>
+<tr>
+<td><strong>Username</strong></td>
+<td>The username account credentialed to connect with Atlassian JIRA</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>The password for the username specified</td>
+</tr>
+<tr>
+<td><strong>Confirm Password</strong></td>
+<td>Confirm the password for the username specified</td>
+</tr>
+<tr>
+<td><strong>Host</strong></td>
+<td>The JIRA URL - must be accessible from the TeamServer instance being configured</td>
+</tr>
+<tr>
+<td><strong>Application</strong></td>
+<td>The application you would like to map to an Atlassian JIRA instance</td>
+</tr>
+<tr>
+<td><strong>Project Name</strong></td>
+<td>The name of the JIRA Project to map with this application</td>
+</tr>
+<tr>
+<td><strong>Assignee</strong></td>
+<td>The username of the account that issues should be assigned to when they are created</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Once the Bug Tracker is configured, you will want to verify the configuration by using the <strong>Test</strong> button at the base of the form. The test will verify that the JIRA instance can be reached by TeamServer and that the specified user is able to log in.</p>
+<h2 id="configuring-bugzilla">Configuring Bugzilla</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>A username and password for a credentialed Bugzilla account</li>
+<li>A running Bugzilla application instance accessible via HTTP to the Contrast TeamServer</li>
+<li>A product, component and version to associate the application instrumented by Contrast</li>
+</ul>
+<h3 id="setting-up-the-bugzilla-integration">Setting Up The Bugzilla Integration</h3>
+<ol>
+<li>Log in to TeamServer with an <strong>Organization Administrator</strong> account</li>
+<li>Click the <strong>User Dropdown</strong> in the top-right corner (your username)</li>
+<li>Select <strong>Settings</strong> from the dropdown menu</li>
+<li>Select <strong>Bug Trackers</strong> in the left navigation</li>
+<li>Click the <strong>+ Add Bugzilla</strong> button</li>
+</ol>
+<p><a href="assets/images/KB3-f04_4.png" rel="lightbox" title="Bugzilla Integration"><img class="thumbnail" src="assets/images/KB3-f04_4.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>A name for the bug tracker entry. It will be displayed when sending findings to bug trackers.</td>
+</tr>
+<tr>
+<td><strong>Username</strong></td>
+<td>The username account credentialed to connect with Bugzilla</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>The password for the username specified</td>
+</tr>
+<tr>
+<td><strong>Confirm Password</strong></td>
+<td>Confirm the password for the username specified</td>
+</tr>
+<tr>
+<td><strong>Host</strong></td>
+<td>The URL of the Bugzilla instance</td>
+</tr>
+<tr>
+<td><strong>Application</strong></td>
+<td>The application you would like to map to a Bugzilla product/component</td>
+</tr>
+<tr>
+<td><strong>Product</strong></td>
+<td>The product in Bugzilla to map with the application</td>
+</tr>
+<tr>
+<td><strong>Component</strong></td>
+<td>The component in Bugzilla to map with the application</td>
+</tr>
+<tr>
+<td><strong>Version</strong></td>
+<td>The version in Bugzilla to map with the application</td>
+</tr>
+<tr>
+<td><strong>Priority</strong></td>
+<td>The priority to use when exporting findings to Bugzilla</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Once you have configured the Bugzilla integration properties, you can verify communication via the <strong>Test</strong> button. This will ensure TeamServer can communicate and authenticate with the Bugzilla instance as well as the existence of the specified <strong>Product</strong>, <strong>Component</strong> and <strong>Version</strong></p>
+<h2 id="configuring-serena-business-manager">Configuring Serena Business Manager</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+<li>A username and password for a credentialed Serena (SBM) account</li>
+<li>A running SBM instance accessible via HTTP to the Contrast TeamServer</li>
+<li>A project to associate the application instrumented by Contrast</li>
+</ul>
+<h3 id="setting-up-the-sbm-integration">Setting Up The SBM Integration</h3>
+<ol>
+<li>Log in to the TeamServer with an <strong>Organization Administrator</strong> account</li>
+<li>Click the <strong>User Dropdown</strong> in the top-right corner (your username)</li>
+<li>Select <strong>Settings</strong> from the dropdown menu</li>
+<li>Select <strong>Bug Trackers</strong> in the left navigation</li>
+<li>Click the <strong>+ Add SBM</strong> button</li>
+</ol>
+<p><a href="assets/images/KB3-f04_5.png" rel="lightbox" title="Serena Integration"><img class="thumbnail" src="assets/images/KB3-f04_5.png"></a></p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>A name for the bug tracker entry. It will be displayed when sending findings to bug trackers.</td>
+</tr>
+<tr>
+<td><strong>Username</strong></td>
+<td>The username account credentialed to connect with the SBM instance</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>The password for the username specified</td>
+</tr>
+<tr>
+<td><strong>Host</strong></td>
+<td>The URL to the SBM instance</td>
+</tr>
+<tr>
+<td><strong>Application</strong></td>
+<td>The application you would like to map to an SBM instance</td>
+</tr>
+<tr>
+<td><strong>Project ID</strong></td>
+<td>The SBM Project ID to associate with this application</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>Once you have configured the Serena integration properties, you can verify communication via the <strong>Test</strong> button. This will ensure that TeamServer can communicate and authenticate with the Serena instance as well as the existence of the specified <strong>Project</strong>.</p>
+
+            </a>
+    </div>
+</div>
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

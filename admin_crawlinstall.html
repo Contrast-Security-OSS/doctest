@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrator | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Admin.png" width="75" height="75">
+            <p class="label2">Admin</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">TeamServer</p></li>
+                <li><a href="admin_tsinstall.html">Installation</a></li>
+                <li><a href="admin_tsconfig.html">Configuration</a></li>
+                <li><a href="admin_tsfaq.html">Troubleshooting</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Crawler</p></li>
+                <li>Installation</li><li>
+
+                    </li><li><a href="admin_crawlinstall.html#install" class="label9">Installing Crawler</a></li>
+                    <br>
+
+                <li><a href="admin_crawlconfig.html">Configuration </a></li>
+<!--
+                <li><a href="admin_crawlfaq.html">Troubleshooting</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Administrator</li>
+            <li>Crawler</li>
+            <li class="label6">Installation</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Installing the Crawler Micro-Service</h1>
+            <a class="anchor" id="install">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/crawler/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Installing the Crawler Micro-Service"
+description: "Guidelines for installing and configuring the Crawler Micro-Service"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>For more information about the Contrast Crawler Micro-Service <a href="admin_crawlconfig.html#overview">click here</a>.</p>
+<h2 id="system-requirements">System Requirements</h2>
+<p>Please see TeamServer and Crawler <a href="admin_tsinstall.html#size">Sizing Recommendations</a>. The Crawler specification can be found via the C1 configuration option.</p>
+<ul>
+<li>Micro-service<ul>
+<li>The recommended sizing for crawler instances is 2 CPUs and 2GB RAM with 1GB disk space that&#39;s dedicated for temporary crawler record storage during execution. The minimum is 1 CPU and 1GB RAM.</li>
+<li>Oracle JDK/JRE 7+</li>
+<li>For Linux platforms, installation of the fontconfig library and required fonts for your web applications</li>
+</ul>
+</li>
+<li>TeamServer<ul>
+<li>At least 1GB of disk space dedicated for the Crawler records. More space is needed depending on the size of your Web application and the number of historical records archived.</li>
+</ul>
+</li>
+</ul>
+<h2 id="installing-the-crawler-micro-service">Installing the Crawler Micro-Service</h2>
+<p>Crawling can take significant amount of CPU time and JVM heap for an extended period. To avoid exhausting TeamServer&#39;s server resource, Contrast&#39;s crawl feature requires deployment of a micro-service that executes crawling outside the TeamServer&#39;s JVM or physical/virtual machine. Multiple micro-service instances can be deployed in order to process more than one scheduled crawl executions simultaneously. It is recommended to start with a single Crawler installation until additional capacity and testing resources are needed.</p>
+<ul>
+<li>Provision a crawler micro-service server (i.e. Linux or Windows 64-bit). Note this can be a virtual server or bare metal server. It is recommended to run on a different server from TeamServer.</li>
+<li>Linux deployments should verify installation of the Fontconfig library and fonts that display the characters on the target web application. Refer to the &quot;Installing fontconfig library&quot; section if the library is not installed. Fontconfig is a library used to configure and customize font access. Run the command below to determine whether the Fontconfig library has been installed.</li>
+</ul>
+<pre><code>ldconfig -p | grep fontconfig</code></pre>
+<ul>
+<li>Download the latest version of the Crawler installation binary from <a href="https://hub.contrastsecurity.com/">Contrast&#39;s Hub</a></li>
+<li>Run the installer and follow the installation wizard. The installation defaults should be suitable.</li>
+<li>The Super admin username is typically: contrast_superadmin@yourdomain.com</li>
+<li>The Api Key, as well as the Service Key are located in the Super Admin api screen</li>
+<li>Log in as super admin.</li>
+<li>Click settings in the top nav bar.</li>
+<li>Click Rest Api on left nav bar.</li>
+<li>Start service</li>
+</ul>
+<p><a href="assets/images/KB2-l01_2.png" rel="lightbox" title="Service &amp; API Keys"><img class="thumbnail" src="assets/images/KB2-l01_2.png"></a></p>
+<ul>
+<li>Linux: sudo /etc/init.d/contrast-crawler start</li>
+<li>Windows: Start contrast-crawler service via Services window</li>
+<li>Verify that the micro-service is running in the <strong>TeamServer Admin portal &gt; Settings &gt; Crawler</strong></li>
+</ul>
+<h2 id="installing-ssl-certificate">Installing SSL Certificate</h2>
+<p>Please make sure that the appropriate SSL certificate is installed on the JRE when Crawler is configured to communicate to TeamServer over HTTPS.</p>
+<h2 id="installing-fontconfig-library">Installing Fontconfig library</h2>
+<p>See examples of installing fontconfig library for Ubuntu and CentOS below.</p>
+<p>If the crawl record screenshots contain fonts that are not readable like below, you need to install proper fonts that can display the characters your web application presents. This is often related to foreign language characters that are not installed on the OS by default.</p>
+<p><a href="assets/images/KB2-l01_3.png" rel="lightbox" title="Unreadable Fonts"><img class="thumbnail" src="assets/images/KB2-l01_3.png"></a></p>
+<h2 id="ubuntu-and-debian">Ubuntu and Debian</h2>
+<pre><code># Install with apt-get
+sudo apt-get install -y libfontconfig
+
+# Install with dpkg
+wget https://mirror.hmc.edu/debian/pool/main/f/fontconfig/fontconfig-config_2.11.0-6.3_all.deb -nv
+wget https://mirrors.mediatemple.net/debian/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.34-1_all.deb -nv
+wget https://mirrors.mediatemple.net/debian/pool/main/f/fontconfig/libfontconfig1_2.11.0-6.3_amd64.deb -nv
+sudo dpkg -i *.deb</code></pre>
+<h2 id="centos-or-rhl">CentOS or RHL</h2>
+<pre><code># Install with yum
+yum -y install fontconfig
+# An example for installing a font package
+yum -y install urw-fonts
+
+# Install with RPM
+wget ftp://mirror.switch.ch/pool/4/mirror/scientificlinux/7.0/x86_64/os/Packages/fontconfig-2.10.95-7.el7.x86_64.rpm -nv
+wget ftp://mirror.switch.ch/pool/4/mirror/scientificlinux/7.0/x86_64/os/Packages/fontpackages-filesystem-1.44-8.el7.noarch.rpm -nv
+sudo rpm -ivh *.rpm</code></pre>
+
+            </a>
+    </div>
+</div>
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/User.png" width="75" height="75">
+        <p class="label3">User</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">Agents</p></li>
+                <li>Java Agent</li>
+                    <li><a href="user_javainstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_javaconfig.html" class="label10">&#8226; Configuration</a></li>
+
+
+                    <li class="label10">&#8226; Troubleshooting</li>
+
+                        <li><a href="user_javafaq.html#agent" class="label9">Troubleshooting The Agent</a></li>
+                        <li><a href="user_javafaq.html#perf" class="label9">Effects On App Performance</a></li>
+                        <li><a href="user_javafaq.html#ibm" class="label9">Improve Startup Performance</a></li>
+                        <li><a href="user_javafaq.html#desktop" class="label9">Desktop And Standalone Apps</a></li>
+                        <li><a href="user_javafaq.html#clear" class="label9">Clearing The Agent Cache</a></li>
+                        <li><a href="user_javafaq.html#log" class="label9">Getting Agent Logs</a></li>
+                        <li><a href="user_javafaq.html#tomcat" class="label9">Tomcat Security Policy</a></li>
+                        <li><a href="user_javafaq.html#error1" class="label9">"NoClassDefFoundError"</a></li>
+                        <li><a href="user_javafaq.html#error2" class="label9">"OutOfMemoryError"</a></li>
+                        <br>
+
+
+                <li>.NET Agent</li>
+                    <li><a href="user_netinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_netconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_netfaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+<!--
+                <li>Node.js Agent</li>
+                    <li><a href="user_nodeinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_nodeconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_nodefaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                <br>
+
+-->
+
+                <br>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Guide</li>
+                    <li><a href="user_tsguideapp.html" class="label10">&#8226; Application</a></li>
+                    <li><a href="user_tsguidecrawl.html" class="label10">&#8226; Crawler</a></li>
+                    <li><a href="user_tsguidelib.html" class="label10">&#8226; Library</a></li>
+                    <li><a href="user_tsguiderep.html" class="label10">&#8226; Report</a></li>
+                    <br>
+
+                <li><a href="user_tsfaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>User</li>
+            <li>Agents</li>
+            <li>Java Agent</li>
+            <li class="label6">Troubleshooting</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Troubleshooting The Agent</h1>
+            <a class="anchor" id="agent">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Troubleshooting the Agent"
+description: "Troubleshooting guide for the agent installation process."
+-->
+
+<h2 id="scenario-i-see-javaagent-failed-missing-zip-or-bad-error-when-starting-up">Scenario: I see &quot;-javaagent failed, missing ZIP or bad...&quot; error when starting up</h2>
+<p>This means that you set up the <code>-javaagent</code> switch properly, but used an incorrect path for <strong><em>contrast.jar</em></strong>. We recommend using a fully qualified path while setting up the switch to prevent any relative path confusion, i.e.:</p>
+<pre><code>[joe@localhost /~#] set JAVA_OPTS=$JAVA_OPTS -noverify -javaagent:../contrast.jar 
+# Bad! Relative path may be interpreted incorrectly by the launcher.</code></pre>
+<p>Using fully-qualified paths fixes everything:</p>
+<pre><code>[joe@localhost /~#] set JAVA_OPTS=$JAVA_OPTS -noverify -javaagent:/usr/share/java/lib/contrast.jar 
+# Good! Everyone sees this path the same.</code></pre>
+<p>If it still fails, double check the path to the <strong><em>contrast.jar</em></strong> file correctly and make sure the user running the server has the correct filesystem privileges to read the file and its parent directory.</p>
+<h2 id="scenario-i-don-t-see-contrast-messages-in-my-console-at-startup-">Scenario: I don&#39;t see Contrast messages in my console at startup.</h2>
+<p>When you start your application server with Contrast, the first thing you should see is a few startup messages from Contrast printed to standard out. There are only a couple reasons this could happen:</p>
+<p><strong>The server has not had the JVM options set correctly.</strong>
+The vast majority of the time, this is the issue. Look at the Installation Guide for specific instructions on how to add JVM options to your server startup script or run configuration. Sometimes, users will add Contrast options to the server&#39;s startup script which isn&#39;t used by their launcher.</p>
+<p><strong>The server or application is redirecting standard output.</strong>
+Confirm that Contrast messages are appearing with the rest of the redirected output.</p>
+<p>If these steps don&#39;t help, consult your application server, IDE or launcher documentation on setting the server&#39;s JVM options. The same steps for adding memory (via the -Xmx switch) can be used to add the Java agent. </p>
+<h2 id="scenario-my-server-doesn-t-appear-on-the-contrast-site">Scenario: My server doesn&#39;t appear on the Contrast site</h2>
+<p>Are you sure the Engine was installed correctly? Here&#39;s a checklist of common fixes for this issue:</p>
+<ul>
+<li>Did you add the JVM parameters to your container&#39;s startup file, run configuration or <code>JAVA_OPTS</code> as was shown in installation documents?</li>
+<li>Did you add some extra PermGen (<code>-XX:PermGen=128m</code> or more) and heap space (<code>-Xmx768m</code> or more) in case it needs more memory?</li>
+<li>Did you see the Contrast messages in the console when you started up the server? What about server startup messages?</li>
+</ul>
+<p>There are a few network-related reasons why your server wouldn&#39;t appear on Contrast&#39;s installation wizard, even if Contrast was installed correctly. Assuming you&#39;ve seen the Contrast and server&#39;s startup messages in your console on startup, consider the following options.</p>
+<p><strong>Your network requires a HTTP proxy to access Contrast&#39;s site</strong>
+If you need to configure an HTTP proxy to reach the Internet in your web browser, it&#39;s very likely Contrast will also require an HTTP proxy. To add an one off HTTP proxy, select &quot;Advanced Configuration&quot; and then &quot;Use HTTP Proxy&quot;in the Agent download screen. Fill out values for the HTTP proxy host and port. These values should be supplied by your network administrators. Finally, download and install Contrast as per the normal instructions.</p>
+<p><strong>Your network firewall doesn&#39;t allow outbound HTTP connections to Contrast&#39;s site</strong>
+Work with your network administrators to allow the server on which the Agent is running to create outbound HTTP requests to the Contrast TeamServer from which you obtained said Agent. For SaaS users, this is <em>app.contrastsecurity.com</em> on port 443.</p>
+<p><strong>You&#39;re suffering from the Windows and Java7 IPv6 bug</strong>
+Starting with Java 7, the behavior of the IP stack is to utilize <a href="http://docs.oracle.com/javase/7/docs/api/java/net/doc-files/net-properties.html">IPv6 addresses</a> if available. On <a href="http://bugs.java.com/bugdatabase/view_bug.do?bug_id=7095419">Windows</a>, this causes problems with Java machines attempting to make connections out and results in inexplicable &quot;PermissionDenied&quot; exceptions. To fix, this, add <code>-Djava.net.preferIPv4Stack=true</code> to your JVM options.</p>
+<p>The Contrast engine ships with a diagnostic tool that can be run by passing the &quot;diagnostic&quot; argument to <strong><em>contrast.jar</em></strong>. This may help you identify your problem area.</p>
+<pre><code>$ java -jar contrast.jar diagnostic 
+*** Contrast Engine (version 1.X) 
+[!] Attempting to connect to the Contrast TeamServer at http://localhost:19080/Contrast (No proxy). 
+[+] Looking up http://localhost:19080/Contrast 
+        Couldn&#39;t resolve host 
+[-] Client cannot resolve the Contarst TeamServer. A proxy or DNS change may be needed. 
+[+] Issuing HTTP request to Contrast... 
+        Executing request... 
+        Reading response [200] 
+        Response size = 3215 
+        Snippet: &lt;!doctype html&gt; &lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class=&quot;no-js&quot;&gt; 
+[+] Client can connect directly to the Contrast TeamServer. No proxy needed.</code></pre>
+<p>You can also customize the diagnostic test and quickly test out different proxy and NTLM configurations by setting the following System properties:</p>
+<ul>
+<li>proxy.host - the proxy hostname or IP address.</li>
+<li>proxy.port - the proxy port (usually 80 or 8080).</li>
+<li>proxy.auth - one of &quot;none&quot;, &quot;basic&quot;, &quot;digest&quot; or &quot;ntlm&quot;.</li>
+<li>proxy.user - your proxy user name, if authentication is needed. For NTLM proxies, this is usually DOMAIN\username.</li>
+<li>proxy.pass - your proxy password, if authentication is needed.</li>
+<li>contrast.teamserver.url - a different URL than that supplied by the TeamServer at time of download</li>
+</ul>
+<h2 id="scenario-i-see-outofmemoryerror-permgen-or-other-unexplained-stack-traces">Scenario: I see OutOfMemoryError, PermGen or other unexplained stack traces</h2>
+<p>If you&#39;re running into unexplained OutOfMemoryErrors, NoClassDefFoundErrors that seem to reference Contrast code, PermGen problems, the following may explain what&#39;s happening:</p>
+<ul>
+<li>You need to add more PermGen (-XX:MaxPermSize=128m or more) and/or heap space (-Xmx768m or more).</li>
+<li>You&#39;re running an unsupported container or version.</li>
+<li>An unsupported OSGi container within your application is causing class loading issues with Contrast.</li>
+</ul>
+<p>If you have enough memory, are running a supported container, and aren&#39;t doing any class visibility funkiness, send us some details at bugs@contrastsecurity.com.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How The Java Agent Affects App Performance</h1>
+            <a class="anchor" id="perf">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How Does The Java Agent Affect App Performance?"
+description: "Tips to improve app performance with the Java agent"
+-->
+
+<p>As you might expect, Contrast&#39;s analysis does make your app run a little slower. The good news is it&#39;s generally not enough for anyone to complain about, and the results are definitely worth it.</p>
+<h2 id="startup-time">Startup Time</h2>
+<p>When you start your server with Contrast, you&#39;ll see a few messages that indicate that Contrast is performing its JIT bytecode transformations to add security sensors to the JVM. This startup JIT period will take 8-12 seconds on a fast developer laptop, and maybe 30-40 seconds on outdated, resource-starved QA server hardware.</p>
+<h2 id="request-processing-time">Request Processing Time</h2>
+<p>It&#39;s probably more important to think about how Contrast affects the round-trip time. In typical applications, Contrast adds around 2x round-trip time to a request that contains a lot of business logic with all the bells and whistles turned on. Round trip times for static resources typically don&#39;t get measurably worse. In requests where the total round-trip time is dominated by database or Web Service calls, Contrast&#39;s effect will be less noticeable.</p>
+<p>If better performance is really important to your environment, consider the following options:</p>
+<ul>
+<li>Run Contrast in <em>sampling</em> mode (gain 33% performance boost)</li>
+<li>Run Contrast with <em>bootstrap performance enhancements</em> (gain 30% performance boost)</li>
+<li>Turn off <em>stack trace collection</em> (gain 30% performance boost, reduce memory footprint)</li>
+<li>Turn off <em>response scanning</em> (gain 5% performance boost, and somewhat reduce memory footprint)</li>
+<li>Run Contrast during nightly integration tests</li>
+<li>Turn off data flow rules (add <code>-Dcontrast.propagators=false</code>, gain 50% performance boost)</li>
+<li>Run Contrast in an alternate environment (QA system or DEV environment)</li>
+<li>Run Contrast on a single node in a load balanced environment</li>
+</ul>
+<h2 id="memory">Memory</h2>
+<p>Contrast also requires some memory to operate. If you&#39;re running close to your memory limits, using Contrast might put you over the limit. To account for Contrast, add the following memory:</p>
+<ol>
+<li>Add 32MB of PermGen space in HotSpot JVM&#39;s</li>
+<li>Add another 128MB to the maximum heap size</li>
+</ol>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_tsfaq.html#sample">Sampling</a></p>
+<p><a href="user_javaconfig.html#bootstrap">Adding Bootstrap Speed Enhancements To The Java Agent</a></p>
+<p><a href="user_javaconfig.html#props2">Java Agent System Properties</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Improving Startup Performance With The IBM JDK</h1>
+            <a class="anchor" id="ibm">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/teamserver/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Improving Startup Performance With The IBM JDK"
+description: "Instructions on improving startup performance using the IBM JDK"
+-->
+
+<p>The time for an application to start up, referred to as <strong>startup performance</strong>, can be affected when Contrast is configured for assessment purposes. The startup is a crucial time for the agent as the main operation involves analyzing libraries for reporting purposes. Many applications are affected by <strong>20% to 30%</strong> as part of the startup cost for security analysis. Some applications can be affected by <strong>2x to 3x</strong> depending on the number of libraries loaded and the configuration of the <strong>Permanent Generation</strong> space.</p>
+<p>Web applications leveraging the IBM JDK will often experience slower-than-expected startup times. A startup option is available for the JDK to streamline the performance of startup. IBM released a JDK option <code>-Xquickstart</code>, which is disabled by default. Customers leveraging the IBM JDK can enable this option in their startup script and/or any location in which JVM parameters are managed (often in the WebSphere performance console). This particular JVM option causes the <strong>Just In Time (JIT)</strong> compiler to run with a subset of optimizations.</p>
+<p><a href="http://www-01.ibm.com/support/knowledgecenter/SSYKE2_7.0.0/com.ibm.java.win.70.doc/diag/appendixes/cmdline/xquickstart.html?lang=en">IBM <code>-Xquickstart</code> Overview</a></p>
+<blockquote>
+<p><em>&quot;The effect is faster compilation times that improve startup time, but longer-running applications might run slower. When the AOT compiler is active (both shared classes and AOT compilation enabled), <code>-Xquickstart</code> causes all methods to be AOT compiled. The AOT compilation improves the startup time of subsequent runs, but might reduce performance for longer-running applications. <code>-Xquickstart</code> can degrade performance if it is used with long-running applications that contain hot methods. The implementation of <code>-Xquickstart</code> is subject to change in future releases. By default, <code>-Xquickstart</code> is disabled. Another way to specify a behavior identical to <code>-Xquickstart</code> is to use the <code>-client</code> option. These two options can be used interchangeably on the command line.&quot;</em></p>
+<p><strong>Note:</strong> Customers should test their application without Contrast enabled to ensure this option does not cause any functional instability with their application. This option has been tested by Contrast, but as stated by IBM, this option is subject to change in future releases.</p>
+</blockquote>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How To Run The Java Agent On A Desktop Or Standalone App</h1>
+            <a class="anchor" id="desktop">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How To Run The Java Agent On A Desktop Or Standalone App"
+description: "Instructions for running Java agent on desktop or standalone app"
+-->
+
+<p>The process is pretty much the same, but you have to also pass a name in the <code>contrast.appname</code> system property under which to collect vulnerabilities.</p>
+<p><code>-Dcontrast.appname=AcmeDesktopApp -javaagent:&lt;path&gt;/contrast.jar</code></p>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_javainstall.html">Java Agent Installation</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How To Clear Your Agent Cache</h1>
+            <a class="anchor" id="clear">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How to clear your agent cache"
+description: "Troubleshooting the Java Agent Cache"
+-->
+
+<h2 id="what-is-the-agent-cache-">What is the agent cache?</h2>
+<p>There are two Java agents -- the Launcher agent and the Standalone agent. The Launcher agent automatically updates itself when the server being monitored starts up. The agent cache is a directory used by this agent to store the latest agent in this automatic update process. The name of this directory is &#39;agents&#39;, and it lives inside the Contrast home directory. </p>
+<h2 id="why-would-i-want-to-clear-the-agent-cache-">Why would I want to clear the agent cache?</h2>
+<p>Enterprise On Premises (EOP) customers transitioning from one TeamServer to another, or a user with agent issues looking to hit the <strong>Reset</strong> button.</p>
+<h2 id="how-do-i-find-my-agent-cache-directory-">How do I find my agent cache directory?</h2>
+<p>This directory can be seen in the agent output on startup:</p>
+<pre><code>[ContrastLauncher] Tue Feb 24 11:23:19 EST 2015 Using /Users/jdoe/tomcat7/temp/.contrast/agents for storage.</code></pre>
+<p>If you don&#39;t see a line like this, it&#39;s possible you&#39;re not using a Launcher agent. Notice that the location may be different from server to server.
+Delete the contents of this directory to clear the cache. </p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Getting Contrast Java Agent Logs</h1>
+            <a class="anchor" id="log">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Getting Contrast Java Agent Logs"
+description: "How to get Java agent logs"
+-->
+
+<p>You can ask Contrast to log verbose information by passing a custom system property, <code>-Dcontrast.log=/path/to/log.txt</code> to the server process.</p>
+<p>This switch will put Contrast into debug mode and log all output to the log file specified as the system property value. The log file will start with some messages that look similar to this:</p>
+<p><a href="assets/images/KB1-d11.png" rel="lightbox" title="Log File"><img class="thumbnail" src="assets/images/KB1-d11.png"></a></p>
+<p>Of course the goal is to never need this. However, if you do, feel free to use the output to <a href="mailto:bugs@contrastsecurity.com">file a bug report</a>.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How to Handle Tomcat's Java Security Policy</h1>
+            <a class="anchor" id="tomcat">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+Title: How to Handle Tomcat's Java Security Policy
+-->
+
+<p>Some Java applications define custom permissions enforced via the <strong><em>catalina.policy</em></strong> file in <strong><em>$CATALINA_BASE/conf/catalina.policy</em></strong>. When applications run with this Java security policy, the Contrast Java agent requires an additional grant of permission to the agent JAR file. Without this permission, the application will either fail to instrument, or potentially fail to execute correctly. For more information about the <code>catalina.policy</code> please <a href="https://tomcat.apache.org/tomcat-7.0-doc/security-manager-howto.html">read this</a>.</p>
+<p>The Contrast Java Agent reads files when analyzing runtime code and reading cached data. The agent writes files when saving analysis results and log files. The agent also inspects sensitive data, like <code>ClassLoaders</code> and <code>ProtectionDomains</code>. In addition, the 
+contrast agent automatically updates and may cause problems when new permissions are required. In order to do all of these operations and more, the agent requires a permission grant within the <code>catalina.policy</code>.</p>
+<p>In this scenario it is suggested that the agent be given the ubiquitous &quot;AllPermission&quot;. Update the path in this example to the real file path to the <strong><em>contrast.jar</em></strong> agent file.</p>
+<pre><code class="language-java">grant codeBase <span class="string">"file:/path/to/contrast.jar"</span> {
+  permission java.security.AllPermission;
+};</code></pre>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Reason For The "NoClassDefFoundError"</h1>
+            <a class="anchor" id="error1">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Why Do I See The "NoClassDefFoundError"?"
+description: "Explanation of the "NoClassDefFoundError""
+-->
+
+<h2 id="issue">Issue</h2>
+<p><code>java.lang.NoClassDefFoundError:com/.../EventController</code></p>
+<p>This error indicates you&#39;ve renamed your agent jar from its original name, <strong><em>contrast.jar</em></strong>. </p>
+<h2 id="solution">Solution</h2>
+<p>The name of this file can&#39;t be changed.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Reason For The "OutOfMemoryError"</h1>
+            <a class="anchor" id="error2">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/java/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Reason For "OutOfMemoryError" When Running Contrast Java Agent"
+description: "Explanation for the OutOfMemoryError"
+-->
+
+<h4 id="contrast-needs-some-of-its-own-memory-bump-it-up-a-bit-">Contrast needs some of its own memory. Bump it up a bit!</h4>
+<p>Contrast keeps some metadata, but not a lot. Maybe the JVM is already close to its heap size limit? Adding another 32MB should be more than enough for Contrast. If you think we&#39;re doing something wrong, <a href="mailto:bugs@contrastsecurity.com">send us a heap dump</a> and we&#39;ll gladly take a look!</p>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_javafaq.html#perf">How The Java Agent Affects App Performance</a></p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

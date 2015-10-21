@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/User.png" width="75" height="75">
+        <p class="label3">User</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">Agents</p></li>
+                <li>Java Agent</li>
+                    <li><a href="user_javainstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_javaconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_javafaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                    <br>
+
+                        
+
+                <li>.NET Agent</li>
+                    <li><a href="user_netinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_netconfig.html" class="label10">&#8226; Configuration</a></li>
+
+                    <li class="label10">&#8226; Troubleshooting</li>
+                    
+                        <li><a href="user_netfaq.html#over" class="label9">Overview</a></li>
+                        <li><a href="user_netfaq.html#supp" class="label9">Supported Technologies</a></li>
+                        <li><a href="user_netfaq.html#start" class="label9">Starting &amp; Stopping The Agent</a></li>
+                        <li><a href="user_netfaq.html#perf" class="label9">Effects on App Performance</a></li>
+                        <li><a href="user_netfaq.html#logs" class="label9">.NET Agent Logs</a></li>
+                        <li><a href="user_netfaq.html#tray" class="label9">Using The .NET Contrast Tray</a></li>
+                        <li><a href="user_netfaq.html#iis" class="label9">Using With IIS Express</a></li>
+                        <li><a href="user_netfaq.html#trouble" class="label9">Troubleshooting</a></li>
+                        <br>
+
+<!--
+                <li>Node.js Agent</li>
+                    <li><a href="user_nodeinstall.html" class="label10">&#8226; Installation</a></li>
+                    <li><a href="user_nodeconfig.html" class="label10">&#8226; Configuration</a></li>
+                    <li><a href="user_nodefaq.html" class="label10">&#8226; Troubleshooting</a></li>
+                <br>
+-->
+
+                <br>
+                <li><p class="label5">TeamServer</p></li>
+                <li>Guide</li>
+                    <li><a href="user_tsguideapp.html" class="label10">&#8226; Application</a></li>
+                    <li><a href="user_tsguidecrawl.html" class="label10">&#8226; Crawler</a></li>
+                    <li><a href="user_tsguidelib.html" class="label10">&#8226; Library</a></li>
+                    <li><a href="user_tsguiderep.html" class="label10">&#8226; Report</a></li>
+                    <br>
+
+                <li><a href="user_tsfaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>User</li>
+            <li>Agents</li>
+            <li>.NET Agent</li>
+            <li class="label6">Troubleshooting</li>
+        </ol>
+    </div>
+</div>
+
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">.NET Agent Overview</h1>
+            <a class="anchor" id="over">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: ".NET Agent Overview"
+description: "Overview of the .NET agent"
+-->
+
+<h2 id="usage">Usage</h2>
+<p>The <strong>Contrast.NET Agent</strong> analyzes the behavior of .NET web applications running on IIS as users interact with these applications.</p>
+<p>To start analyzing an application, install the .NET agent, and then simply point your browser to the web application and use it as you normally would: click on links, submit forms using normal data, etc. The .NET agent&#39;s sensors will gather information about the application&#39;s security, architecture and libraries. The results of the agent&#39;s analysis can be viewed on <a href="https://app.contrastsecurity.com">Contrast TeamServer</a>.</p>
+<h2 id="-net-agent-components">.NET Agent Components</h2>
+<p>The .NET agent consists of several key components:</p>
+<ul>
+<li><p><strong>Contrast Service</strong> (<strong><em>ContrastService.exe</em></strong>) is a background Windows service that is responsible for adding <strong>sensors</strong> to IIS and web applications, receiving information from these sensors, and sending this information to the Contrast TeamServer. The Contrast Service also performs some passive analysis of applications when starting, such as analyzing an application&#39;s configuration for potential vulnerabilities. The Contrast Service starts automatically when Windows starts.</p>
+</li>
+<li><p>Various <strong>Sensors</strong> are added to IIS and web applications on the server by the Contrast Service. These sensors gather vulnerability, library, technology and other information and send it to the Contrast Service. Note that the agent&#39;s sensors can only collect information when the Contrast Service is running <strong>and</strong> an ASP .NET application is actively being used.</p>
+</li>
+<li><p><strong>Contrast Tray</strong> (<strong><em>ContrastTray.exe</em></strong>) is a Windows system tray application that displays high-level information about the health of the agent. The Contrast Tray does not perform any analysis and does not need to be run; it only displays information for agent users that are logged into the server where the agent is installed.</p>
+</li>
+</ul>
+<h2 id="see-also-">See Also:</h2>
+<p><a href="user_netfaq.html#supp">.NET Agent Supported Technologies</a></p>
+<p><a href="user_netfaq.html#start">Starting And Stopping The .NET Agent</a></p>
+<p><a href="user_netfaq.html#tray">Using The .NET Contrast Tray</a></p>
+<p><a href="user_netconfig.html#config">.NET Agent Configuration</a></p>
+<p><a href="user_netfaq.html#logs">Getting .NET Agent Logs</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">.NET Agent Supported Technologies</h1>
+            <a class="anchor" id="supp">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: ".NET Agent Supported Technologies"
+description: "List of technologies supported by the .NET agent"
+-->
+
+<p>The Contrast.NET Agent supports analysis of web applications built on the following technologies:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Server</th>
+<th style="text-align:left">Host</th>
+<th style="text-align:left">Runtime</th>
+<th style="text-align:left">Web Application Framework</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Windows Vista</td>
+<td style="text-align:left">IIS6</td>
+<td style="text-align:left">CLR 2.0 (.NET Framework 2.0 - 3.5)</td>
+<td style="text-align:left">ASP.NET Web Applications</td>
+</tr>
+<tr>
+<td style="text-align:left">Windows 7</td>
+<td style="text-align:left">IIS7</td>
+<td style="text-align:left">CLR 4.0+ (.NET Framework 4.0+)</td>
+<td style="text-align:left">ASP.NET Web Pages</td>
+</tr>
+<tr>
+<td style="text-align:left">Windows 8</td>
+<td style="text-align:left">IIS8</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">ASP.NET Web Forms</td>
+</tr>
+<tr>
+<td style="text-align:left">Windows Server 2003</td>
+<td style="text-align:left">IIS Express</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">ASP.NET MVC 2-5</td>
+</tr>
+<tr>
+<td style="text-align:left">Windows Server 2008</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">IIS-Hosted WCF Service Host</td>
+</tr>
+<tr>
+<td style="text-align:left">Windows Server 2012</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">IIS-Hosted Web API</td>
+</tr>
+<tr>
+<td style="text-align:left">Azure Virtual Machine</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Note:</strong> The <strong>Mono</strong> runtime is not supported because Mono does not have a <strong>Profiler API</strong>. The Profiler API is a <strong>Component Object Model (COM)</strong>-based interface and is not supported on Linux.</p>
+</blockquote>
+<p>In CLR 2.0, dataflow analysis can be stopped by three string methods (<code>String.Insert</code>, <code>String.Remove</code> and <code>String.Replace</code>) that are implemented in native code and cannot currently be monitored by Contrast. These methods are fully analyzed for applications running on CLR 4.0.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Starting And Stopping The .NET Agent</h1>
+            <a class="anchor" id="start">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Starting And Stopping The .NET Agent"
+description: "How to start and stop the .NET agent"
+-->
+
+<p>The Contrast.NET Agent can be started to turn on analysis or stopped to temporarily disable analysis. The agent can be started or stopped by using shortcuts (<strong>Start &gt; Programs &gt; Contrast.NET &gt; Start Agent or Stop Agent</strong>), or by right-clicking on the <strong>Contrast Tray</strong> and selecting the desired option as shown below:</p>
+<p><a href="assets/images/KB3-e13.jpg" rel="lightbox" title="Start / Stop Options Menu"><img class="thumbnail" src="assets/images/KB3-e13.jpg"></a></p>
+<h2 id="start-agent">Start Agent</h2>
+<p>Starting the Contrast.NET Agent starts the <strong>Contrast Service</strong>, restarts IIS, and adds sensors to IIS and hosted web applications.</p>
+<h2 id="stop-agent">Stop Agent</h2>
+<p>Stopping the Contrast.NET Agent stops the <strong>Contrast Service</strong>, removes sensors, and restarts IIS.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">How Does The .NET Agent Affect App Performance?</h1>
+            <a class="anchor" id="perf">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "How Does The .NET Agent Affect App Performance?"
+description: "Tips on improving application performance with the .NET agent"
+-->
+
+<p>As you might expect, Contrast&#39;s analysis <em>does</em> make your app run a little slower. The good news is that it&#39;s generally not enough for anyone to complain about, and the results are definitely worth it.</p>
+<h2 id="request-processing-time">Request Processing Time</h2>
+<p>It&#39;s probably more important to think about how Contrast affects the round-trip time. In typical applications, Contrast adds around 2x the round-trip time to a request that contains a lot of business logic. Round trip times for static resources typically don&#39;t get measurably worse. In requests where the total round-trip time is dominated by database or WebService calls, Contrast&#39;s effect will be less noticeable.</p>
+<p>If performance is really important to your environment, consider the following options:</p>
+<ul>
+<li>Run Contrast in <em>sampling</em> mode (enabled by default)</li>
+<li>Run Contrast during nightly integration tests</li>
+<li>Run Contrast in an alternate environment (QA system or DEV environment)</li>
+<li>Run Contrast on a single node in a load balanced environment</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_tsfaq.html#sample">Sampling</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Getting .NET Agent Logs</h1>
+            <a class="anchor" id="logs">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Getting .NET Agent Logs"
+description: "Instructions on using .NET agent logs"
+-->
+
+<p>The Contrast.NET Agent logs information to the <strong><em>Contrast.NET\LOGS</em></strong> directory within the Windows <strong><em>ProgramData</em></strong> directory:</p>
+<ul>
+<li><p>Windows 2003
+  <strong><em>C:\Documents and Settings\All Users\Application Data\Contrast.NET</em></strong></p>
+</li>
+<li><p>Windows 2008/2012 
+  <strong><em>C:\ProgramData\Contrast.NET\LOGS</em></strong> (There is no space in <strong><em>ProgramData</em></strong>)</p>
+</li>
+</ul>
+<p>Depending on how the Windows profile is set up (folder view settings), the directories may be hidden so you can&#39;t browse directly to them. If so, paste the paths into the Windows Explorer location (replace the drive letter <strong>C</strong> with <strong>D</strong> if necessary).</p>
+<p>You can change what information is logged by changing the logging level in the <a href="user_netconfig.html#config">.NET Agent Configuration</a>.</p>
+<p>There are two types of log files in the <strong><em>LOGS</em></strong> directory: <strong><em>ContrastSvc_</em></strong> and <strong><em>ContrastProfiler_</em></strong> logs. <strong><em>ContrastSvc_</em></strong> logs include details about <strong><em>ContrastService.exe</em></strong>&#39;s work, including any details of errors communicating with the Contrast TeamServer. <strong><em>ContrastProfiler_</em></strong> logs include details about data flow and control flow analysis peformed by the agent&#39;s sensors.</p>
+<p>For example, here is the start of a <strong><em>ContrastSvc_</em></strong> log:</p>
+<p><a href="assets/images/KB3-e04_1.jpg" rel="lightbox" title="ContrastSvc_ Log"><img class="thumbnail" src="assets/images/KB3-e04_1.jpg"></a></p>
+<p>Of course the goal is never to need this; however, if you do, feel free to use the output to <a href="mailto:bugs@contrastsecurity.com">file a bug report</a>.</p>
+<p>The <strong>Windows Event Log</strong> can also be a useful source of information for debugging.</p>
+<ol>
+<li>Launch the <strong>Windows Event Viewer</strong> (<strong>Start &gt; Event Viewer</strong>)</li>
+<li>Expand the <strong>Windows Logs</strong> (in the left pane) and select <strong>Application</strong></li>
+<li>Look for a recent event where the <strong>Source</strong> is <strong>.NET Runtime</strong></li>
+</ol>
+<p>If the Contrast.NET Agent was successfully loaded by IIS, you&#39;ll see a message similar to the following:</p>
+<p><a href="assets/images/KB3-e04_1.jpg" rel="lightbox" title="Success Message"><img class="thumbnail" src="assets/images/KB3-e04_1.jpg"></a></p>
+<p>If there was an error, then you will probably see something similar to this:</p>
+<p><a href="assets/images/KB3-e04_1.jpg" rel="lightbox" title="Error Message"><img class="thumbnail" src="assets/images/KB3-e04_1.jpg"></a></p>
+<p>Starting with <strong>Version 3.1.8</strong>, the .NET agent will produce a minidump file (<strong><em>.dmp</em></strong>) when it encounters an error that would crash the worker process. These minidump files can be sent to Contrast as part of a <a href="https://support.contrastsecurity.com/tickets/new">bug report</a>. Dump files will help the Contrast team resolve the bug much more quickly than without the information in the dump file. Dump files are located in the same directory as other log files.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Using The .NET Contrast Tray</h1>
+            <a class="anchor" id="tray">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Using The .NET Contrast Tray"
+description: "Guide to using the .NET Contrast Tray"
+-->
+
+<p>The <strong>.NET Contrast Tray</strong> is a Windows system tray application (<strong><em>ContrastTray.exe</em></strong>) that displays high-level information about the health of the agent. The following annotated screenshot demonstrates an example of a healthy agent.</p>
+<p><a href="assets/images/KB3-e09_1.jpg" rel="lightbox" title="Healthy Agent"><img class="thumbnail" src="assets/images/KB3-e09_1.jpg"></a></p>
+<blockquote>
+<p><strong>Note:</strong> The Contrast Tray is not required to be running in order to analyze applications with Contrast; the Contrast Tray exists only to provide status information about the agent. This information can be useful when verifying that the agent is behaving as expected (especially when the agent is first installed).</p>
+</blockquote>
+<h4 id="contrast-tray-status-indicators">Contrast Tray Status Indicators</h4>
+<ul>
+<li><strong>Contrast.NET Service</strong> displays a green light when the Contrast Service has been installed correctly and is running</li>
+<li><strong>TeamServer Communication</strong> displays a green light when the Contrast Service can communicate with <a href="https://www.contrastsecurity.com/">TeamServer</a>. The most common error causing TeamServer communication to fail is incorrect proxy settings.</li>
+</ul>
+<h4 id="contrast-tray-tabs">Contrast Tray Tabs</h4>
+<ul>
+<li><p>The <strong>IIS</strong> tab displays a list of all web applications running on the IIS server (within application pools that use the integrated pipeline). The name displayed matches the alias used by IIS to identify the application. The <strong>URLs</strong> column displays the number of unique URLs (not including the query string) for the application that the agent has observed. The <strong>Last Activity</strong> column displays the time of the last request analyzed by the agent for that application.</p>
+<blockquote>
+<p><strong>Note:</strong> This tab is only displayed if IIS is installed</p>
+</blockquote>
+</li>
+<li><p>The <strong>IIS Express</strong> tab displays a list of all web appliations set up to run on IIS Express.</p>
+<blockquote>
+<p><strong>Note:</strong> This tab is only displayed if IIS Express is installed</p>
+</blockquote>
+</li>
+<li><p>The <strong>Console</strong> tab includes status and error messages that may be useful for troubleshooting problems with the Contrast.NET Agent</p>
+</li>
+</ul>
+<h2 id="contrast-tray-states">Contrast Tray States</h2>
+<h3 id="starting">Starting</h3>
+<h4 id="action-required">Action Required</h4>
+<p>None. Wait for the agent to start.</p>
+<p><a href="assets/images/KB3-e09_2.jpg" rel="lightbox" title="Waiting For The Agent To Start"><img class="thumbnail" src="assets/images/KB3-e09_2.jpg"></a></p>
+<h3 id="started">Started</h3>
+<h4 id="action-required">Action Required</h4>
+<p>Start using web applications on the server to have the agent analyze those applications.</p>
+<p><a href="assets/images/KB3-e09_3.jpg" rel="lightbox" title="Application Analysis When Started"><img class="thumbnail" src="assets/images/KB3-e09_3.jpg"></a></p>
+<p><strong><em>Contrast Tray</em></strong> <em>after the agent has started and before a web application has been visited</em></p>
+<h3 id="stopping">Stopping</h3>
+<h4 id="action-required">Action Required</h4>
+<p>None. Wait for the agent to stop.</p>
+<p><a href="assets/images/KB3-e09_4.jpg" rel="lightbox" title="Waiting For The Agent To Stop"><img class="thumbnail" src="assets/images/KB3-e09_4.jpg"></a></p>
+<h3 id="stopped">Stopped</h3>
+<h4 id="action-required">Action Required</h4>
+<p>Start the agent. After the agent has started, browse to and use web applications to have the agent analyze those applications.</p>
+<p><a href="assets/images/KB3-e09_5.jpg" rel="lightbox" title="Application Analysis When Stopped"><img class="thumbnail" src="assets/images/KB3-e09_5.jpg"></a></p>
+<h3 id="error">Error</h3>
+<h4 id="action-required">Action Required</h4>
+<p>Follow the prompt provided by the notification bubble. In this particular example, the agent cannot connect to TeamServer. The user may need to review network and firewall settings to ensure the agent can connect to TeamServer. The user may also need to review and correct the TeamServer proxy settings in Contrast Service&#39;s configuration file: <strong><em>C:\Contrast.NET\ContrastService.exe.config</em></strong></p>
+<p><a href="assets/images/KB3-e09_6.jpg" rel="lightbox" title="Start Error"><img class="thumbnail" src="assets/images/KB3-e09_6.jpg"></a></p>
+<h3 id="installation-error">Installation Error</h3>
+<h4 id="action-required">Action Required</h4>
+<p>Uninstall the agent. Ensure that your user has appropriate permissions to install software on the server. Run the agent installer again.</p>
+<p><a href="assets/images/KB3-e09_7.jpg" rel="lightbox" title="Installation Error"><img class="thumbnail" src="assets/images/KB3-e09_7.jpg"></a></p>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_netfaq.html#iis">Using Contrast With IIS Express</a></p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Using Contrast With IIS Express</h1>
+            <a class="anchor" id="iis">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Using Contrast With IIS Express"
+description: "Guide to using IIS Express"
+-->
+
+<p>Analyzing IIS Express with Contrast is performed using the <strong>Contrast.NET Tray</strong>. If installed, the tray will have a tab for IIS Express.</p>
+<blockquote>
+<p><strong>Note:</strong> All instances of IIS Express running in the user&#39;s session will be closed when the <strong>Contrast.NET Tray</strong> is started.</p>
+</blockquote>
+<h2 id="applications">Applications</h2>
+<p>The <strong>IIS Express</strong> tab will show all the applications that have previously been started in IIS Express. Selecting an application from the list will reveal details in the form below, such as application pool, physical path, process ID (PID) and last activity.</p>
+<p><a href="assets/images/KB3-e01_1.jpg" rel="lightbox" title="IIS Express Tab"><img class="thumbnail" src="assets/images/KB3-e01_1.jpg"></a></p>
+<h3 id="starting-an-application-with-contrast">Starting An Application With Contrast</h3>
+<p>To start an application, click the <strong>Start</strong> link in its row. This will start a new IIS Express process with the Contrast agent attached and open a browser to the local URL. The Contrast icon for the row will darken and the PID will be updated. The default <strong>IIS Express Tray</strong> will also appear, showing the application is running.</p>
+<p><a href="assets/images/KB3-e01_2.jpg" rel="lightbox" title="Updated IIS Express Tab"><img class="thumbnail" src="assets/images/KB3-e01_2.jpg"></a></p>
+<h3 id="stopping-an-application">Stopping An Application</h3>
+<p>To stop an application, click the <strong>Stop</strong> link in its row. This will close the IIS Express instance for that application. If this was the only application running under IIS Express, the default <strong>IIS Express Tray</strong> will also close.</p>
+<blockquote>
+<p><strong>Note:</strong> Exiting the <strong>Contrast.NET Tray</strong> will close running instances of IIS Express</p>
+</blockquote>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>If an application is missing from the application list:</p>
+<ul>
+<li>Check the IIS Express <strong><em>config</em></strong> file to ensure the application is configured: <code>%Documents%\IISExpress\config\applicationhost.config</code></li>
+<li>Confirm the physical path listed in the configuration is valid and accessible</li>
+</ul>
+<p>If there are no applications listed in the application list:</p>
+<ul>
+<li>Confirm the IIS Express configuration file exists and is valid: <code>%Documents%\IISExpress\config\applicationhost.config</code></li>
+<li>For each application, confirm the physical path is valid and accessible</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label3cat">Troubleshooting Problems With The .NET Agent</h1>
+            <a class="anchor" id="trouble">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/user/agent/net/faq" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Troubleshooting Problems With The .NET Agent"
+description: "Troubleshooting guide for .NET agent issues"
+-->
+
+<p>There are a number of issues that can be encountered when using the Contrast.NET Agent to analyze web applications. Reviewing the .NET agent&#39;s <em>log files</em> may be helpful when troubleshooting many of the following issues.</p>
+<h2 id="the-net-agent-cannot-connect-to-teamserver">The .NET Agent Cannot Connect To TeamServer</h2>
+<h3 id="symptoms">Symptoms</h3>
+<ul>
+<li>The .NET agent does not successfully start</li>
+<li><p>The <em>Contrast Tray</em> and/or .NET agent <em>logs</em> report errors when connecting to TeamServer: </p>
+<blockquote>
+<p><em>Contrast.NET service failed to start. Contrast.NET cannot connect to TeamServer at: <a href="https://app.contrastsecurity.com"><a href="https://app.contrastsecurity.com">https://app.contrastsecurity.com</a></a>. The remote name could not be resolved:</em> <strong><em>app.contrastsecurity.com</em></strong></p>
+</blockquote>
+</li>
+<li><p>Data from a server with the installed agent does not appear on TeamServer</p>
+</li>
+</ul>
+<h3 id="how-to-solve">How To Solve</h3>
+<ol>
+<li>Open the .NET agent&#39;s configuration file, <strong><em>ContrastService.exe.config</em></strong>, which is located in the agent&#39;s installation directory (i.e. <strong><em>C:/Program Files/Contrast.NET</em></strong>)</li>
+<li>Verify that the <code>TeamServerUrl</code> value (e.g. <a href="https://app.contrastsecurity.com/Contrast"><a href="https://app.contrastsecurity.com/Contrast">https://app.contrastsecurity.com/Contrast</a></a>) can be reached from a normal web browser on the server. If the URL cannot be reached, then you should review the network path and related settings between the server and TeamServer.</li>
+<li>Verify proxy settings. If a normal web browser can connect to TeamServer but the agent cannot, then the agent may be missing the proxy settings required by your network environment. A proxy can be configured using the <code>ProxyAuth</code>, <code>ProxyUser</code>, <code>ProxyPass</code> and <code>ProxyAddress</code> values in the configuration file.</li>
+<li>Verify that the API Key is correct. If the above settings are correct then the API Key used by the agent may have changed. Follow these <em>directions</em> to view your user&#39;s current API Key.</li>
+</ol>
+<h2 id="teamserver-does-not-recognize-third-party-net-libraries">TeamServer Does Not Recognize Third Party .NET Libraries</h2>
+<h3 id="symptoms">Symptoms</h3>
+<ul>
+<li>Popular third-party libraries such as <strong>Entity Framework</strong> are shown as <strong>Unknown</strong> or gray on TeamServer</li>
+</ul>
+<h3 id="how-to-solve">How To Solve</h3>
+<ul>
+<li>There is no action to take at this time. Contrast uses a database of library file hashes to identify libraries (see the process for <em>Java libraries</em>). We are in the process of creating this database for .NET libraries based on information from the <a href="https://www.nuget.org/">Nuget</a> package repository (the de facto standard repository for .NET libraries). We will update this page once the .NET library database is in place.</li>
+</ul>
+<h2 id="error-loading-this-assembly-would-produce-a-different-grant-set-from-other-instances-">Error: <em>Loading this assembly would produce a different grant set from other instances</em></h2>
+<h3 id="symptoms">Symptoms</h3>
+<ul>
+<li><p>A page containing certain ASP.NET controls (such as the legacy ASP.NET <strong>ReportViewer</strong> control) throws an unhandled exception when Contrast.NET is running: </p>
+<blockquote>
+<p><em>Loading this assembly would produce a different grant set from other instances</em></p>
+</blockquote>
+</li>
+<li><p>The application&#39;s <strong><em>web.config</em></strong> file specifies <code>&lt;trust legacyCasModel=&quot;true&quot;</code></p>
+</li>
+</ul>
+<h3 id="how-to-solve">How To Solve</h3>
+<p>Contrast.NET does not support analysis of applications using the <code>legacyCasModel=&quot;true&quot;</code> setting. Either:</p>
+<ul>
+<li>Set <code>legacyCasModel=&quot;false&quot;</code>. The <strong>ReportViewer</strong> control&#39;s performance will suffer but will still work.</li>
+<li><em>Configure Contrast.NET to not analyze</em> the application pool containing the application with the <strong>ReportViewer</strong> control using the <code>ProcessBlacklist</code> setting.</li>
+</ul>
+<h2 id="a-particular-resource-returns-0-bytes-under-contrast-net">A Particular Resource Returns 0 Bytes Under Contrast.NET</h2>
+<h3 id="symptoms">Symptoms</h3>
+<ul>
+<li>A particular resource (page, image, etc.) works normally when the Contrast.NET agent is not running and stops working once the agent is running</li>
+<li>When using browser developer tools or something similar to view network traffic, the resource returns <strong>0 bytes</strong> while the Contrast.NET agent is running</li>
+</ul>
+<h3 id="how-to-solve">How To Solve</h3>
+<p>Contrast.NET uses a filter within a <code>System.Web.IHttpModule</code> to gather HTTP response data. There is a known Microsoft bug in the .NET framework: <code>HttpModules</code> with filters can cause resources such as <strong><em>WebResource.axd</em></strong> to return <strong>0 bytes</strong> (which can result in 500 status responses for embedded resources such as images).</p>
+<ul>
+<li><em>Configure Contrast.NET</em> using the <code>ResponseMode</code> (value <strong>0</strong> or <strong>2</strong>) or <code>ResponseUrlWhitelistRegex</code> settings to prevent Contrast from applying the <code>HttpModules</code> filter to the resource.</li>
+</ul>
+<h2 id="see-also">See Also</h2>
+<p><a href="user_netfaq.html#logs">Getting .NET Agent Logs</a></p>
+<p><a href="user_netfaq.html#tray">Using The .NET Contrast Tray</a></p>
+<p><a href="dev_api2.html#access">Accessing The API</a></p>
+<p><a href="user_tsguidelib.html#analysis">Library Analysis</a></p>
+<p><a href="user_netconfig.html#config">.NET Agent Configuration</a></p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

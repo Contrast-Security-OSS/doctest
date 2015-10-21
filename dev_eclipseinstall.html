@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Developer Eclipse Installation | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+ 
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+ 
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Developer.png" width="75" height="75">
+        <p class="label1">Developer</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">API</p></li>
+                <li><a href="dev_api3.html">Open API</a></li>
+                <li><a href="dev_api1.html">API v1</a></li>
+                <li><a href="dev_api2.html">API v2</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Eclipse</p></li>
+                <li>Installation</li><li>
+                    </li><li><a href="dev_eclipseinstall.html#intro" class="label9">Downloading Eclipse</a></li>
+                    <li><a href="dev_eclipseinstall.html#ubuntu" class="label9">Eclipse On Ubuntu</a></li>
+                    <br>
+                <li><a href="dev_eclipseguide.html">Guide</a></li>
+                <li><a href="dev_eclipsefaq.html">Troubleshooting</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+ 	<div class="breadcontainer">
+    	<ol class="breadcrumb">
+        	<li>Developer</li>
+        	<li>Eclipse</li>
+        	<li class="label6">Installation</li>
+    	</ol>
+ 	</div>
+</div>
+
+ <div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Downloading Contrast For Eclipse</h1>
+ 			<a class="anchor" id="intro">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Downloading Contrast for Eclipse"
+description: "Instructions for Downloading and Installing Contrast for Eclipse"
+-->
+
+<h2 id="drag-and-drop-option-1-">Drag and Drop (Option 1)</h2>
+<p>The Contrast for Eclipse plugin can be found in the Eclipse Market place by searching <strong>Contrast for Eclipse</strong> or can be downloaded directly by dragging the preceding link into an active Eclipse workspace.
+Once installed, you will have to restart Eclipse for the plugin to be loaded. You can then open the Contrast view (<strong><em>Window &gt; Show View &gt; Other &gt; Contrast Security &gt; Contrast</em></strong>) or start a server with Contrast (<strong><em>Servers &gt; Right click on your server &gt; Start with Contrast</em></strong>).</p>
+<h2 id="install-new-software-option-2-">Install New Software (Option 2)</h2>
+<ul>
+<li>In Eclipse, open the <strong>Help</strong> menu and select <strong>Install New Software</strong></li>
+<li>Click <strong>Add</strong> and add the URL &quot;<a href="https://eclipse.contrastsecurity.com/repository">https://eclipse.contrastsecurity.com/repository</a>&quot; to your repositories </li>
+</ul>
+<p><a href="assets/images/KB6-a02.png" rel="lightbox" title="Add Repository"><img class="thumbnail" src="assets/images/KB6-a02.png"></a></p>
+<ul>
+<li>Select the <strong>Contrast Security</strong> software and click <strong>Next</strong></li>
+<li>Click <strong>Next</strong> and the accept the license agreement</li>
+<li>Click <strong>Finish</strong> and the plugin should begin to install<ul>
+<li>You may be prompted to install unsigned content. This is normal. In order to support older but not end of lifed versions of Eclipse, we are unable to sign the jar file</li>
+</ul>
+</li>
+<li>When prompted, restart Eclipse to complete the install.</li>
+<li>If the view does not automatically open, you can find it under <strong><em>Window &gt; Show View &gt; Other &gt; Contrast for Eclipse</em></strong>  </li>
+</ul>
+
+			</a>
+ 	</div>
+</div>
+
+<div class="container-content">
+ 	<div class="article">
+ 		<h1 class="label1cat">Eclipse On Ubuntu</h1>
+ 			<a class="anchor" id="ubuntu">
+			 	<div class="actions">
+			 		<div class="iconbar">
+		 				
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+	<a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  	<a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/developer/eclipse/install" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+
+</div>
+
+		 			</div>
+		 		</div>
+				<!--
+title: "Why doesn't Contrast for Eclipse render on my Ubuntu machine?"
+description: "Why doesn't Contrast for Eclipse render on my Ubuntu machine?"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li>Ubuntu flavors of Linux are not set up correctly for use with internal SWT browsers that come bundled with Eclipse. The objective of this guide is to direct Eclipse to use Mozilla&#39;s XULRunner, without modifying any environmental variables.</li>
+<li>Navigate to <a href="http://www.eclipse.org/swt/faq.php#browserlinux">Eclipse&#39;s SWT FAQ</a></li>
+<li>Identify the newest version of XULRunner compatible to your version of Eclipse. For example Eclipse 4.4 and newer (Luna) can use any 24.x version.</li>
+<li>Navigate to the <a href="http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/">Mozilla XULRunner</a> releases directory</li>
+<li>Navigate to the folder for the version identified in step 2. For our example 24.0/ is a fine candidate.</li>
+<li>Navigate to the runtimes folder and download the <strong><em>xulrunner-XX.X.en-US.linux-i686.tar.bz2</em></strong> for 32-bit systems or <strong><em>xulrunner-XX.X.en-US.linux-x86_64.tar.bz2</em></strong> for 64-bit systems, where XX.X is the version identified in step 2. For our example, on a 64 bit system, this file is appropriate: <a href="http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/24.0/runtimes/xulrunner-24.0.en-US.linux-x86_64.tar.bz2">http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/24.0/runtimes/xulrunner-24.0.en-US.linux-x86_64.tar.bz2</a>.</li>
+<li>Extract the downloaded files to your desired location, this will create a folder called xulrunner. </li>
+<li>Edit the eclipse.ini file located in the root of the eclipse directory with your favorite text editor.</li>
+<li>Append <strong><em>-Dorg.eclipse.swt.browser.XULRunnerPath={path to xulrunner folder created in step 6}</em></strong>, without braces, onto a new line at the end of the file, then save.</li>
+<li>Launch Eclipse and open the Contrast View - the plugin should now render correctly.</li>
+</ul>
+
+			</a>
+ 	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>

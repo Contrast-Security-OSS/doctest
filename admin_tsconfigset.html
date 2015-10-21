@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administrator | Open Docs</title>
+
+    <!-- Contrast Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="assets/css/lightbox/lightbox.css" rel="stylesheet">
+
+    <!-- Google Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+
+
+    <!-- ZenDesk Support Widget -->
+    <!-- Start of contrastsecurity Zendesk Widget script -->
+    <script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","contrastsecurity.zendesk.com");/*]]>*/</script>
+
+<!-- End of contrastsecurity Zendesk Widget script -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+  <div id="wrapper">
+
+      
+
+
+<!-- Fixed navbar -->
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-brand">
+          <a href="index.html"><img src="../../assets/images/OpenDocs_logo.png" width="142" height="37" data-toggle="tooltip" data-placement="top" title="Back to OpenDocs Home"></a>
+      </div>
+
+  
+      <div class="navbar-collapse collapse">
+        
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="dev_api3.html">Developer</a>
+            </li>
+            <li>
+              <a href="admin_tsinstall.html">Administrator</a>
+            </li>
+            <li>
+              <a href="user.html">User</a>
+            </li>
+            <li>
+              <a href="release_v3.html">Release Notes</a>
+            </li>
+            <li>
+              <a href="contribute_guidelines.html">Contribute</a>
+            </li>
+          </ul>
+        
+
+        
+          <ul class="nav navbar-nav navbar-right">
+            <a href="https://github.com/Contrast-Security-OSS/docs" target="new"><i class="fa fa-github fa-2x" data-toggle="tooltip" data-placement="top" title="View the OpenDocs repo on GitHub"></i></a>
+          </ul>
+      
+
+      </div><!--/.nav-collapse -->
+  
+</div>
+
+
+
+
+
+
+<div id="nav">  
+
+    <div class="persona">
+        <img src="../../assets/images/Admin.png" width="75" height="75">
+            <p class="label2">Admin</p>
+    </div>
+
+    <div class="scroll">
+        <div class="navitems">
+            <ul>
+                <li><p class="label5">TeamServer</p></li>
+                <li><a href="admin_tsinstall.html">Installation</a></li>
+                <li><a href="admin_tsconfig.html">Configuration</a></li>
+
+                    <li><a href="admin_tsconfigint.html" class="label10">&#8226; Integration</a></li>
+                        
+                    <li class="label10">&#8226; Settings</li>
+                        <li><a href="admin_tsconfigset.html#user" class="label9">Managing Users</a></li>
+                        <li><a href="admin_tsconfigset.html#pw" class="label9">Configure Password Policy</a></li>
+                        <li><a href="admin_tsconfigset.html#key" class="label9">Security API Keys</a></li>
+                        <li><a href="admin_tsconfigset.html#ip" class="label9">IP Restriction</a></li>
+                        <li><a href="admin_tsconfigset.html#ssl" class="label9">Configuring For HTTPS</a></li>
+                        <br>
+
+                <li><a href="admin_tsfaq.html">Troubleshooting</a></li>
+                <br>
+                <br>
+                <li><p class="label5">Crawler</p></li>
+                <li><a href="admin_crawlinstall.html">Installation</a></li><li>
+                </li><li><a href="admin_crawlconfig.html">Configuration </a></li>
+<!--
+                <li><a href="admin_crawlfaq.html">Troubleshooting</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="breadcontent">
+    <div class="breadcontainer">
+        <ol class="breadcrumb">
+            <li>Administrator</li>
+            <li>TeamServer</li>
+            <li>Configuration</li>
+            <li class="label6">Settings</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Managing Users In Team Server</h1>
+            <a class="anchor" id="user">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/settings" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Managing Users in TeamServer"
+description: "Managing Users in TeamServer"
+-->
+
+<h2 id="user-roles">User Roles</h2>
+<p>There are several different roles that can be selected for Users within an organization. We will discuss each of those roles briefly below.</p>
+<h3 id="administrator">Administrator</h3>
+<p>The organization administrator is responsible for overall management of the organization within the Team Server. This user has the ability to add and delete users, update the configuration settings for an organization and make purchases (SaaS Only).</p>
+<h3 id="rules-admin">Rules Admin</h3>
+<p>The rules administrator has all the privileges of the Edit user plus the ability to manage rule information at the organizational level. This includes things such as adding validation and sanitization methods, and adding organization guidance and references to existing rules.</p>
+<h3 id="edit">Edit</h3>
+<p>The edit user has all the rights of the view user plus the ability to edit information about traces such as updating triage status and making notes.</p>
+<h3 id="view">View</h3>
+<p>The view user can access the user interface and browse the organization&#39;s applications in Read-Only mode. The view user does not have the ability to perform and edits to traces or the application.</p>
+<h3 id="api-only-users">API Only Users</h3>
+<p>The ability also exists to create a so-called API Only User within an organization. This user has the ability to access the Team Server&#39;s REST API but not to log in to the user interface. An API Only user can also be granted and of the roles described above (creating administrator API accounts is not recommended).</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configure the Password Policy of TeamServer</h1>
+            <a class="anchor" id="pw">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/settings" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configure the Password Policy of TeamServer"
+description: "Guidelines for configuring the password policy for TeamServer"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>We realize how important staying in compliance with your organization&#39;s password policies are, so we went to great effort to make sure Contrast wasn&#39;t a &quot;step down&quot; in that department. We included the ability to require many different factors in password strength from which you can choose &quot;a la carte&quot;.</p>
+<h2 id="customizing-your-password-policy">Customizing your password policy</h2>
+<p>The password policy can be defined by the SuperAdmin, as well as managed by each organization adminitrator. The policy is managed via the Settings --&gt; Security. </p>
+<p>Password policy includes attributes such as:</p>
+<ul>
+<li>Password length</li>
+<li>Password case</li>
+<li>Password numbers, symbols and letters</li>
+<li>Account active days</li>
+<li>Password usage days</li>
+<li>Password history retention</li>
+<li>Use of unique characters</li>
+</ul>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Security API Keys</h1>
+            <a class="anchor" id="key">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/settings" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Security API Keys"
+description: "About article for the TeamServer API Keys"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>When you download the Contrast JVM plugin (also called the &quot;Engine&quot;), it comes pre-fitted with a set of randomly generated credentials for your user that don&#39;t involve the password you login with. When the plugin communicates with the Contrast site, it authenticates using these credentials. This makes the authentication look something like this:</p>
+<p><a href="assets/images/KB4-a04_1.png" rel="lightbox" title="Default Authentication"><img class="thumbnail" src="assets/images/KB4-a04_1.png"></a></p>
+<h2 id="why-use-an-api-key-">Why use an API key?</h2>
+<p>We asked ourselves, however, what would happen if a bad guy get a hold of an Engine? We wanted to be able to handle a sort of &quot;key rotation&quot; in these situations. To add another layer of security we added a &quot;organizational API key&quot; that customers can enable and manage on their own. Even in this situation, a bad guy won&#39;t be able to submit forged or malicious data to your organization, because their organizational API key is wrong. With the API key enabled, the authentication looks more like this:</p>
+<p><a href="assets/images/KB4-a04_2.png" rel="lightbox" title="Organizational API Key"><img class="thumbnail" src="assets/images/KB4-a04_2.png"></a></p>
+<h2 id="enabling-and-changing-an-api-key">Enabling and Changing an API key</h2>
+<p>To enable or change an API key, go to Settings menu option and select API. From this screen you&#39;ll be able to inspect the current API key and update it to a new value.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">IP Restriction</h1>
+            <a class="anchor" id="ip">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/settings" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "IP Restriction"
+description: "Guidelines for configure IP Restriction from within TeamServer"
+-->
+
+<h2 id="getting-started">Getting Started</h2>
+<p>As an Administrator you can limit the range of Internet addresses (IPs) that your organizational accounts can login from. This means that even if an attacker obtained valid credentials for one of your Contrast users, they wouldn&#39;t be able to login without originating their login request from your network. To create an IP restriction, go to the administrator settings menu option and select Security. </p>
+<p>The page helpfully tells you the current IP address that Contrast detects your traffic is from, and allows you to specify a list of IP addresses or IP ranges (one per line) to restrict traffic from.</p>
+
+            </a>
+    </div>
+</div>
+
+<div class="container-content">
+    <div class="article">
+        <h1 class="label2cat">Configuring TeamServer for HTTPS</h1>
+            <a class="anchor" id="ssl">
+                <div class="actions">
+                    <div class="iconbar">
+                        
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="contrastsec" data-count="none" data-hashtags="opendocs"></a>
+	
+
+<div class="iconbar">
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/issues" target="new"><i class="fa fa-bug fa-lg" data-toggle="tooltip" data-placement="top" title="Report an issue"></i></a>
+
+  <a href="https://github.com/Contrast-Security-OSS/docs/blob/master/content/admin/teamserver/config/settings" target="new"><i class="fa fa-pencil fa-lg" data-toggle="tooltip" data-placement="top" title="Improve this article"></i></a>
+  
+</div>
+
+
+
+                    </div>
+                </div>
+                <!--
+title: "Configuring TeamServer for HTTPS"
+description: "Guidelines for configure HTTPS for TeamServer"
+-->
+
+<h2 id="background">Background</h2>
+<p>By default, Contrast uses HTTP for both UI and Agent connections. In some organizations this may not be a big deal, but in others you may find that you need to add or replace HTTP with HTTPS for both UI and Agent Traffic. There are essentially two ways to accomplish this requirement.</p>
+<p><strong>Reverse Proxy Method</strong> - Use a standard web server such as Apache HTTPD or nginx in front of the Contrast Server configured to reverse proxy requests using Contrast&#39;s AJP connector. </p>
+<p><strong>Contrast HTTPS Connector</strong> - Configure Contrast to listen to HTTPS connections on a port that you specify.
+Each method has it&#39;s own benefits and providing the option to use either method allows Contrast to fit in with many different organization security policies and architectures. </p>
+<h2 id="reverse-proxy-method">Reverse Proxy Method</h2>
+<p>To use AJP with a Reverse Proxy, you will need to ensure that the Contrast Server is configured to listen for connections using the AJP protocol. To verify this setting, open the <strong><em>$CONTRAST_HOME/data/conf/server.properties</em></strong> file in your text editor and ensure that the following options are set.</p>
+<pre><code>ajp.enabled=true
+ajp.port=8009</code></pre>
+<p>You can, of course configure the <code>ajp.port</code> setting to reflect the port that you would actually like the server to listen for incoming connections on. In some cases, you may wish to also disable the <code>http.enabled</code> and <code>https.enabled</code> options if they are enabled.</p>
+<p>After updating the server.properties file you will need to restart the Contrast Server service so the changes take effect. </p>
+<h3 id="configuring-the-front-end-server">Configuring The Front-End Server</h3>
+<p>You should refer to your server&#39;s documentation for instructions on how to configure it to use AJP. For reference, below you will find links to the instructions for both Apache and nginx. </p>
+<ul>
+<li><a href="http://httpd.apache.org/docs/2.2/mod/mod_proxy_ajp.html">Apache mod_proxy_ajp configuration</a></li>
+<li><a href="http://webapp.org.ua/sysadmin/setting-up-nginx-ssl-reverse-proxy-for-tomcat/">nginx proxy ajp configuration</a></li>
+</ul>
+<h2 id="contrast-https-connector">Contrast HTTPS Connector</h2>
+<p>Configuring Contrast to use an HTTPS connector is a straight-forward process. This documentation assumes that you have already either acquired a certificate to use. The certificate can be CA Signed or Self-Signed. </p>
+<p>You will first need to import your certificate into a new Java KeyStore (jks) for use by Contrast. If you already have a KeyStore, you can skip this step and place your keystore in the <strong><em>$CONTRAST_HOME/data/conf/ssl</em></strong> directory.</p>
+<p>All commands used in this guide should be run from the directory where contrast was installed in a command shell with administrative privileges.</p>
+<h3 id="generating-a-self-signed-certificate-and-keystore-for-ssl-termination">Generating a self-signed certificate and keystore for SSL termination</h3>
+<p>This is the quickest and easiest method for generating the proper certificate and keystore. The following command will prompt you for information about your organization and then generate a keystore with a self-signed certificate. </p>
+<pre><code>$ jre/bin/keytool -genkey -keyalg RSA -alias contrast-server -keystore data/conf/ssl/contrast-server.jks -validity 365 -keysize 2048</code></pre>
+<p>We recommend using this method over generating certificates with OpenSSL. For more complicated SSL configurations, we recommend using a reverse proxy.  Continue to enabling SSL in the Contrast Server. </p>
+<h3 id="importing-ssl-certificates-verified-by-third-party-providers">Importing SSL certificates verified by third party providers</h3>
+<p>First, generate a new keystore.</p>
+<pre><code>$ jre/bin/keytool -genkey -alias contrast-server -keystore data/conf/ssl/contrast-server.jks</code></pre>
+<p>Once your keystore is created, you can import your server&#39;s certificate into the new keystore.</p>
+<pre><code>$ jre/bin/keytool -import -keystore data/conf/ssl/contrast-server.jks -storepass &lt;keystore password&gt; \
+  -file &lt;path to certificate&gt; -alias &lt;server hostname&gt;</code></pre>
+<p>Additionally, you may need to import Intermediate CA Certs into the Keystore as well (see you CA&#39;s documentation to verify this is the case). For a private CA server, you will need any intermediate certificates and the root CA certificate in the keystore.</p>
+<pre><code>$ jre/bin/keytool -import -trustcacerts -alias &lt;ca-name&gt; -storepass &lt;keystore password&gt; \
+  -file &lt;path to ca or intermediate certificate&gt;</code></pre>
+<p>Continue to enabling SSL in Contrast Server. </p>
+<h3 id="enabling-and-configuring-https-in-contrast-server">Enabling and Configuring HTTPS in Contrast Server</h3>
+<p>Once you have setup your keystore, you will need to open the <strong><em>$CONTRAST_HOME/data/conf/server.properties</em></strong> file in your favorite text editor and update the following properties.</p>
+<pre><code>https.enabled=true
+https.port=&lt;port to listen for https connections on&gt;
+https.keystore.file=&lt;full path to jks created above&gt;
+https.keystore.pass=&lt;password for the jks created above&gt;
+https.keystore.alias=&lt;hostname of the server&gt;</code></pre>
+<p>You may also find it useful to ensure that the <code>http.enabled</code> and <code>ajp.enabled</code> options are both set to <strong>false</strong> to ensure that only connections made over HTTPS are allowed to the Contrast Server.</p>
+<p>After you have updated the <code>server.properties</code>, you can restart the Contrast Server service and ensure that it is now listening on the HTTPS port you&#39;ve configured.</p>
+<h2 id="agent-configuration">Agent Configuration</h2>
+<p>If you switch from http to https, you will need to update the server to tell future Contrast Agents that they should connect back using https instead of http.
+Open the <strong><em>$CONTRAST_HOME/data/conf/general.properties</em></strong> file and change the value of the teamserver.url property to reflect your change. Agents will need to be manually updated the first time after this change has been made. Future updates to the agent will be automatic.</p>
+<h2 id="contrast-net-agent">Contrast.NET Agent</h2>
+<p>The Contrast.NET agent needs additional configuration to connect to a TeamServer using a self-signed certificate.</p>
+
+            </a>
+    </div>
+</div>
+
+
+
+
+  
+      
+
+<div id="footer">
+    Copyright &copy 2013-2015  <a href="https://www.contrastsecurity.com" target="new"> <img src="../../assets/images/Contrast-logo-transparent.png" width="80" height="26" data-toggle="tooltip" data-placement="top" title="Check out our website"></a>  Licensed under <a href="https://www.creativecommons.org/licenses/by-nc-sa/4.0/" target="new"> <span style="color: #56b4aa">Creative Commons (CC BY-NC-SA 4.0)</span></a>
+</div>
+
+      
+  </div>
+  
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/twitterbutton.js"></script>
+    <script src="assets/js/externallink.js"></script>
+    <!--Lightbox -->
+    <script src="assets/css/lightbox/lightbox.js"></script>
+    <!--
+    <script src="assets/css/lightbox/lightbox-plus-jquery.js"></script>
+    -->
+
+
+  </body>
+</html>
